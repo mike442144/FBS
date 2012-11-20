@@ -1,0 +1,153 @@
+
+/* CSS Document */ 
+.hcy-pagelan {
+	height: 23px;
+padding-top: 5px;
+font-size: 13px;
+text-align: center;
+padding-bottom: 5px;
+width: 500px;
+margin: 0 auto;
+}
+.hcy-pagebox
+{
+    width: 21px;
+	height: 21px;
+	/*line-height:21px;*/
+	float: left;
+	text-align: center;
+	margin-right: 10px!important;
+	margin-right: 5px;
+	border:solid 1px #97c5df;
+}
+.hcy-pagecurrent
+{
+    height:21px;
+	width:21px;
+	/*line-height:21px;*/
+	float: left;
+	text-align: center;
+	margin-right: 10px!important;
+	margin-right: 5px;
+	border:solid 1px #97c5df;
+}
+.hcy-next {
+	float: left;
+	height: 21px;
+	width: 60px;
+	border-color: #97c5df;
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 10px!important;
+	margin-right: 5px;
+	text-align:center;
+}
+.hcy-next a:link,.hcy-last a:link,.hcy-next a:visited,.hcy-last a:visited
+{
+   margin-right: 10px!important;
+	margin-right: 0px;
+	float:left;
+   height:18px;
+   line-height:18px;
+   width:60px;
+   text-decoration:none;
+   padding-top:3px;
+   color:#005eac;
+   /*border-color: #97c5df;
+	border-style: solid;
+	border-width: 1px;*/
+}
+.hcy-next a:hover,.hcy-last a:hover,.hcy-next a:active,.hcy-last a:active
+{
+	 color:White;
+	 background:#0B58B0;
+}
+
+.hcy-last {
+	height: 21px;
+	width: 60px;
+	float:left;
+	border-color: #97c5df;
+	border-width: 1px;
+	border-style: solid;
+	text-align:center;
+}
+.hcy-pagecurrent a
+{
+    float:left;
+	height:18px;
+	line-height:18px;
+	width:21px;
+	background-color: #0B58B0;
+    
+	color:white;
+	margin-right: 10px!important;
+	margin-right: 0px;
+	text-align:center;
+	padding-top:3px;
+}
+.hcy-pagecurrent a:hover
+{
+	
+	color:white;
+	text-decoration:underline;
+	/*border: solid 1px #97C5DF;
+	margin-right: 10px!important;
+	margin-right: 5px;
+	text-align:center;
+	padding-top:3px;*/
+	
+}
+.hcy-pagebox a
+{
+	float: left;
+	height: 18px;
+	line-height:18px;
+	width: 21px;
+	
+	text-decoration:none;
+	padding-top:3px;
+	color:#005eac;
+	margin-right: 10px!important;
+	margin-right: 0px;
+}
+
+.hcy-pagebox a:link
+{
+	color:#0B58B0;
+	text-decoration:none;
+}
+
+.hcy-pagebox a:visited
+{
+	color:#0B58B0;
+	background-color:White;
+	text-decoration:none;
+}
+
+.hcy-pagebox a:hover
+{
+	color:#fff;
+	background-color:#0b58b0;
+	text-decoration:underline;
+}
+
+.hcy-pagebox a:active
+{
+	color:#0B58B0;
+	background-color:White;
+	text-decoration:none;
+}
+
+.fenyebox
+{
+	font-size: 22px;
+	background: url(../images/NewsList/bg_y.gif) left top repeat-y;
+	color:#2b2b2b;
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	margin:5px auto;
+}
+
+
+

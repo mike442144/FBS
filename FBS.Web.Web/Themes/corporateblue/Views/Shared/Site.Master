@@ -1,0 +1,60 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="[YourProjectName].Views.Shared.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><%= Html.Encode(ViewData["Title"]) %> by Free CSS Templates</title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>[YourProjectName]</h1>
+		<h2>By Free CSS Templates</h2>
+	</div>
+	<div id="main-menu">
+		<ul>
+            <li class="first"><%= Html.ActionLink("Home", "Index", "Home")%></li>
+            <li><%= Html.ActionLink("About Us", "About", "Home")%></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="left">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+		</div>
+	</div>
+	
+	<div id="right">
+		<h2>Membership</h2>
+		<ul>
+		<li><%= Html.ActionLink("Login", "Login", "Account")%></li>
+		<li><%= Html.ActionLink("Register", "Register", "Account")%></li>
+		</ul>
+		<hr class="hr1" />
+		<h2>Lorem Ipsum Dolor</h2>
+		<h3>June 09, 2006</h3>
+		<p><img src="/content/images/homepage04.jpg" alt="" width="72" height="56" class="img1" /> Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. <a href="#">Read more&#8230;</a></p>
+		<hr class="hr1" />
+		<h3>June 06, 2006</h3>
+		<p><img src="/content/images/homepage04.jpg" alt="" width="72" height="56" class="img1" /> Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. <a href="#">Read more&#8230;</a></p>
+		<hr class="hr1" />
+		<h3>June 02, 2006</h3>
+		<p><img src="/content/images/homepage04.jpg" alt="" width="72" height="56" class="img1" />Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. <a href="#">Read more&#8230;</a></p>
+	</div>
+
+	<div class="hr1">
+		<hr />
+	</div>
+
+	<div id="footer">
+		<ul>
+            <li><%= Html.ActionLink("Home", "Index", "Home")%></li>
+            <li><%= Html.ActionLink("About Us", "About", "Home")%></li>
+		</ul>
+		<p>Copyright &copy; 2008. Designed by <a href="http://www.freecsstemplates.org" class="link1">Free CSS Templates</a></p>
+	</div>
+</div>
+</body>
+</html>

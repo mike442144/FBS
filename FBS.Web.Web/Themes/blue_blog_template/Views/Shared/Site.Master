@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="/Content/style1/favicon.ico" />
+    <script src="/Scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="/Scripts/site.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</head>
+<body>
+    <div id="page">
+        <div id="bas">
+            <a id="baslik" href="<%= Url.Action("Index", "Home") %>">Your Blog Title</a>
+            <div id="menu">           
+                <%= Html.ActionLink("Home", "Index", "Home") %>
+                <%= Html.ActionLink("About", "#", "Home") %>
+                <%= Html.ActionLink("Photos", "#", "Home") %>
+                <%= Html.ActionLink("Contact", "#", "Home") %>
+                <%= Html.ActionLink("RSS", "#", "Home") %>
+                <%= Html.ActionLink("Sitemap", "#", "Home") %>
+            </div>
+        </div>
+        <div id="icerik"><!--Content Begins-->
+            <div id="icerik_sol"><!--Left Part Begins-->
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div><!--Left Part End-->
+            <div id="icerik_sag"><!--Right Part Begins-->
+                <div id="mehmet">Write something about life...</div>
+                <div id="tabs"><!--Tab Part Begins-->
+                    <div id="tabs_baslik"><!--Tab Header Begins-->
+                        <div>Parts</div>
+                        <div>Writings</div>
+                        <div>Archive</div>
+                        <div>Search</div>
+                        <div>Links</div>
+                    </div><!--Tab Header End-->
+                    <div id="tabs_alan"><!--Tab Content Begins-->
+                        <div><!--Parts Begins-->
+                            <div class="sag_baslik">Categories</div>
+                            <div id="kategoriler" class="sag_icerik">
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 1</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 2</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 3</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 4</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 5</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 6</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 7</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 8</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Category 9</a>
+                            </div>
+                            <div class="sag_baslik">Tags</div>
+                            <div id="etiketler" class="sag_icerik">
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 1</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 2</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 3</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 4</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 5</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 6</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 7</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 8</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 9</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 10</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 11</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 12</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 13</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 14</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 15</a>
+                                <a class="tag" href="<%= Url.Action("#","Home") %>">Tag 16</a>
+                            </div>
+                        </div><!--Parts End-->
+                        <div id="acc_yazilar"><!--Writings Begins-->
+                            <div class="sag_baslik">Random Writings</div>
+                            <span id="rastgele_yazilar" class="sag_icerik">
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 1</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 2</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 3</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 4</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 5</a>
+                            </span>
+                            <div class="sag_baslik">Last Writings</div>
+                            <span id="son_yorumlanan_yazilar" class="sag_icerik">
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 1</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 2</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 3</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 4</a>
+                                <a class="sag_link" href="<%= Url.Action("#","Home") %>">Blog Writing Head 5</a>
+                            </span>
+                        </div><!--Writings End-->
+                        <div><!--Archive Begins-->
+                            <div class="sag_baslik">Archive</div>
+                            <div class="sag_icerik">
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">June 2009 (10)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">May 2009 (5)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">April 2009 (15)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">March 2009 (10)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Feb. 2009 (5)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Jan. 2009 (15)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Dec. 2008 (10)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Nov. 2008 (5)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Oct. 2008 (15)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">Sep. 2008 (15)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">August 2008 (10)</a>
+                                <a class="link_r" href="<%= Url.Action("#","Home") %>">July 2008 (5)</a>
+                            </div>
+                        </div><!--Archive End-->
+                        <div><!--Search Begins-->
+                            <div class="sag_baslik">Site Search</div>
+                            <div class="sag_icerik">
+                                <% Html.BeginForm("Index", "Home", FormMethod.Get); %>
+                                    <%= Html.TextBox("searched", "", new { @class="ara_text" })%>
+                                    <input type="submit" value="Search" class="ara_buton">
+                                <% Html.EndForm(); %>
+                            </div>
+                        </div><!--Search End-->
+                        <div><!--Links Begins-->
+                            <div class="sag_baslik">Links</div>
+                            <div id="uygulama_linkler" class="sag_icerik">
+                                <a href="http://mehmetduran.com" class="sag_link">My Blog</a>
+                                <a href="http://ajax.mehmetduran.com" class="sag_link">My jQuery and Ajax Applications</a>
+                                <a href="http://ajax.mehmetduran.com/galerim/" class="sag_link">My jQuery and Ajax Slayt Application</a>
+                            </div><!--Links End-->
+                        </div>
+                    </div><!--Tab Content End-->
+                </div><!--Tab Parts End-->
+                <div class="sag_baslik">Advertise</div>
+                <div class="sag_icerik">
+                    <b>Advertises Here</b>
+                </div>
+            </div><!--Right Part End-->
+        </div><!--Contents End-->
+        <div id="son">
+            Designed by <a href="http://mehmetduran.com">Mehmet Duran</a> | Copyright © 2009
+        </div>
+        <img alt="Loading" title="Loading" class="loading" src="/Content/loading.gif">
+    </div>
+</body>
+</html>

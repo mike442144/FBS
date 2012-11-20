@@ -1,0 +1,171 @@
+body {
+	background-image: url(background_tile.gif);
+	background-repeat: repeat;
+	
+	/* to get ie5/win to align the layout in the center */
+	text-align: center;
+}
+
+div.content_2col_minheight
+{
+	height: 250px;
+}
+
+/* main container */
+/*******************************************************************************/
+#centercontainer
+{
+	margin: 30px auto;
+	width: 740px;
+	text-align: left;
+	background-color: #fff;
+	
+	border: 1px solid #CCCCCC;
+	padding: 0 10px 10px;
+}
+
+/* header */
+/*******************************************************************************/
+#headercontainer
+{
+	width: 740px;
+	height: 180px;
+	background: #fff url(header.gif) no-repeat top left;
+}
+
+/* main navigation menu */
+/*******************************************************************************/
+#navigation
+{
+	margin: 10px;
+	width: 720px;
+	height: 36px;
+	
+	background: url(navigation_bg.gif) repeat-x;
+}
+
+#navigation_left
+{
+	float: left;
+	height: 36px;
+	width: 420px;
+	text-align: left;
+}
+
+#navigation_right
+{
+	float: left;
+	height: 36px;
+	width: 300px;
+	text-align: right;
+}
+
+#navigation ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation_left li
+{
+	display: inline;
+}
+
+#navigation_left img
+{
+	padding: 0 10px;
+}
+
+#navigation_right li
+{
+	display: inline;
+}
+
+#navigation_right img
+{
+	padding: 0 10px;
+}
+
+/* breadcrumb trail */
+/*******************************************************************************/
+#breadcrumb
+{
+	margin: 10px 10px;
+	width: 720px;
+	height: 20px;
+	
+	background: url(breadcrumb_bg.gif) repeat-x;
+}
+
+
+
+/* content columns (wrapper for 2col) */
+/*******************************************************************************/
+#bodycontainer
+{
+	width: 720px;
+	margin: 0 10px;
+}
+
+#content_2col
+{
+	width: 510px;
+	min-height: 500px;
+	float: left;
+	margin-right: 20px;
+}
+
+#network_2col
+{
+	width: 190px;
+	height: 300px;
+	float: left;
+}
+
+#worknews
+{
+	clear: both;
+	width: 720px;
+	margin: 10px;
+}
+
+#network_col_container
+{
+}
+
+/* content container */
+/*******************************************************************************/
+#main
+{
+	padding: 10px;
+}
+
+
+/* footer */
+/*******************************************************************************/
+#footercontainer
+{
+	width: 720px;
+	height: 60px;
+	margin: 10px;
+}
+
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul.menu li
+{
+	line-height: 36px;
+	font-size: 1.333em;
+	padding: 0 0.5em;
+}
+
+/* MISC 
+----------------------------------------------------------*/
+.clear {clear:both;}
+.error {color:Red;}
+.field-validation-error {color:#ff0000;}
+.input-validation-error {border:1px solid #ff0000;background-color:#ffeeee;}
+.validation-summary-errors {font-weight:bold;color:#ff0000;}

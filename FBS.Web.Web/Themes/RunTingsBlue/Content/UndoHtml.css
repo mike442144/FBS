@@ -1,0 +1,93 @@
+﻿/* undohtml.css                                                         */
+/*  (CC) 2006 Matthew Harris                                            */
+/*                                                                      */
+/* based in part on work by                                             */
+/*  (CC) 2004 Tantek Celik.                                             */
+/*                                                                      */
+/* This style sheet is licensed under a Creative Commons License.       */
+/*   http://creativecommons.org/licenses/by/2.0                         */
+/************************************************************************/
+/* Purpose: undo some of the default styling of common (X)HTML browsers */
+
+
+/* font size fixing */
+/* based on an article found at http://www.clagnut.com/blog/348/ */
+/* usage note: */
+/* to override this in a site design copy the next two rules and paste them
+   into a stylesheet, linked before this one and then tag them with !important */
+body {
+	font-size: 75%; /* For IE */
+}
+
+html>body {
+	font-size: 12px; /* IE can’t read this */
+}
+
+/* default fonts */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* remove the inconsistent (among browsers) default ul,ol padding or margin  */
+/* the default spacing on headings does not match nor align with 
+   normal interline spacing at all, so let's get rid of it. */
+/* zero out the spacing around pre, form, body, html, p, blockquote as well */
+/* form elements are oddly inconsistent, and not quite CSS emulatable. */
+/*  nonetheless strip their margin and padding as well */
+h1,h2,h3,h4,h5,h6,pre,form,body,html,div,p,blockquote,fieldset,input {	margin:0; 	padding:0;	}
+
+/* consistent headlines accross browsers */
+h1 {font-size:2em;}  		/* displayed at 24px */
+h2 {font-size:1.5em;}  		/* displayed at 18px */
+h3 {font-size:1.25em;}  	/* displayed at 15px */
+h4 {font-size:1em;}  		/* displayed at 12px */
+
+/* avoid browser default inconsistent heading font-sizes and pre/code too */
+h5,h6,pre,code { font-size: 1em; } /* displayed at 12px */
+
+pre, code { overflow: auto; }
+
+/* make paragraph consistent */
+p { margin-bottom: 1em; }
+
+/* whoever thought blue linked image borders were a good idea? */
+a img,:link img,:visited img {	border:none; }
+
+/* link underlines tend to make hypertext less readable, 
+   because underlines obscure the shapes of the lower halves of words */
+:link,:visited { text-decoration: none; }
+
+/* make blockquote consistent */
+blockquote {
+	margin-left: 3em;
+	margin-right: 30px;
+	
+	margin-bottom: 1em;
+	margin-top: 0;
+	padding: 0;
+	font-style: italic;
+}
+
+/* make bullet points consistent (for use as bullet points [not semantic markup]) */
+ul, ol {
+	margin-left: 3em;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* make pre-formatted text consistent */
+pre {
+	margin-left: 3em;
+	margin-right: 3em;
+	margin-bottom: 1em;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* avoid double shrinkage of nested elements */
+li li, li p, td p, blockquote p { font-size: 1em; padding-bottom: 0; }	
+
+/* de-italicize address */
+address { font-style: normal; }

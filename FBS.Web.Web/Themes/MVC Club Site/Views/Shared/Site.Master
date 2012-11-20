@@ -1,0 +1,109 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title></title>
+    </asp:ContentPlaceHolder>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="logindisplay">
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div>
+            <div id="sitetitle">
+                SITE NAME
+            </div>
+            <div id="sitesubtitle">
+                Powered by ASP.NET MVC
+            </div>
+        </div>
+        <div id="menu">
+            <div id="forumsearch">
+                <table>
+                    <tr>
+                        <td>
+                            Search:
+                        </td>
+                        <td>
+                            <%= Html.TextBox("searchText", "", (object)new { @size = "10" })%>
+                        </td>
+                        <td>
+                            <input class="search" id="searchbutton" value="" type="submit" style="width: 25px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="first">
+                        <%= Html.ActionLink("Home", "Index", "Home") %></li>
+                    <li>
+                        <%= Html.ActionLink("About", "About", "Home") %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="main">
+            <div class="contentblock">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                <div class="photo">
+                    <img src="../../Content/Images/newdotnetlogosmall.png" alt="Photo" />
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis
+                    lacus sed eros. Nam sapien. Integer porttitor felis eget sem. Mauris et leo non
+                    enim mollis mollis. Integer luctus ultrices est. Vestibulum commodo molestie libero.
+                    Curabitur porttitor tempor turpis. Vestibulum rutrum placerat magna. Aenean sed
+                    orci nec nisl auctor condimentum. Sed erat neque, dapibus et, eleifend porta, sollicitudin
+                    a, enim. Pellentesque nec risus ornare lectus vulputate laoreet. Suspendisse quis
+                    ligula quis ipsum placerat rhoncus. In massa. Sed eget justo. Vivamus elementum
+                    tristique nunc. Donec interdum vestibulum tortor. Nulla pellentesque scelerisque.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis
+                    lacus sed eros. Nam sapien. Integer porttitor felis eget sem. Mauris et leo non
+                    enim mollis mollis. Integer luctus ultrices est. Vestibulum commodo molestie libero.
+                    Curabitur porttitor tempor turpis. Vestibulum rutrum placerat magna. Aenean sed
+                    orci nec nisl auctor condimentum. Sed erat neque, dapibus et, eleifend porta, sollicitudin
+                    a, enim. Pellentesque nec risus ornare lectus vulputate laoreet.
+                </p>
+                <fieldset>
+                    <legend>Form</legend>
+                    <div style="float:left; padding-right:30px">
+                    <label for="name">
+                        &lt;label&gt; User Name
+                    </label>
+                    <input class="textbox" name="name" id="name" type="text" size="50" />
+                    <label for="email">
+                        &lt;label&gt; Email
+                    </label>
+                    <input class="textbox" name="email" id="email" type="text" size="50" />
+                    <label for="message">
+                        &lt;label&gt; Message
+                    </label>
+                    <textarea class="textbox" name="message" cols="50" rows="4" id="message"></textarea>
+                    <input class="button" id="Submit1" value="Submit" type="submit" />
+                    </div>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </fieldset>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            © 2009 Site Name
+        </div>
+    </div>
+</body>
+</html>

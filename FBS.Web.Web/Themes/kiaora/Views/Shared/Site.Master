@@ -1,0 +1,119 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Marty Batten" />
+
+<link rel="stylesheet" href="../../Content/core.css" media="screen,projection" type="text/css" />
+<link rel="stylesheet" href="../../Content/facebox.css" media="screen,projection" type="text/css" />
+
+<!--[if IE 7]>
+	<link href="../../Content/ie7.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<script type="text/javascript" src="../../Scripts/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="../../Scripts/jquery.bgpos.js"></script>
+<script type="text/javascript" src="../../Scripts/facebox-edit.js"></script>
+
+<script type="text/javascript">
+
+    $(function() {
+        $('#b a')
+		.css({ backgroundPosition: "0 0" })
+		.mouseover(function() {
+		    $(this).stop().animate({ backgroundPosition: "(-150px 0)" }, { duration: 500 })
+		})
+		.mouseout(function() {
+		    $(this).stop().animate({ backgroundPosition: "(-300px 0)" }, { duration: 200, complete: function() {
+		        $(this).css({ backgroundPosition: "0 0" })
+		    } 
+		    })
+		})
+    });
+
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox()
+    })
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="container">
+
+	<div id="header">
+		<h1>Heading 1</h1>
+	</div>
+	
+	<div id="navigation">
+		<ul id="b">
+			<li><a class="current" href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<%
+                if (Request.IsAuthenticated) {
+            %>
+            <li><a href="../Account/Logout">Sign Out</a></li>
+			<li class="signedin">Kia ora, <%= Html.Encode(Page.User.Identity.Name) %></li>
+            <%
+                }
+                else {
+            %>
+            <li><a href="../Account/Login" rel="facebox">Sign In</a></li>            
+            <%
+                }
+            %>
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	
+	<div id="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+	</div>
+
+	<div id="dropshadow"></div>
+	
+	<div class="news">
+		<h3>Heading 3</h3>
+		<div class="photo">
+			<img src="../../Content/plant1.jpg" /><br />
+		</div>
+		<p>The drop shadow for these photos are separate and sits underneath, so all you need to do is change the photo source.
+		<br /><a href="#">Read more</a></p>
+	</div>
+	<div class="news-r">
+		<h3>Heading 3</h3>
+		<div class="photo">
+			<img src="../../Content/grass1.jpg" /><br />
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. liqua.
+		<br /><a href="#">Read more</a></p>
+	</div>
+	<div style="clear: both;"></div>
+	
+	<div id="footer">
+		<p>
+			My Sample Appliction &copy; 2009. Designed by <a href="http://www.martyb.com/">Marty Batten</a><br />
+			This site uses <a title="JQuery Javascript Library" href="http://jquery.com">JQuery</a>, the <a title="Facebox" href="http://famspam.com/facebox/">Facebox</a> by Chris Wanstrath &amp;
+			Background Image Animation adapted from <a title="Jonathan Snook" href="http://snook.ca/archives/javascript/jquery-bg-image-animations/">Snook.ca</a>
+		</p>
+	</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

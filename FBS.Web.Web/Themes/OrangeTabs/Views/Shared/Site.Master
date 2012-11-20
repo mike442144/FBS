@@ -1,0 +1,60 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="Helpers" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>My MVC Application</h1>
+            </div>
+              
+            <div id="logindisplay">
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div> 
+            
+            <div id="menucontainer">
+            
+                <ul id="menu">
+                <% if (Html.IsCurrentAction("Index", "Home")) { %>
+                    <li class="active"><%= Html.ActionLink("Home", "Index", "Home")%></li>
+                <% } else { %>
+                    <li><%= Html.ActionLink("Home", "Index", "Home") %></li>
+                <% }%>
+
+                <% if (Html.IsCurrentAction("About", "Home"))
+                   { %>
+                    <li class="active"><%= Html.ActionLink("About", "About", "Home")%></li>
+                <% } else { %>
+                    <li><%= Html.ActionLink("About", "About", "Home")%></li>
+                <% }%>
+                
+                <% if (Html.IsCurrentAction("SampleTags", "Home"))
+                   { %>
+                    <li class="active"><%= Html.ActionLink("Sample Tags", "SampleTags", "Home")%></li>
+                <% } else { %>
+                    <li><%= Html.ActionLink("Sample Tags", "SampleTags", "Home")%></li>
+                <% }%>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+			
+            <div id="footer">
+                My MVC Application &copy; Copyright 2009
+            </div>
+        </div>
+    </div>
+</body>
+</html>

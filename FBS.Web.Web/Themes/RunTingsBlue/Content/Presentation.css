@@ -1,0 +1,237 @@
+﻿/*
+	colors:
+		blue		297ff0
+		new-blue    2fb5de
+		green		99cc00
+*/
+
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+abbr, acronym
+{
+	cursor: help;
+	border-bottom: 1px solid #ccc;
+}
+
+abbr:hover, acronym:hover
+{
+	border-bottom-color: #3f3f3f;
+}
+
+a:link
+{
+	color: #2fb5de;
+}
+
+a:visited
+{
+	/*color: #003399;*/
+	color: #2f6dde;
+}
+
+ul.menu a:hover
+{
+	padding: 4px 0;	
+}
+
+ul.menu a:hover,
+div#breadcrumb a:hover, 
+div#content_2col a:hover, 
+div#footer a:hover
+{
+	background-color: #2fb5de;
+	color: #fff; 
+}
+
+/* utilities */
+/*******************************************************************************/
+/* hack to make float:left take up space on the page */
+div.spacer
+{
+	clear: both;
+}
+
+div.borderfade_top
+{
+	height: 20px;
+	background: repeat-x url(content_border_top.gif);
+	margin-bottom: 10px;
+}
+
+div.borderfade_bottom
+{
+	height: 20px;
+	background: repeat-x url(content_border_bottom.gif);
+	margin: 10px 0;
+}
+
+.indent_lvl1
+{
+	margin-left: 20px;
+}
+
+.table_td_1col
+{
+	padding: 10px;
+	width: 470px;
+}
+
+.table_td_2col
+{
+	float:left;
+	padding: 10px;	
+	width: 225px;
+
+}
+
+
+/* accessibility - skip link */
+/*******************************************************************************/
+div#skiplink
+{
+	text-align: right;
+}
+
+div#skiplink
+{
+	font-size: 0.83em;
+}
+
+div#skiplink p, div#skiplink a:link, div#skiplink a:visited, div#skiplink a:hover, div#skiplink a:active 
+{
+	
+	color: #CCCCCC;
+	margin: 3px 0;
+}
+
+/* breadcrumb formatting */
+/*******************************************************************************/
+div#breadcrumb p
+{
+	font-size: 0.83em;
+	padding: 3px 10px;	
+}
+
+/* content formatting */
+/*******************************************************************************/
+div#content_2col h1,
+div#worknews h1
+{
+	background: url(content_2col_header_bg.gif) left bottom no-repeat;
+	margin: 0 0 10px 0;
+	padding: 0 0 0.25em 10px;
+	font-size: 1.666em;
+	color: #99cc00;
+}
+
+/* format rest of content to #main so it works with single column pages */
+div#main h2
+{
+	border-bottom: 1px solid #000;
+	color: #2fb5de;
+	font-size: 1.5em;
+	margin: 1.5em 0 0.5em;	
+}
+
+div#main h3
+{
+	border-bottom: 1px solid #000;
+	color: #99cc00;
+	font-size: 1.333em;
+	font-weight: normal;
+	width: 80%;
+	margin: 1.5em 0 0.5em;	
+}
+
+div#main h4
+{
+	color: #666666;
+	font-size: 1.1666em;
+	font-style: italic;
+	margin: 1.5em 0 0.2em;
+}
+
+div#main p
+{
+	font-size: 1em;
+	text-align: justify;
+	margin: 1em 0;
+}
+
+div#main ul
+{
+	list-style: none;
+}
+
+div#main ul li
+{
+	background: url(bulletpoint_blue.gif) no-repeat 0 4px;
+	font-size: 1em;
+	padding-left: 12px;
+
+}
+
+div#main pre,
+p.tip
+{
+	border: 1px solid #99cc00;
+	background-color: #ccffcc;
+	margin: 10px;
+	padding: 10px;
+}
+
+/* news item byline */
+div#main .byline
+{
+	color: #2fb5de;
+	font-size: 0.83em;
+}
+
+/* numbered lists */
+div#main ol
+{
+	list-style-type:decimal;
+}
+
+div#main ol li
+{
+	margin-bottom: 10px;
+}
+
+/* network column formatting */
+/*******************************************************************************/
+div#network_2col h1
+{
+	height: 30px;
+	background: no-repeat url(network_2col_header_bg.gif);
+	margin-bottom: 10px;
+	padding-right: 10px;
+	font-size: 1.666em;
+	text-align: right;
+	color: #2fb5de;
+}
+
+div#network_2col img
+{
+	margin-top: 20px;
+}
+
+div#network_2col p,
+div#worknews p
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.83em;
+	margin-left: 10px;
+}
+
+/* footer */
+/*******************************************************************************/
+#footercontainer p
+{
+	font-size: 1em;
+	text-align: center;
+	line-height: 25px;
+}

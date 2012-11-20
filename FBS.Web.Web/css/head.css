@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+.head_logo
+{
+    height:110px;
+	width:960px;
+	margin:0 auto;
+}
+.search
+{
+   width:1000px;
+   height:46px;
+   margin-top:3px;
+   background:url(../images/searchbg.png);
+}
+.searchbox
+{
+   width:360px;
+   height:36px;
+   margin-right:20px;
+   margin-top:5px;
+   float:right;
+   border-radius: 10px;
+   background-color:black;
+}
+.searchbox input
+{
+   float:left;
+}
+.searchinput
+{
+   height:20px;
+   padding:3.5px 5px;
+   background:black;
+   border:none;
+   margin:5px auto 5px 10px;
+   color:white;
+   width:280px;
+}
+.searchbox span
+{
+   color:#B1B1B1;
+   font-size:12px;
+   line-height:36px;
+   float:right;
+   width:55px;
+   background:url(../images/search.png) no-repeat 22px 6px;
+}
+.searchbox a
+{
+   color:white;
+   text-decoration:none;
+}

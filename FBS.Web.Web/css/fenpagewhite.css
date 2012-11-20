@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+.pagelan
+{
+   width:800px;
+   height:25px;
+   margin:10px auto;
+   font-size:10px;
+}
+.pagebox
+{
+   width:25px;
+   height:25px;
+   line-height:25px;
+   float:left;
+   text-align:center;
+   margin-right:8px;
+      
+}
+.page
+{
+   clear:both;
+   width:25px;
+   height:25px;
+   line-height:25px;
+   text-align:center;
+   background:#F3F3F3;
+   color:#727272;
+   display:block;
+   text-decoration:none;
+   border-radius: 5px;
+   border:1px solid #DCDCDD;
+}
+.pagebox a
+{
+   clear:both;
+   width:25px;
+   height:25px;
+   line-height:25px;
+   text-align:center;
+   background:#F3F3F3;
+   color:#727272;
+   display:block;
+   text-decoration:none;
+   border-radius: 5px;
+   border:1px solid #DCDCDD;
+}
+.pagebox a:link
+{
+   text-decoration:none;
+   background:#F3F3F3;
+   color:#727272;
+   width:25px;
+   height:25px;
+   line-height:25px;
+}
+.pagebox a:visited
+{
+   text-decoration:none;
+   background:#F3F3F3;
+   color:#727272;
+}
+.pagebox a:hover
+{
+  text-decoration:none;
+   background:white;
+   color:#727272;
+}
+.pagebox a:active
+{
+   text-decoration:none;
+   background:white;
+   color:#727272;
+}
+
+.pagebox a.currentPage
+{
+   width:24px;
+   height:24px;
+   line-height:24px;
+   text-align:center;
+   text-decoration:none;
+   border-radius: 5px;
+   border:1px solid #686868;
+   background:#686868;
+   color:white;
+   display:block;
+}
+
+.previousPage
+{
+   width:25px;
+   height:25px;
+   line-height:25px;
+   text-align:center;
+   background:#F3F3F3;
+   color:#727272;
+   font-size:16px;
+   display:block;
+   text-decoration:none;
+}
+
+.nextPage
+{
+   width:25px;
+   height:25px;
+   line-height:25px;
+   text-align:center;
+   background:#F3F3F3;
+   color:#727272;
+   font-size:16px;
+   display:block;
+}
+
+.points
+{
+  width:25px;
+  height:25px;
+  line-height:25px;
+  text-align:center;
+  float:left;
+  border:none;
+  margin-right:5px;
+  color:#727272;
+}

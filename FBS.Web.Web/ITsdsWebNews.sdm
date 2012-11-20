@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Visual Studio 生成的基于系统定义模型(SDM)的文件。-->
+<!--建议不要手动编辑此文件，这可能会导致错误。-->
+<SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ITsdsWebNews" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWebApplication" Name="Microsoft.WebApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.0.0" />
+  <Import Alias="MicrosoftInternetInformationServices" Name="Microsoft.InternetInformationServices" Version="1.0.0.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="468f0efe53784c5caf19672d63f8bcdb" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="1a7990e8-a1c8-4a40-b225-dbd11924ed10" />
+        <Relationship Id="f0fcdb8d7dbf4ff2bcce7166391294b3" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@9af8ad928abd4664b989048cffe1c468" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="9af8ad928abd4664b989048cffe1c468" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="ITsds.Web.News" />
+          <Property Name="Guid" Value="1a7990e8-a1c8-4a40-b225-dbd11924ed10" />
+          <Property Name="Location" Value="E:\FBS\ITsds.Web.News\" />
+          <Property Name="IsSupportedWebProject" Value="true" />
+          <Property Name="Language" Value="c#" />
+          <Property Name="IsImplemented" Value="true" />
+          <Property Name="BuildOutputPath" Value="bin\" />
+          <Property Name="ProjectType" Value="Library" />
+          <ModelElement Id="b14bc959e8054ff3960ca4b6347ed204" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="95d273ab16c84b568f9e7dbf740a1a58" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="CSharp" />
+              <Relationship Id="3c0f313145f340d2ad0c4a027c797139" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@b14bc959e8054ff3960ca4b6347ed204" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="6bf4192382014e51adc9c1c4f16788ca" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@9af8ad928abd4664b989048cffe1c468" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="ITsdsWebNews" Extends="MicrosoftWebApplication:WebApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.AspComponentType">
+          <Property Name="State" Value="Implemented" />
+          <Property Name="Project" Value="ITsds.Web.News" />
+          <Property Name="DefaultNamespace" Value="ITsdsWebNews" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="ResourceType1" Extends="MicrosoftConfiguration:Configuration" />
+      <ResourceDefinition Name="DirectoryResource" Extends="MicrosoftFileSystem:Directory">
+        <SettingValue Path="Name" Fixed="false">Areas</SettingValue>
+        <ResourceDefinition Name="ResourceType1" Extends="MicrosoftConfiguration:Configuration" />
+        <Resource Name="ResourceType1" Definition="ITsdsWebNews.Directory.DirectoryResource.ResourceType1" MinOccurs="1" MaxOccurs="1" Reference="false">
+          <DesignData>
+            <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+              <ModelElement>
+                <Property Name="DisplayName" Value="Configuration" />
+              </ModelElement>
+            </VisualStudio>
+          </DesignData>
+        </Resource>
+      </ResourceDefinition>
+      <Resource Name="ResourceType1" Definition="ITsdsWebNews.Directory.ResourceType1" MinOccurs="1" MaxOccurs="1" Reference="false">
+        <DesignData>
+          <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+            <ModelElement>
+              <Property Name="DisplayName" Value="Configuration" />
+            </ModelElement>
+          </VisualStudio>
+        </DesignData>
+      </Resource>
+      <Resource Name="Areas" Definition="ITsdsWebNews.Directory.DirectoryResource" MinOccurs="1" MaxOccurs="1" Reference="false">
+        <DesignData>
+          <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+            <ModelElement>
+              <Property Name="DisplayName" Value="Areas" />
+            </ModelElement>
+          </VisualStudio>
+        </DesignData>
+      </Resource>
+      <Containment Name="AreasContainment" Definition="MicrosoftFileSystem:DirectoryContainsDirectory" ChildMember="Areas" />
+    </ResourceDefinition>
+    <ResourceDefinition Name="ResourceType1" Extends="MicrosoftInternetInformationServices:WebApplication" />
+    <Resource Name="Directory" Definition="ITsdsWebNews.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWebApplication:WebAppContainsFilesystemDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsAreas" Definition="MicrosoftFileSystem:DirectoryHostsDirectory" GuestMember="Directory.Areas" HostMember="Directory" />
+    <Resource Name="ResourceType1" Definition="ITsdsWebNews.ResourceType1" MinOccurs="1" MaxOccurs="1" Reference="false">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement>
+            <Property Name="DisplayName" Value="WebApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Resource>
+    <Reference Name="Reference1" DependentMember="ResourceType1" SourceMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel>

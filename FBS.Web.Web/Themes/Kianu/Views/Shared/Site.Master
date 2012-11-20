@@ -1,0 +1,123 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="Description" />
+<meta name="keywords" content="Keywords" />
+
+        <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+
+<link href="../../Content/styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body class="inner-body">
+<div class="header-container">
+	<div class="header-container-inner">
+		<div class="subtitle"><h2>12 Kingsway Road, London E1 4HL     (087.391.131)</h2></div>
+		</div>
+</div>
+<div class="content-container">
+ <div class="topNav">
+	<div id="logo">
+	<img src="../../Content/images/kianu.gif" alt="Kianu" /></div>
+
+	<ul>
+	  <li class="selected"><a href="#" >Home</a></li>
+	  <li> <a href="#">About Us</a></li>
+	  <li><a href="#">Services</a> </li>
+	  <li><a href="#">Contacts</a></li>
+  </ul>
+  <div>
+	<h2>We are a market leader in the productiowen of.
+	Trust our services and products for a rdfdselatio.
+	Last year 1,324 companies did so.</h2>
+</div>
+<div class="buttons">
+ <a class="btnStretch first" href="#"><span><strong>Online Demo</strong></span></a>
+  <a class="btnStretch" href="#"><span><strong>Buy Now</strong></span></a>
+ </div>
+   </div>
+  
+ <div class="content-main">
+            <h3>News</h3>
+          
+<div class="colmask threecol">
+	<div class="colmid">
+		<div class="colleft">
+			<div class="col1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+			<div class="col2"><h2>10/11/2007</h2></div>
+			<div class="col3"><p class="comment">2 comments</p></div>
+		</div>
+	</div>
+</div>
+
+<div class="colmask threecol">
+	<div class="colmid">
+		<div class="colleft">
+			<div class="col1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+			<div class="col2"><h2>10/12/2007</h2></div>
+			<div class="col3"><p class="comment">12 comments</p></div>
+		</div>
+	</div>
+</div>
+
+<div class="colmask threecol">
+	<div class="colmid">
+		<div class="colleft">
+			<div class="col1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+			<div class="col2"><h2>06/12/2007</h2></div>
+			<div class="col3"><p class="comment">12 comments</p></div>
+		</div>
+		
+		<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+		
+	</div>
+</div>
+<p style="clear: both;">
+   <a href="#" class="more">more</a> 
+ </p>
+
+ <div class="colmask twocol">
+	<div class="colmid">
+		<div class="colleft">
+			<div class="col1">
+			<div class="quotes leftquotes"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+			
+			<div class="quotes rightquotes"></div>
+			</div>
+			<div class="col3 corner">
+			<div class="photo-containter">
+			<div class="photo-caption corner">Mario Biaggiotti
+					<span>(Happy customer)</span>
+			</div>
+		<div class="photo-content">
+			<img src="../../Content/images/picture.gif" alt="Profile photo" />
+		</div></div>
+               </div>
+            </div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="nav-footer-container">
+	<div class="nav-footer-container-inner">
+    <div class="nav-footer">
+        <span class="copyright"><strong>&copy; Copyright 2009 </strong>    Kianu Ltd. All Rights Reserved.</span>
+        <ul>
+            <li class="first"><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+		<li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D83B4EC-523B-46C9-813A-E6B5AE9FE39F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FBS.Service</RootNamespace>
+    <AssemblyName>FBS.Service</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionModels\AddFolloweeModel.cs" />
+    <Compile Include="ActionModels\AdvertiseDspModel.cs" />
+    <Compile Include="ActionModels\AdvertiseFillingDetailsModel.cs" />
+    <Compile Include="ActionModels\AdvertiseFillingDspModel.cs" />
+    <Compile Include="ActionModels\AdvertisementDetailsModel.cs" />
+    <Compile Include="ActionModels\AdvertisementDspModel.cs" />
+    <Compile Include="ActionModels\AdvertisePageDetailsModel.cs" />
+    <Compile Include="ActionModels\AdvertisePageDspModel.cs" />
+    <Compile Include="ActionModels\AlbumDspModel.cs" />
+    <Compile Include="ActionModels\AnswerSheetQuestionModel.cs" />
+    <Compile Include="ActionModels\AnswerToQuestionModel.cs" />
+    <Compile Include="ActionModels\ArticleCategoryModel.cs" />
+    <Compile Include="ActionModels\ArticleDetailsModel.cs" />
+    <Compile Include="ActionModels\ArticleDspModel.cs" />
+    <Compile Include="ActionModels\BlogCategoryModel.cs" />
+    <Compile Include="ActionModels\BlogQuestionCategoryModel.cs" />
+    <Compile Include="ActionModels\BlogQuestionDetailsModel.cs" />
+    <Compile Include="ActionModels\BlogQuestionDspModel.cs" />
+    <Compile Include="ActionModels\BlogStoryDetailsModel.cs" />
+    <Compile Include="ActionModels\BlogStoryDspModel.cs" />
+    <Compile Include="ActionModels\DemandDetailsModel.cs" />
+    <Compile Include="ActionModels\DemandDspModel.cs" />
+    <Compile Include="ActionModels\FeedDspModel.cs" />
+    <Compile Include="ActionModels\FormInfoModel.cs" />
+    <Compile Include="ActionModels\ForumDspModel.cs" />
+    <Compile Include="ActionModels\GoodsDetailsModel.cs" />
+    <Compile Include="ActionModels\GoodsDspModel.cs" />
+    <Compile Include="ActionModels\InstallModels.cs" />
+    <Compile Include="ActionModels\ModifiedArticleModel.cs" />
+    <Compile Include="ActionModels\NeedsDetailsModel.cs" />
+    <Compile Include="ActionModels\NeedsDspModel.cs" />
+    <Compile Include="ActionModels\NewAdvertiseFillingModel.cs" />
+    <Compile Include="ActionModels\NewAdvertisementModel.cs" />
+    <Compile Include="ActionModels\NewAdvertisePageModel.cs" />
+    <Compile Include="ActionModels\NewArticleModel.cs" />
+    <Compile Include="ActionModels\NewBlogQuestionModel.cs" />
+    <Compile Include="ActionModels\NewBlogStateModel.cs" />
+    <Compile Include="ActionModels\NewCategoryModel.cs" />
+    <Compile Include="ActionModels\NewDemandModel.cs" />
+    <Compile Include="ActionModels\NewFeedModel.cs" />
+    <Compile Include="ActionModels\NewForumModel.cs" />
+    <Compile Include="ActionModels\NewGoodsModel.cs" />
+    <Compile Include="ActionModels\NewNeedsModel.cs" />
+    <Compile Include="ActionModels\NewPhotoModel.cs" />
+    <Compile Include="ActionModels\NewShareThreadModel.cs" />
+    <Compile Include="ActionModels\NewTopForumThreadModel.cs" />
+    <Compile Include="ActionModels\NewVideoModel.cs" />
+    <Compile Include="ActionModels\PageModel.cs" />
+    <Compile Include="ActionModels\SendShortMessageModel.cs" />
+    <Compile Include="ActionModels\SettingBestAnswerModel.cs" />
+    <Compile Include="ActionModels\ShareThreadDetailsModel.cs" />
+    <Compile Include="ActionModels\ShareThreadDspModel.cs" />
+    <Compile Include="ActionModels\SheetAnswerModel.cs" />
+    <Compile Include="ActionModels\SheetQuestionModel.cs" />
+    <Compile Include="ActionModels\ShareStateWithPhotoModel.cs" />
+    <Compile Include="ActionModels\SheetResultModel.cs" />
+    <Compile Include="ActionModels\SiteShareModel.cs" />
+    <Compile Include="ActionModels\SuggestModel.cs" />
+    <Compile Include="ActionModels\TopForumThreadDetailsModel.cs" />
+    <Compile Include="ActionModels\TopForumThreadDspModel.cs" />
+    <Compile Include="ActionModels\UpdateBlogStoryModel.cs" />
+    <Compile Include="ActionModels\NewBlogStoryModel.cs" />
+    <Compile Include="ActionModels\NewThreadModel.cs" />
+    <Compile Include="ActionModels\PagedList.cs" />
+    <Compile Include="ActionModels\CommentModel.cs" />
+    <Compile Include="ActionModels\ReplyThreadModel.cs" />
+    <Compile Include="ActionModels\ThreadDetailsModel.cs" />
+    <Compile Include="ActionModels\ThreadsDspModel.cs" />
+    <Compile Include="ActionModels\UpdateThreadModel.cs" />
+    <Compile Include="ActionModels\UserInfoModel.cs" />
+    <Compile Include="ActionModels\UserModel.cs" />
+    <Compile Include="AdvertiseFillingService.cs" />
+    <Compile Include="AdvertisementService.cs" />
+    <Compile Include="AdvertisePageService.cs" />
+    <Compile Include="AdvertiseService.cs" />
+    <Compile Include="BlogService.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="CMSService.cs" />
+    <Compile Include="DemandService.cs" />
+    <Compile Include="FocuseService.cs" />
+    <Compile Include="ForumService.cs" />
+    <Compile Include="ForumThreadService.cs" />
+    <Compile Include="GoodsService.cs" />
+    <Compile Include="Maintenance\MonitorWorker.cs" />
+    <Compile Include="NeedsService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchHelper.cs" />
+    <Compile Include="SearchService.cs" />
+    <Compile Include="ShareThreadService.cs" />
+    <Compile Include="SiteInfoService.cs" />
+    <Compile Include="StatisticService.cs" />
+    <Compile Include="SuggestService.cs" />
+    <Compile Include="ThreadAdminService.cs" />
+    <Compile Include="TopForumThreadService.cs" />
+    <Compile Include="UserAuthorityService.cs" />
+    <Compile Include="UserEntryService.cs" />
+    <Compile Include="UserInfoService.cs" />
+    <Compile Include="VideoService.cs" />
+    <Compile Include="WeiboService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FBS.DBUtility\FBS.DBUtility.csproj">
+      <Project>{B55FC860-E0BC-493D-A3A9-89127B0CF7BB}</Project>
+      <Name>FBS.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Domain\FBS.Domain.csproj">
+      <Project>{1C32487C-531D-4F91-8D10-6C69873A6A2D}</Project>
+      <Name>FBS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Factory\FBS.Factory.csproj">
+      <Project>{AD284018-6061-47B3-8A9C-0E34FC938B6B}</Project>
+      <Name>FBS.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Utils\FBS.Utils.csproj">
+      <Project>{2398954B-ABDD-42F7-9DCF-364024C16300}</Project>
+      <Name>FBS.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Web.Share\FBS.Share.csproj">
+      <Project>{6D44CEB5-4314-48E0-8F2B-74E03A8E8D71}</Project>
+      <Name>FBS.Share</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

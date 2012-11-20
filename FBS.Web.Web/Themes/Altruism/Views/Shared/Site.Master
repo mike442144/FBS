@@ -1,0 +1,140 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="Helpers" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under the Creative Commons Attribution 3.0 License
+
+Adapted by Keith Adler
+ 
+Name       : Altruism
+Description: A two-column, fixed-width template fit for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20080308
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="Description of your web page goes here." />
+    <meta name="keywords" content="Keywords for you web page go here. Each keyword or group of keyword phrases are separated by a comma. Keep this  list short and relevant to the content and title of this specific page." />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <!-- start header -->
+    <div id="header">
+        <div id="logo">
+            <h1>
+                <a href="#">Altruism</a></h1>
+            <h2>
+                <a href="http://www.nodethirtythree.com/">by nodethirtythree + free css templates + Keith Adler</a></h2>
+        </div>
+        <div id="menu">
+            <ul>
+                <li class="first">
+                    <%= Html.ActionLink("Home", "Index", "Home") %></li>
+                <li>
+                    <%= Html.ActionLink("About", "About", "Home") %></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start page -->
+    <div id="page">
+        <!-- start content -->
+        <div id="content">
+            <!-- start latest-post -->
+            <div id="latest-post" class="post">
+                <div class="entry">
+                    <p>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </p>
+                </div>
+            </div>
+            <!-- end-post -->
+            <!-- start recent-posts -->
+            <div id="sidebar1">
+                <ul>
+                    <li>
+                        <h2>
+                            Categories</h2>
+                        <ul>
+                            <li>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor,
+                                elementum vel, tempor at, varius non, purus.<a href="#"> Mauris vitae nisl.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            Archives</h2>
+                        <ul>
+                            <li><a href="#">Sed lacu donec lectus nullam</a></li>
+                            <li><a href="#">Pretium nibh ut turpis nam bibendum</a></li>
+                            <li><a href="#">In nulla tortor elementum vel</a></li>
+                            <li><a href="#">Tempor at varius non purus</a></li>
+                            <li><a href="#">Mauris vitae nisl nec metus</a></li>
+                            <li><a href="#">Placerat consectetue donec ipsum</a></li>
+                            <li><a href="#">Proin imperdiet est phasellus</a></li>
+                            <li><a href="#">Pellentesque ornare orci sed</a></li>
+                            <li><a href="#">Consectetuer hendrerit urna</a></li>
+                            <li><a href="#">Elit eleifend nunc ut dolor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- end sidebar -->
+            <!-- start sidebar -->
+            <div style="clear: both;">
+                &nbsp;</div>
+            <div class="hr1">
+                &nbsp;</div>
+            <div id="sidebar">
+                <ul>
+                    <li>
+                        <h2>
+                            Lorem Ipsum</h2>
+                        <ul>
+                            <li>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor,
+                                elementum vel, tempor at, varius non, purus. <a href="#">Mauris vitae nisl.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            Volutpat Dolore</h2>
+                        <ul>
+                            <li><a href="#">Sed lacu donec lectus nullam</a></li>
+                            <li><a href="#">Pretium nibh ut turpis nam bibendum</a></li>
+                            <li><a href="#">In nulla tortor elementum vel</a></li>
+                            <li><a href="#">Tempor at varius non purus</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            Magna Bibendum</h2>
+                        <ul>
+                            <li><a href="#">Sed lacu donec lectus nullam</a></li>
+                            <li><a href="#">Pretium nibh ut turpis nam bibendum</a></li>
+                            <li><a href="#">In nulla tortor elementum vel</a></li>
+                            <li><a href="#">Tempor at varius non purus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="clear: both;">
+                    &nbsp;</div>
+            </div>
+            <!-- end sidebar1 -->
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            Copyright (c) 2009 Sitename.com. All rights reserved. Design by <a href="http://www.nodethirtythree.com/">
+                NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> and Keith Adler.</p>
+    </div>
+    <!-- end page -->
+</body>
+</html>

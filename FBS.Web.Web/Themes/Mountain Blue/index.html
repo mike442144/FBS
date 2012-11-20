@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Mountain Blue</title>
+		<link rel="stylesheet" type="text/css" href="content/style.css" media="screen, projection" />
+    </head>
+    <body>
+		<div id="container">
+			<div id="header">
+				<div class="logo">
+					<img src="content/images/logo.gif" alt="ASP.NET MVC" title="ASP.NET MVC" />
+				</div>
+				<div class="dashboard">
+					<ul>
+						<li><a href="#">Sign In</a></li>
+						<li class="spacer">&nbsp;</li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="menu">
+				<div class="links">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="spacer">&nbsp;</li>
+						<li><a href="#">About</a></li>
+						<li class="spacer">&nbsp;</li>
+						<li><a href="#">Articles</a></li>
+						<li class="spacer">&nbsp;</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="search">
+					<form action="/search" method="post">
+						<input type="text" value="enter your keyword..." class="keyword" />
+						<input type="image" src="content/images/search_button.gif" alt="Search" title="Search" class="button" />
+					</form>
+				</div>
+			</div>
+			<div id="content">
+				<div id="left">
+					<div class="padding">
+						<h1>Article</h1>
+						<div class="text">
+							<p><img src="content/images/photo.gif" title="Photo" alt="Photo" class="left" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla lacus ante, convallis quis, feugiat eget, hendrerit non, mauris. Nunc viverra aliquam lorem. Aliquam laoreet mollis tortor. Nunc ligula massa, rhoncus et, laoreet nec, convallis ac, orci. Nulla facilisi. Nullam nunc dolor, auctor a, iaculis eu, fermentum at, tortor. Praesent vel lacus tincidunt orci dignissim consequat. Sed quis justo ut tortor porta rutrum. Aenean pharetra luctus libero. Duis faucibus pede vitae ante. Donec eget sapien at velit mollis posuere. Curabitur mattis magna ut enim. Praesent imperdiet.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla lacus ante, convallis quis, feugiat eget, hendrerit non, mauris. Nunc viverra aliquam lorem. Aliquam laoreet mollis tortor. Nunc ligula massa, rhoncus et, laoreet nec, convallis ac, orci. Nulla facilisi. Nullam nunc dolor, auctor a, iaculis eu, fermentum at, tortor. Praesent vel lacus tincidunt orci dignissim consequat. Sed quis justo ut tortor porta rutrum. Aenean pharetra luctus libero. Duis faucibus pede vitae ante. Donec eget sapien at velit mollis posuere. Curabitur mattis magna ut enim. Praesent imperdiet.</p>
+							<p><img src="content/images/photo.gif" title="Photo 2" alt="Photo 2" class="right" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla lacus ante, convallis quis, feugiat eget, hendrerit non, mauris. Nunc viverra aliquam lorem. Aliquam laoreet mollis tortor. Nunc ligula massa, rhoncus et, laoreet nec, convallis ac, orci. Nulla facilisi. Nullam nunc dolor, auctor a, iaculis eu, fermentum at, tortor. Praesent vel lacus tincidunt orci dignissim consequat. Sed quis justo ut tortor porta rutrum. Aenean pharetra luctus libero. Duis faucibus pede vitae ante. Donec eget sapien at velit mollis posuere. Curabitur mattis magna ut enim. Praesent imperdiet.</p>
+						</div>
+						<div class="clear"></div>
+						<form action="/" method="post">
+							<div class="form">
+								<h1>Form</h1>
+								<div class="message">
+									<div class="error">
+										<ul>
+											<li><span>1.</span> Name is a required field.</li>
+											<li><span>2.</span> Email Address is a required field.</li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+									<div class="notice">
+										<ul>
+											<li><span>1.</span> Notice</li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+									<div class="success">
+										<ul>
+											<li><span>1.</span> Success</li>
+										</ul>
+									</div>
+								</div>
+								<div class="fields">
+									<div class="field">
+										<div class="field-label">
+											<label>Name:</label>
+										</div>
+										<div class="field-input">
+											<input type="text" name="name" value="" size="40" class="input-validation-error" />
+										</div>
+									</div>
+									<div class="seperator"></div>
+									<div class="field">
+										<div class="field-label">
+											<label>Email Address:</label>
+										</div>
+										<div class="field-input">
+											<input type="text" name="email" value="" size="40" class="input-validation-error" />
+										</div>
+									</div>
+									<div class="seperator"></div>
+									<div class="field">
+										<div class="field-label">
+											<label>Address:</label>
+										</div>
+										<div class="field-input">
+											<input type="text" name="address" value="" size="40" />
+										</div>
+									</div>
+									<div class="seperator"></div>
+									<div class="field">
+										<div class="field-label">
+											<label>Countries:</label>
+										</div>
+										<div class="field-select">
+											<select name="country">
+												<option value="1">Canada</option>
+												<option value="2">United Kingdom</option>
+												<option value="3">United States</option>
+											</select>
+										</div>
+									</div>
+									<div class="seperator"></div>
+									<div class="field">
+										<div class="field-label">
+											<label>Description:</label>
+										</div>
+										<div class="field-textarea">
+											<textarea name="description" rows="10" cols="94"></textarea>
+										</div>
+									</div>
+									<div class="footer">
+										<input type="submit" name="submit" value="Submit" /> <input type="reset" name="reset" value="Clear" />
+									</div>
+								</div>
+							</div>
+						</form>
+						<div class="clear"></div>
+						<div class="list">
+							<h1>List</h1>
+							<div class="clear"></div>
+							<table cellspacing="1">
+								<thead>
+									<tr>
+										<th class="left">Title</th>
+										<th class="center">Published</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="item-title"><a href="">Item #1</a></td>
+										<td class="item-published">Dec 11th, 2008</td>
+									</tr>
+									<tr>
+										<td class="item-title"><a href="">Item #2</a></td>
+										<td class="item-published">Dec 12th, 2008</td>
+									</tr>
+									<tr>
+										<td class="item-title"><a href="">Item #3</a></td>
+										<td class="item-published">Dec 12th, 2008</td>
+									</tr>
+									<tr>
+										<td class="item-title"><a href="">Item #4</a></td>
+										<td class="item-published">Dec 13th, 2008</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pagination">
+								<div class="results">
+									<span>Showing results 1-4 of 6</span>
+								</div>
+								<div class="pager">
+									<span class="disabled">&laquo; prev</span>
+									<span class="current">1</span>
+									<a href="#">2</a>
+									<a href="#">next &laquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="right">
+					<div class="padding">
+						<h1>Menu</h1>
+						<ul>
+							<li><a href="">Link #1</a></li>
+							<li><a href="">Link #2</a></li>
+							<li><a href="">Link #3</a></li>
+							<li><a href="">Link #4</a></li>
+							<li class="last"><a href="">Link #5</a></li>
+						</ul>
+						<div class="clear"></div>
+						<h1>Menu</h1>
+						<ul>
+							<li><a href="">Link #1</a></li>
+							<li><a href="">Link #2</a></li>
+							<li><a href="">Link #3</a></li>
+							<li><a href="">Link #4</a></li>
+							<li class="last"><a href="">Link #5</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<p>Copyright &copy; 2008 Someone?. All Rights Reserved.</p>
+				<p>All brands &amp; models are Copyright &copy; by their respective owners.</p>
+			</div>
+		</div>
+    </body>
+</html>

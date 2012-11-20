@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document 
+.footer
+{
+   width:1000px;
+   height:100px;
+   margin:0 auto;
+   background:#DDDDDE;
+}*/
+.copyright
+{
+   width:1000px;
+   margin:0 auto;
+   font-size:12px;
+   font-family:"黑体";
+   text-align:center;  
+   clear:both;
+   height:30px;
+   line-height:30px;
+   
+}
+.copyright p a
+{
+   height:20px;
+   line-height:20px;
+   text-align:center;
+   color:#ABABAB;
+   text-decoration:none;
+}
+.copyright p
+{
+   color:#868686;
+}
+.linklist
+{
+  /* background-color:#1D1D1D;*/
+   /*height:220px;
+   clear:both;*/
+   width:1000px;
+   margin:0 auto;
+   font-family:"黑体"
+}
+
+.linklistbg
+{
+   background-color:#1D1D1D;
+   /*height:220px;
+   background:url(../images/footerBg.jpg) left -90px repeat-x;*/
+   width:100%;
+   margin:0 auto;
+}
+.listfenge
+{
+   width:6px;
+   height:100px;
+   margin:15px auto 10px auto;
+   float:left;
+   background:url(../images/listfengefu.png) repeat-y;
+}
+.linklist_block_leftwidth
+{
+   width:400px;
+   margin:10px auto auto 32px;
+}
+.linklist_block_rightwidth
+{
+   width:235px!important;
+   width:215px;
+   margin:10px auto auto 42px;
+}
+.linklist_block
+{
+    float:left;
+	
+}
+.linklist_block ul
+{
+   float:left;
+   width:200px;
+   margin-top:10px;
+  /* */
+}
+.linklist_block ul li
+{
+   background:url(../images/li_style.png) no-repeat;
+   padding-left:20px;
+   height:20px;
+   line-height:20px;
+}
+.linklist_block ul li a:link,.linklist_block ul li a:visited
+{
+   /*color:#868686;*/
+   color:#A7BA0E;
+   text-decoration:none;
+   font-size:14px;
+}
+.linklist_block ul li a:hover,.linklist_block ul li a:active
+{
+   color:#993300;
+   text-decoration:none;
+   font-size:14px;
+}
+.linklist_block_title
+{
+   color:white;
+   font-size:16px;
+   padding-left:6px;
+   font-family:"幼圆","微软雅黑","黑体";
+}
+.linklist_block_title a
+{
+   color:white;
+   text-decoration:none;
+}
+.linklist_block_title a:hover
+{
+   color:#993300;
+   text-decoration:none;
+}
+.linklist_block_content
+{
+   
+}
+.linklist_block_content ul
+{
+}
+.linklist_block_content ul li
+{
+   background:url(../images/li_style.png) no-repeat;
+   padding-left:20px;
+}
+.linklist_block_content ul li a
+{
+   color:#868686;
+   text-decoration:none;
+   font-size:14px;
+}
+.blankguodu19
+{
+   clear:both;
+   overflow:hidden;
+   height:19px;
+   /*width:1000px;
+   margin:0 auto;*/
+   background:url(../images/mainContentAreaBgShadowHome.png) repeat-y;
+}

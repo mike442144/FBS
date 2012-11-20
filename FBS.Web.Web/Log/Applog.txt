@@ -1,0 +1,230 @@
+2011-12-23 20:45:29,866 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:45:29,902 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:45:29,902 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:45:30,322 [9] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.Data.SqlClient.SqlException: 对象名 'Aviator_Account' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Aviator.DBUtility.SqlHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\SqlHelper.cs:行号 128
+   在 Aviator.DBUtility.DBHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\DBHelper.cs:行号 257
+   在 Aviator.Repository.Persistence.TPersist`1.Persist(DataRow r, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 78
+   在 Aviator.Repository.Persistence.TPersist`1.PersistAll(DataTable t, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 31
+   在 Aviator.Repository.TRepository`1.PersistAll() 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\TRepository.cs:行号 161
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 133
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 20:47:06,896 [14] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:47:06,910 [14] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:47:06,910 [14] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:47:32,203 [14] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.Data.SqlClient.SqlException: 对象名 'Aviator_Account' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Aviator.DBUtility.SqlHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\SqlHelper.cs:行号 128
+   在 Aviator.DBUtility.DBHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\DBHelper.cs:行号 257
+   在 Aviator.Repository.Persistence.TPersist`1.Persist(DataRow r, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 78
+   在 Aviator.Repository.Persistence.TPersist`1.PersistAll(DataTable t, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 31
+   在 Aviator.Repository.TRepository`1.PersistAll() 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\TRepository.cs:行号 161
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 133
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 20:50:43,381 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:50:43,397 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:50:43,397 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:51:47,101 [5] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.Data.SqlClient.SqlException: 对象名 'Aviator_Account' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Aviator.DBUtility.SqlHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\SqlHelper.cs:行号 128
+   在 Aviator.DBUtility.DBHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\DBHelper.cs:行号 257
+   在 Aviator.Repository.Persistence.TPersist`1.Persist(DataRow r, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 78
+   在 Aviator.Repository.Persistence.TPersist`1.PersistAll(DataTable t, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 31
+   在 Aviator.Repository.TRepository`1.PersistAll() 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\TRepository.cs:行号 161
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 133
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 20:53:24,283 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:53:24,294 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:53:24,294 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:53:24,623 [5] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.Data.SqlClient.SqlException: 对象名 'Aviator_UserProfile' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Aviator.DBUtility.SqlHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\SqlHelper.cs:行号 128
+   在 Aviator.DBUtility.DBHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\DBHelper.cs:行号 257
+   在 Aviator.Repository.Persistence.TPersist`1.Persist(DataRow r, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 78
+   在 Aviator.Repository.Persistence.TPersist`1.PersistAll(DataTable t, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 31
+   在 Aviator.Repository.TRepository`1.PersistAll() 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\TRepository.cs:行号 161
+   在 Aviator.Service.UserEntryService.InitUserProfile(Guid uid) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 175
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 139
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 20:54:10,014 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:54:10,027 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:54:10,027 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:54:16,889 [5] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+Aviator.Utils.RegisterException: 该邮箱已经被注册
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 127
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 20:56:23,847 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:56:23,863 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:56:23,863 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:56:23,891 [9] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.Data.SqlClient.SqlException: 对象名 'Aviator_UserProfile' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Aviator.DBUtility.SqlHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\SqlHelper.cs:行号 128
+   在 Aviator.DBUtility.DBHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\DBHelper.cs:行号 257
+   在 Aviator.Repository.Persistence.TPersist`1.Persist(DataRow r, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 78
+   在 Aviator.Repository.Persistence.TPersist`1.PersistAll(DataTable t, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 31
+   在 Aviator.Repository.TRepository`1.PersistAll() 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\TRepository.cs:行号 161
+   在 Aviator.Service.UserEntryService.InitUserProfile(Guid uid) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 175
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 139
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 20:57:15,272 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 20:57:15,324 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 20:57:15,324 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-23 20:58:08,145 [9] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.Data.SqlClient.SqlException: 对象名 'Aviator_UserProfile' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Aviator.DBUtility.SqlHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\SqlHelper.cs:行号 128
+   在 Aviator.DBUtility.DBHelper.ExecuteNonQuery(DbTransaction trans, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\company\项目\套餐系统\flycode\Aviator.DBUtility\DBHelper.cs:行号 257
+   在 Aviator.Repository.Persistence.TPersist`1.Persist(DataRow r, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 78
+   在 Aviator.Repository.Persistence.TPersist`1.PersistAll(DataTable t, DbOperation op) 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\Persistence\TPersist.cs:行号 31
+   在 Aviator.Repository.TRepository`1.PersistAll() 位置 E:\company\项目\套餐系统\flycode\Aviator.Repository\TRepository.cs:行号 161
+   在 Aviator.Service.UserEntryService.InitUserProfile(Guid uid) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 175
+   在 Aviator.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 139
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-23 21:00:08,807 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2011-12-23 21:00:08,819 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - newUser = Aviator.Service.ActionModels.UserRegisterModel
+2011-12-23 21:00:08,819 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:10:26,923 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:10:26,962 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:10:26,962 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:10:27,060 [5] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 86
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:10:29,023 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:10:29,023 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:10:29,023 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:10:29,024 [4] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 86
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:11:16,789 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:11:16,801 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:11:16,801 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:11:16,872 [9] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 86
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:19:34,873 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:19:34,895 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:19:34,895 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:20:01,998 [9] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 86
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:20:59,066 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:20:59,078 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:20:59,078 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:20:59,149 [4] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:21:22,719 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:21:22,719 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:21:22,719 [4] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:21:44,083 [4] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:22:01,087 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:22:01,099 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:22:01,099 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:22:01,831 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2011-12-24 11:22:01,831 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - uid = 0a4bdf77-150c-4ca7-8863-7395cb8bc91b
+2011-12-24 11:22:01,831 [9] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:22:02,562 [9] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Aviator.Service.UserInfoService.GetUserRoles(Guid uid) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserInfoService.cs:行号 203
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 106
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:22:27,414 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:22:27,415 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:22:27,415 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:22:51,345 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2011-12-24 11:22:51,345 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - uid = 0a4bdf77-150c-4ca7-8863-7395cb8bc91b
+2011-12-24 11:22:51,345 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:27:40,098 [5] ERROR Aviator.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Aviator.Service.UserInfoService.GetUserRoles(Guid uid) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserInfoService.cs:行号 203
+   在 Aviator.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\company\项目\套餐系统\flycode\Aviator.Service\UserEntryService.cs:行号 106
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2011-12-24 11:29:01,761 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:29:01,774 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:29:01,774 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:29:02,002 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2011-12-24 11:29:02,002 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - uid = 0a4bdf77-150c-4ca7-8863-7395cb8bc91b
+2011-12-24 11:29:02,002 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:53:43,734 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2011-12-24 11:53:43,750 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - model = Aviator.Service.ActionModels.UserLogOnModel
+2011-12-24 11:53:43,750 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2011-12-24 11:53:43,885 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2011-12-24 11:53:43,885 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - uid = 0a4bdf77-150c-4ca7-8863-7395cb8bc91b
+2011-12-24 11:53:43,885 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )

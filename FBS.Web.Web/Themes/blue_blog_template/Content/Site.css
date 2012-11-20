@@ -1,0 +1,66 @@
+﻿*{padding:0;margin:0;}
+body{background:#4570a1;cursor:default;padding:5px;}
+
+/*Common Rules*/
+a{text-decoration:none;color:#800;outline:none;}
+a:hover{text-decoration:underline;color:#147;cursor:pointer;}
+
+/*Common Parts*/
+#page{width:965px;margin:auto;}
+#bas{float:left;width:980px;height:170px;background:url('back.jpg') no-repeat;}
+#baslik{float:left;width:920px;height:40px;padding:0 30px;margin:60px 0 20px 0;font:bold 20pt verdana;color:#ccc;text-decoration:none;}
+	#baslik:hover{color:#aaa;}
+#menu{float:left;width:940px;padding:5px 20px;height:20px;margin:20px 0 0 0;}
+	#menu a{float:left;margin:0 5px 0 0;padding:3px 10px;font:bold 9pt verdana;color:#147;text-decoration:none;}
+	#menu a:hover{color:#000;}
+#icerik{float:left;width:980px;background:#fff;}
+	#icerik_sol{float:left;width:600px;padding:5px 2px 5px 5px;}
+	#icerik_sag{float:right;width:365px;padding:5px 5px 5px 3px;text-align:right;}
+#son{float:left;width:940px;padding:5px 20px;text-align:right;font:bold 8pt verdana;color:#147;background:url('son-back.jpg') repeat;}
+.loading{position:absolute;display:none;left:0;bottom:0;position:fixed;}
+
+/*Right Part*/
+#mehmet{float:left;width:355px;padding:45px 5px 5px 5px;background:#eee url('right_top1.png') no-repeat;font:9pt verdana;color:#363;text-align:justify;}
+.sag_baslik{float:left;width:325px;padding:4px 20px;height:16px;margin:5px 0 0 0;font:10pt verdana;color:#800;text-align:right;background:url('bas_span.gif') no-repeat;}
+.sag_icerik{float:left;width:355px;padding:5px;background:#eee;text-align:center;font:10pt vardana,arial;color:#333;}
+.sag_link{float:left;width:345px;padding:2px 5px;border-bottom:dotted 1px #ccc;font:9pt verdana;color:#363;text-align:left;}
+.sag_link:hover{background:#800;color:#fff;text-decoration:none;}
+	/*tabs*/
+	#tabs{float:left;width:355px;margin:5px 0 0 0;}
+	#tabs_baslik{float:left;width:355px;height:25px;padding:4px 5px 0 5px;background:url('tab_bas.jpg') repeat-x;cursor:pointer;}
+		#tabs_baslik > div{float:left;padding:4px 10px;margin:0 5px 0 0;height:16px;font:10pt verdana;color:#147;background:url('tab_top.jpg') repeat;}
+	#tabs_alan{float:left;width:365px;}
+		#tabs_alan > div{float:left;display:none;}
+	/*categories, archive*/
+	.link_r{float:left;width:114px;padding:4px 4px 4px 0;font:10pt tahoma, arial;color:#147;}
+		.link_r:hover{background:#800;color:#fff;text-decoration:none;}
+	/*tags*/
+	.tag{float:left;padding:3px 10px;font:10pt verdana;color:#363;}
+		.tag:hover{background:#800;color:#fff;text-decoration:none;}
+	/*search*/
+	.ara_text{float:left;width:280px;border:solid 1px #ccc;padding:1px;}
+	.ara_buton{float:left;border:0;background:#800;color:#fff;width:50px;margin:0 0 0 5px;padding:1px 5px;} .ara_buton:hover{background:#147;}
+/*Left Part*/
+.baslik{float:left;width:580px;padding:2px 10px;background:url('detay_top.gif') repeat-x;font:11pt trebuchet ms;color:#800;text-decoration:none;text-align:left;}
+	.baslik:hover{text-decoration:none;color:#363;}
+.icerik{float:left;padding:4px;width:592px;text-align:justify;font:10pt trebuchet ms;color:#333;}
+	.icerik li,ul{list-style:none;margin:2px;padding:2px;}
+.ayrintilar{float:left;width:590px;padding:2px 5px;margin:4px 0 10px 0;background:#eee;}
+	.ayrinti_satir{float:left;width:590px;border-bottom:dotted 1px #ddd;}
+	.ayrintilar span{float:left;padding:2px 5px 2px 25px;margin:2px 15px 2px 0;height:16px;text-align:left;font:10pt verdana;color:#363;}
+	/*paging*/
+	#sayfalar{float:left;width:590px;padding:5px;margin:3px;font:bold 10pt verdana;}
+		.sayfa{float:left;padding:2px 5px;height:16px;margin:0 2px;background:#ccc;text-align:center;color:#147;}
+		.sayfa:hover,.aktif_sayfa{float:left;height:16px;padding:2px 5px;margin:0 2px;background:#800;color:#fff;text-decoration:none;text-align:center;}
+			.aktif_sayfa:hover{color:#fff;text-decoration:none;}
+		#sayfalar span{float:left;padding:2px;}
+	/*Informations*/
+	.ic_yazar{background:url('yazar.png') no-repeat;}
+	.ic_tarih{background:url('tarih.png') no-repeat;}
+	.ic_yorum{background:url('yorum.png') no-repeat;}
+	.ic_okunma{background:url('okunma.png') no-repeat;}
+	.ic_puan{background:url('puan.png') no-repeat;}
+	.ic_kategori{background:url('kategori.png') no-repeat;}
+	.ic_etiket{background:url('etiket.png') no-repeat;}
+		.ic_kategori > a,.ic_etiket > a{float:left;padding:1px 5px;margin:2px 0 0 0;font:9pt verdana;color:#363;}
+		.ic_kategori > a:hover,.ic_etiket > a:hover{background:#800;color:#fff;text-decoration:none;}

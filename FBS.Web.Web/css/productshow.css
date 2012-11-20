@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.productshow
+{
+    width:100000px;
+	height:596px;
+	background:url(../images/productshowbg.png) repeat-x;
+	margin:0 auto;
+	margin-top:5px;
+	display:inline;
+}
+.showleftone
+{
+   position:relative;
+   z-index:1;
+   width:282px;
+   height:292px;
+   left:10px;
+   top:130px;
+   float:left;
+}
+.showlefttwo
+{
+   position:relative;
+   z-index:2;
+   width:298px;
+   height:324px;
+   left:-186px;
+   top:111px;
+   float:left;
+}
+.showmiddle
+{
+   position:relative;
+   z-index:5;
+   width:354px;
+   height:536px;
+   top:0px;
+   left:-303px;
+   float:left;
+}
+.showrightone
+{
+   position:relative;
+   z-index:3;
+   width:282px;
+   height:292px;
+   right:10px;
+   top:130px;
+   float:left;
+}
+.showrighttwo
+{
+   position:relative;
+   z-index:4;
+   width:298px;
+   height:324px;
+   right:-198px;
+   top:111px;
+   float:left;
+}

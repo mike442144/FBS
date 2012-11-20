@@ -1,0 +1,97 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="Helpers" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/UndoHtml.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../Content/Presentation.css" rel="stylesheet" type="text/css" media="screen, print" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="robots" content="index, follow, noodp, noydir" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/us/" title="Copyright Statement" />
+    <!-- This MVC Design Template was created by Matthew Harris, www.rtpdesign.co.uk -->
+</head>
+<body>
+    <div id="centercontainer">
+        <div id="skiplink">
+            <p>
+                skip to <a href="#skiptonavigation" title="skip down to navigation">navigation</a>,
+                <a href="#skiptocontent" title="skip down to content">content</a></p>
+        </div>
+        <div id="headercontainer">
+        </div>
+        <!-- #headercontainer -->
+        <div id="navigation">
+            <div id="navigation_left">
+                <a id="skiptonavigation" name="skiptonavigation"></a>
+                <%-- The custom Html.MenuItem() helper is used to render each menu link --%>
+                <ul class="menu">
+                    <%= Html.MenuItem("Home", "Index", "Home")%>
+                    <%= Html.MenuItem("About Us", "About", "Home")%>
+                </ul>
+            </div>
+            <div id="navigation_right">
+                <ul class="menu">
+                    <li><% Html.RenderPartial("LogOnUserControl"); %></li>
+                </ul>
+            </div>
+        </div>
+        <!-- #navigation -->
+        <div id="breadcrumb">
+            <p>
+                You Are At : <a href="/">Example.com</a> | <%= Html.Encode(ViewData["Title"]) %></p>
+        </div>
+        <!-- #breadcrumb -->
+        <div id="bodycontainer">
+            <div id="content_2col">
+                <a id="skiptocontent" name="skiptocontent"></a>
+                <h1>
+                    <%= Html.Encode(ViewData["Title"]) %></h1>
+                <div class="borderfade_top">
+                </div>
+                <div id="main">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+                <div class="borderfade_bottom">
+                </div>
+            </div>
+            <!-- #2col_content -->
+            <div id="network_2col">
+                <div id="network_col_container">
+                    <h1>
+                        About</h1>
+                    <div class="borderfade_top">
+                    </div>
+                    <a href="http://www.rtpdesign.co.uk/">
+                        <img src="../../Content/network_rtpdesign.gif" alt="rtpDesign" width="190" height="33"
+                            border="0" /></a><br />
+                    <p>
+                        <a href="http://www.rtpdesign.co.uk/">www.rtpdesign.co.uk</a></p>
+                    <p>
+                        If you use this template then feel free to link to me or not.</p>
+                    <p>
+                        I think there are better uses for this sidebar anyway :)</p>
+                    <div class="borderfade_bottom">
+                    </div>
+                </div>
+                <div class="spacer">
+                </div>
+            </div>
+            <!-- #2col_network -->
+            <div class="spacer">
+            </div>
+        </div>
+        <!-- #bodycontainer -->
+        <div id="footercontainer">
+            <div id="footer_copyright">
+                <p>
+                    My Sample MVC Application &copy; Copyright 2009</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

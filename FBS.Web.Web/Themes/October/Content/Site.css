@@ -1,0 +1,499 @@
+/* css reset
+--------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 11pt;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body
+{
+	line-height: 1;
+}
+
+ol, ul
+{
+	list-style-position: outside;
+}
+
+ol
+{
+    list-style-type:decimal;
+}
+
+li ol
+{
+    list-style-type:lower-latin;
+}
+
+ul
+{
+    list-style-type: square;
+}
+
+blockquote, q
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* standard elements
+----------------------*/
+
+body
+{
+    background:#222 url(/Content/bg_body.jpg) 0 0 repeat-x;
+    font-family:Arial,Helvetica,sans-serif
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+    margin: 1em 0 0;
+}
+
+p,blockquote,pre,q,dl,ol,ul,table
+{
+    margin-top:.5em;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: lighter;
+}
+
+h1
+{
+    font-size: 2.5em;
+    margin:.5em 0 0;
+}
+
+h2
+{
+    font-size: 1.5em;
+}
+
+h3
+{
+    font-size:1.3em;
+}
+
+h4
+{
+    font-size:1.2em;
+}
+
+h5
+{
+    font-size:1.1em;
+}
+
+p
+{
+    margin: .5em 0 0;
+    text-align:justify;
+}
+
+ol ol, ul ul
+{
+    margin:0 0 .2em;
+}
+
+/* form elements
+------------------*/
+
+form fieldset
+{
+    margin:1em 0;
+    padding:1em;
+    border:1px solid #444;
+}
+
+form label
+{
+    display: block;
+    float: left;
+    width: 12em;
+    margin-bottom:.5em;
+}
+
+form input[type=text], form input[type=password], form textarea
+{
+    display: block;
+    margin: 0 0 .5em;
+    color:#333;
+    background-color:#DDD;
+    border:1px solid #333;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:1em;
+}
+
+form textarea
+{
+    width: 40em;
+    height:8.1em;
+}
+
+form input[type=text], form input[type=password]
+{
+    width: 15em;
+}
+
+form optgroup
+{
+    color:#F90;
+    font-style:normal;
+    font-size:1.1em;
+    background-color:#333;
+}
+
+form option
+{
+    color:#333;
+    background-color:#DDD;
+    padding:.1em .3em;
+}
+
+form input[type=checkbox], form input[type=radio]
+{
+    display:block;
+    clear:both;
+    float:left;
+    margin:.1em .5em 0 0;
+    height:1em;
+    width:1em;
+    color:#333;
+}
+
+form input[type=checkbox]
+{
+    background-color:#DDD;
+    border:1px solid #333;
+}
+
+form input[type=text]:focus, form input[type=password]:focus, form input[type=checkbox]:focus, form input[type=radio]:focus form textarea:focus
+{
+    background-color:#DB9;
+    border:1px solid #F90;
+}
+
+form input[type=button], form input[type=submit], input[type=reset], form button
+{
+    padding:.15em;
+    font-size: .9em;
+}
+
+form table input[type=text], form table input[type=password], form table textarea
+{
+    float:none;
+    margin:0;
+}
+
+form table label
+{
+    width:auto;
+}
+
+
+/* page layout
+----------------*/
+
+#container
+{
+    max-width:980px;
+    height:100%;
+    margin:0 auto;
+}
+
+#header
+{
+}
+
+#loginmenucontainer
+{
+    float:right;
+    margin-top:1em;
+    color:#999;
+}
+
+#menucontainer
+{
+    padding-top:.5em;
+}
+
+#content, #ajaxlogin
+{
+    margin-top:1em;
+    padding:0 1em 1em;
+    color:#BBB;
+    background-color: #242424;
+    border:1px solid #333;
+    letter-spacing:.03em;
+    line-height:130%;
+}
+
+#ajaxlogin
+{
+    display:none;
+    padding-top:1em;
+}
+
+#footer
+{
+    margin: 1em 0 1em;
+    color: #444;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+/* header
+-----------*/
+
+#header h1
+{
+    margin:0;
+    padding:1em;
+    color:#EEF;
+    background:#222 url(/Content/bg_header.jpg) 0 0 no-repeat;
+    border:1px solid #333;
+    border-top-width: 0;
+}
+
+/* menu
+---------*/
+
+ul#menu
+{
+    list-style:none;
+    display:inline-block;
+}
+
+ul#menu li, #loginlink
+{
+    list-style:none;
+    margin-right: .5em;
+    padding:0 0 0 1em;
+    display:inline-block;
+    background: #333 url(/Content/roundcorner_topleft.png) 0 0 no-repeat;
+}
+
+ul#menu a, #loginlink a
+{
+    display: block;
+    padding: .5em 1em .5em 0;
+    color:#CCD;
+    background:url(/Content/roundcorner_bottomright.png) right bottom no-repeat;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+ul#menu li:hover, #loginlink:hover
+{
+    background-color:#3B3B3B;
+}
+
+ul#menu a:hover, #loginlink a:hover
+{
+    color:#DDE;
+}
+
+ul#menu li.selected a, #loginlink.selected a
+{
+    color:#F90;
+}
+
+#loginmenucontainer span
+{
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#loginlink
+{
+    margin-right:0;
+}
+
+/* content
+------------*/
+
+#content a, #ajaxlogin a
+{
+    color:#C60;
+    text-decoration:none;
+}
+
+#content a:hover, #content a:active, #content a:focus, #ajaxlogin a:hover, #ajaxlogin a:active, #ajaxlogin a:focus
+{
+    text-decoration:underline
+}
+
+#content a:visited
+{
+    color:#A40;
+}
+
+#content a.external
+{
+    background:url(/Content/link_external.png)  0 50% no-repeat;
+    margin-left:5px;
+    padding-left:13px;
+}
+
+#content a.image
+{
+    background:url(/Content/link_image.png) 0 50% no-repeat;
+    margin-left:5px;
+    padding-left:13px;
+}
+
+#content a.document
+{
+    background:url(/Content/link_document.png) 0 50% no-repeat;
+    margin-left:5px;
+    padding-left:13px;
+}
+
+#content h1,h2,h3,h4,h5,h6
+{
+    color:#F90;
+}
+
+#content ul, #content ol
+{
+    padding-left: 2em;
+}
+
+#content table
+{
+    border-collapse:collapse;
+}
+
+#content th
+{
+    background-color:#333;
+    min-width:3em;
+}
+
+#content th,td
+{
+    padding:.2em .5em;
+}
+
+#content th
+{
+    border:1px solid #222;
+}
+
+#content td
+{
+    border:1px solid #333;
+}
+
+/* footer
+-----------*/
+
+/* ajax login
+---------------*/
+#ajaxlogin p
+{
+display:block;
+position:relative;
+top:0;
+left:0;
+width:400px;
+margin-top:0;
+}
+
+#ajaxlogin form
+{
+display: block;
+position:relative;
+top:-2.5em;
+left:450px;
+width:450px;
+margin-bottom:-2.5em;
+}
+
+#ajaxlogin input[type=checkbox]
+{
+margin-left:8em;
+}
+
+#ajaxlogin input[type=submit]
+{
+width:7em;
+margin: .5em 0 0 7.5em;
+}
+
+#ajaxlogin label
+{
+width:7em;
+}
+
+#ajaxlogin label[for=rememberMe]
+{
+width:10em;
+}
+
+/* messages
+-------------*/
+
+div.information, div.error, div.success, ul.validation-summary-errors
+{
+    margin:1em 0;
+    padding:1em;
+}
+
+div.information
+{
+    color:#C60;
+    background-color:#FF9;
+    border:1px solid #F90;
+}
+
+div.error, ul.validation-summary-errors
+{
+    color: #F00;
+    background-color:#C99;
+    border:1px solid #900;
+}
+
+div.success
+{
+    color: #060;
+    background-color:#9C9;
+    border:1px solid #060;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}

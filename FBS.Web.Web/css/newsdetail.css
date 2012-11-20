@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+.leftnav
+{
+   float:left;
+   width:25%;
+   margin-left:10px;
+   border-radius: 20px;
+   border-top:1px solid #DCDCDD;
+   background:url(../../images/leftlanbgjianbian.png) repeat-x;
+   min-height:1000px;
+}
+.leftnav ul
+{
+   margin:0 auto;
+   padding:20px;
+   
+}
+.leftnav ul li
+{
+   border-radius: 50px;
+   border:1px solid #DCDCDD;
+   height:58px;
+   width:210px;
+   line-height:58px;
+   margin-bottom:10px;
+   text-align:center;
+}
+.online
+{
+       background:url(../../images/online.png) no-repeat;
+}
+.caseshow
+{
+      background:url(../../images/caseshow.png) no-repeat;
+}
+.aboutlink
+{
+      background:url(../../images/aboutlink.png) no-repeat;
+}
+.leftnav ul li a
+{
+     display:block;
+     height:58px;
+    line-height:58px;
+    color:White;
+    text-decoration:none;
+}
+.leftnav ul li a:link
+{
+     color:White;
+    text-decoration:none;
+}
+.leftnav ul li a:visited
+{
+     color:#ff9933;
+     text-decoration:none;
+}
+.leftnav ul li a:hover
+{
+     color:#ff9933;
+     text-decoration:underline;
+}
+.leftnav ul li a:active
+{
+     color:#ff9933;
+     text-decoration:underline;
+}
+.article
+{
+   float:left;
+   margin-left:30px;
+   width:70%;
+   /*width:600px;
+background: #F9F9F9;*/
+   border-radius: 20px;
+   border:1px solid #DCDCDD;
+   padding-top:20px;
+   padding-bottom:20px;
+   
+}
+.article_title
+{
+    text-align:center;
+}
+.article_title h3
+{
+   height:50px;
+   line-height:50px;
+   font-size:24px;
+   font-family:"微软雅黑","黑体";
+}
+.article_publicDate
+{
+   text-align:center;
+}
+.article_content
+{
+   padding:20px 20px;
+}
+.article_content p
+{
+   text-indent:2em;
+   line-height:1.8em;
+   font-family:"微软雅黑","黑体";
+}
+.btn_backToNewslist
+{
+    margin-left:20px;
+	height:36px;
+	line-height:36px;
+	width:80px;
+	text-align:center;
+	background:url(../../images/btn_backlist.png) no-repeat;
+}
+.btn_backToNewslist a
+{
+    height:36px;
+	width:80px;
+	line-height:36px;
+	text-align:center;
+	color:#2b2b2b;
+	display:block;
+	text-decoration:none;
+	
+}
+.btn_backToNewslist a:hover
+{   
+	color:#ff9933;
+	text-decoration:underline;
+	
+}

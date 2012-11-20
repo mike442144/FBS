@@ -1,0 +1,266 @@
+﻿/* ASP.NET MVC Design Gallery: Simple and Fast CSS */
+body
+{
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	width: 100%;
+	background: #fff;
+	min-width: 600px; 
+	font: normal 10px/1.2em Verdana,Tahoma,Arial,Helvetica,Georgia,Sans-Serif;
+}
+a
+{
+	color: #369;
+}
+a:hover
+{
+	color: #fff;
+	background: #369;
+	text-decoration: none;
+}
+h1, h2, h3
+{
+	margin: .8em 0 .2em 0;
+	padding: 0;
+}
+h1
+{
+	font-size: 1.3em;
+}
+h2
+{
+	font-size: 1.2em;
+	color: #369;
+}
+h3
+{
+	font-size: 1.1em;
+}
+h4
+{
+	font-size: 1em;
+}
+p
+{
+	margin: .4em 0 .8em 0;
+	padding: 0;
+}
+img
+{
+	margin: 5px 0;
+}
+/* Header styles */
+#header
+{
+	clear: both;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	background-color: #cccccc;
+}
+#header p, #header h1, #header h2
+{
+	padding: .4em 15px;
+	margin: 0;
+	line-height: 1.2em;
+}
+#header h1
+{
+	font-size: 1.2em;
+}
+#header h2
+{
+	font-size: 1.1em;
+}
+#header h3
+{
+	font-size: 1em;
+	color: #fe7;
+}
+#navbar ul
+{
+	clear: left;
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navbar ul li
+{
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navbar ul li a
+{
+	display: block;
+	float: left;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	text-align: center;
+	background: #eee;
+	color: #000;
+	text-decoration: none;
+	position: relative;
+	line-height: 1.3em;
+}
+#navbar ul li a:hover
+{
+	background: #369;
+	color: #fff;
+}
+#navbar ul li a.active, #navbar ul li a.active:hover
+{
+	color: #fff;
+	background: #000;
+	font-weight: bold;
+}
+#navbar ul li a span
+{
+	display: block;
+	margin: 0;
+	padding: 10px 0;
+}
+#header img
+{
+	padding-left: 10px;
+}
+/* Status info sub menu */
+#statusinfo
+{
+	clear: both;
+	background: #eef3e2;
+	border-top: 3px solid #666;
+	margin: 0;
+	padding: 6px 15px !important;
+	text-align: right;
+}
+/* Top Menu */
+.topmenu
+{
+	float: right;
+	position: relative;
+}
+/* column container */
+.colmask
+{
+	position: relative; 
+	clear: both;
+	float: left;
+	width: 100%; 
+	overflow: hidden; /* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright, .colmid, .colleft
+{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.col1, .col2, .col3
+{
+	float: left;
+	position: relative;
+	padding: 0 0 1em 0;
+	overflow: hidden;
+}
+/* 2 Column (right menu) settings */
+.rightmenu
+{
+	background: #f6f9ed; /* right column background colour */
+}
+.rightmenu .colleft
+{
+	right: 25%; /* right column width */
+	background: #fff; /* left column background colour */
+}
+.rightmenu .col1
+{
+	width: 71%; /* left column content width (left column width minus left and right padding) */
+	left: 27%; /* (right column width) plus (left column left padding) */
+}
+.rightmenu .col2
+{
+	width: 21%; /* right column content width (right column width minus left and right padding) */
+	left: 31%; /* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+.rightmenu h2
+{
+	line-height:1.2em;
+	font-size: 1.1em;
+}
+.rightmenu h3
+{
+	line-height:1.1em;
+	font-size: 1em;
+	color: #667;
+}
+.col2 ul
+{
+	margin: 5px 0;
+	list-style: inside;
+	list-style-type: square;
+}
+.col2 ul li
+{
+	margin-left: 15px;
+	padding: 0;
+}
+/* Form layout elements */
+fieldset 
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset label 
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+/* Footer styles */
+#footer
+{
+	clear: both;
+	float: left;
+	width: 100%;
+	border-top: 1px solid #000;
+	background-color: #fdfcdc;
+}
+#footer p
+{
+	padding: 10px;
+	margin: 0;
+}

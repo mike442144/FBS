@@ -1,0 +1,120 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="Helpers" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under the Creative Commons Attribution 3.0 License
+
+Adapted by Keith Adler
+ 
+Name       : Abrasive
+Description: A two-column, fixed-width design with dirty looks.
+Version    : 1.0
+Released   : 20081122
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="Description of your web page goes here." />
+    <meta name="keywords" content="Keywords for you web page go here. Each keyword or group of keyword phrases are separated by a comma. Keep this  list short and relevant to the content and title of this specific page." />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="/Themes/Abrasive/Content/Site.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    <a href="#">Abrasive</a></h1>
+                <h2>
+                    by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">
+                        FreeCSSTemplates</a> + Keith Adler</h2>
+            </div>
+            <!-- end #logo -->
+            <div id="menu">
+                <ul>
+                    <li class="first">
+                        <%= Html.ActionLink("Home", "Index", "Home") %></li>
+                    <li>
+                        <%= Html.ActionLink("About", "About", "Home") %></li>
+                </ul>
+            </div>
+            <!-- end #menu -->
+        </div>
+        <!-- end #header -->
+        <div id="page">
+            <div id="bgtop">
+                <div id="bgbottom">
+                    <div id="content">
+                        <div class="post">
+                            <div class="title">
+                                <h2>
+                                    <a href="#">Lorem Ipsum Dolor</a></h2>
+                                <p>
+                                    Posted by <a href="#">enks</a> on November 19, 2008</p>
+                            </div>
+                            <div class="entry">
+                                <img src="/Themes/Abrasive/Content/Images/img01.jpg" alt="" width="112" height="104" class="alignleft" />
+                                <p>
+                                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end #content -->
+                    <div id="sidebar">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Nullam vitae</h2>
+                                <ul>
+                                    <li><a href="#">Morbi ante sem aliquam</a></li>
+                                    <li><a href="#">Vitae egestas ullamcorpe</a></li>
+                                    <li><a href="#">Ornare donec nec neque</a></li>
+                                    <li><a href="#">Vel rhoncus adipiscing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>
+                                    Sed magna</h2>
+                                <ul>
+                                    <li><a href="#">Morbi ante sem aliquam</a></li>
+                                    <li><a href="#">Vitae egestas ullamcorpe</a></li>
+                                    <li><a href="#">Vulputate non magna</a></li>
+                                    <li><a href="#">Cras a massa integer</a></li>
+                                    <li><a href="#">Nec turpis vel pulvinar</a></li>
+                                    <li><a href="#">Ornare donec nec neque</a></li>
+                                    <li><a href="#">Vel rhoncus adipiscing</a></li>
+                                    <li><a href="#">Vulputate non magna</a></li>
+                                    <li><a href="#">Cras a massa integer</a></li>
+                                    <li><a href="#">Nec turpis vel pulvinar</a></li>
+                                    <li><a href="#">Vulputate non magna</a></li>
+                                    <li><a href="#">Nec turpis vel pulvinar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end #sidebar -->
+                    <div style="clear: both;">
+                        &nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <!-- end #page -->
+        <div id="footer">
+            <p>
+                Copyright (c) 2009 SiteName.com. Design by <a href="http://www.nodethirtythree.com/">
+                    NodeThirtyThree</a>, <a href="http://www.freecsstemplates.org/">FreeCSSTemplates</a>
+                and Keith Adler</p>
+        </div>
+        <!-- end #footer -->
+    </div>
+    <!-- end #wrapper -->
+</body>
+</html>

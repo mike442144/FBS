@@ -1,0 +1,399 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A7990E8-A1C8-4A40-B225-DBD11924ED10}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITsds.Web.News</RootNamespace>
+    <AssemblyName>ITsds.Web.News</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.2.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL" />
+    <Reference Include="Aviator.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Aviator.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft ASP.NET\ASP.NET MVC 2\\Assemblies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\FBS_Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\FBS_Admin\Controllers\ArticleController.cs" />
+    <Compile Include="Areas\FBS_Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\FBS_Admin\Controllers\PageController.cs" />
+    <Compile Include="Areas\FBS_Admin\FBS_AdminAreaRegistration.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\IsCurrentActionHelper.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewEngine\WebFormThemeViewEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.min-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.min-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\DbMapping.xml" />
+    <Content Include="Content\Page1.htm" />
+    <Content Include="css\companystate.css" />
+    <Content Include="css\connectionUs.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\fancymoves.css" />
+    <Content Include="css\fenpageblack.css" />
+    <Content Include="css\fenpagewhite.css" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\head.css" />
+    <Content Include="css\introduce.css" />
+    <Content Include="css\jquery.fancybox-1.3.4.css" />
+    <Content Include="css\listfenpage.css" />
+    <Content Include="css\navigation.css" />
+    <Content Include="css\newsdetail.css" />
+    <Content Include="css\ourservice.css" />
+    <Content Include="css\pictureshow.css" />
+    <Content Include="css\productshow.css" />
+    <Content Include="css\public.css" />
+    <Content Include="css\workshow.css" />
+    <Content Include="css\zhaoren.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\baqijljianbianbg.png" />
+    <Content Include="images\bottomleft.png" />
+    <Content Include="images\bottomright.png" />
+    <Content Include="images\caojun.png" />
+    <Content Include="images\chenjinglei.png" />
+    <Content Include="images\chensainan.png" />
+    <Content Include="images\circlecurrent.png" />
+    <Content Include="images\circlenone.png" />
+    <Content Include="images\companyimg.png" />
+    <Content Include="images\companystatebigshow.png" />
+    <Content Include="images\connectionbigshow.png" />
+    <Content Include="images\content_jianbian.png" />
+    <Content Include="images\d1.png" />
+    <Content Include="images\d2.png" />
+    <Content Include="images\d3.png" />
+    <Content Include="images\d4.png" />
+    <Content Include="images\d5.png" />
+    <Content Include="images\d6.png" />
+    <Content Include="images\d7.png" />
+    <Content Include="images\dingzhishow.png" />
+    <Content Include="images\fancybox\blank.gif" />
+    <Content Include="images\fancybox\fancybox-x.png" />
+    <Content Include="images\fancybox\fancybox-y.png" />
+    <Content Include="images\fancybox\fancybox.png" />
+    <Content Include="images\fancybox\fancy_close.png" />
+    <Content Include="images\fancybox\fancy_loading.png" />
+    <Content Include="images\fancybox\fancy_nav_left.png" />
+    <Content Include="images\fancybox\fancy_nav_right.png" />
+    <Content Include="images\fancybox\fancy_shadow_e.png" />
+    <Content Include="images\fancybox\fancy_shadow_n.png" />
+    <Content Include="images\fancybox\fancy_shadow_ne.png" />
+    <Content Include="images\fancybox\fancy_shadow_nw.png" />
+    <Content Include="images\fancybox\fancy_shadow_s.png" />
+    <Content Include="images\fancybox\fancy_shadow_se.png" />
+    <Content Include="images\fancybox\fancy_shadow_sw.png" />
+    <Content Include="images\fancybox\fancy_shadow_w.png" />
+    <Content Include="images\fancybox\fancy_title_left.png" />
+    <Content Include="images\fancybox\fancy_title_main.png" />
+    <Content Include="images\fancybox\fancy_title_over.png" />
+    <Content Include="images\fancybox\fancy_title_right.png" />
+    <Content Include="images\fancybox\_notes\dwsync.xml" />
+    <Content Include="images\fancy_nav_left.png" />
+    <Content Include="images\fancy_nav_right.png" />
+    <Content Include="images\gonggaobg.png" />
+    <Content Include="images\gudan.png" />
+    <Content Include="images\guoguoyu.png" />
+    <Content Include="images\hcy.png" />
+    <Content Include="images\hua.png" />
+    <Content Include="images\huayudajiudian.jpg" />
+    <Content Include="images\k1.png" />
+    <Content Include="images\k2.png" />
+    <Content Include="images\k3.png" />
+    <Content Include="images\k4.png" />
+    <Content Include="images\laba.png" />
+    <Content Include="images\liblue.png" />
+    <Content Include="images\listfengefu.png" />
+    <Content Include="images\listicon.png" />
+    <Content Include="images\li_style.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logocontent.png" />
+    <Content Include="images\logocontent1.png" />
+    <Content Include="images\luguosheng.png" />
+    <Content Include="images\mainContentAreaBgShadowHome.png" />
+    <Content Include="images\middlebg.png" />
+    <Content Include="images\nav_aboutcompany.png" />
+    <Content Include="images\nav_aboutproduct.png" />
+    <Content Include="images\nav_bg.png" />
+    <Content Include="images\nav_companynews.png" />
+    <Content Include="images\nav_connectionus.png" />
+    <Content Include="images\nav_fengefu.png" />
+    <Content Include="images\nav_home.png" />
+    <Content Include="images\nav_homewhitebg.png" />
+    <Content Include="images\nav_line.png" />
+    <Content Include="images\nav_whitebg.png" />
+    <Content Include="images\nav_yellowbg.png" />
+    <Content Include="images\nav_yellowbghome.png" />
+    <Content Include="images\nav_zhaopin.png" />
+    <Content Include="images\nongjiale.jpg" />
+    <Content Include="images\qianyinpeng.png" />
+    <Content Include="images\qinghang.jpg" />
+    <Content Include="images\ren.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\searchbg.png" />
+    <Content Include="images\searchbg1.png" />
+    <Content Include="images\star.png" />
+    <Content Include="images\sunxue.png" />
+    <Content Include="images\team.png" />
+    <Content Include="images\teamren.png" />
+    <Content Include="images\tiaochang.png" />
+    <Content Include="images\tiaoduan.png" />
+    <Content Include="images\titlebg.png" />
+    <Content Include="images\tmpicshow\1.png" />
+    <Content Include="images\tmpicshow\2.png" />
+    <Content Include="images\tmpicshow\3.png" />
+    <Content Include="images\tmpicshow\4.png" />
+    <Content Include="images\tmpicshow\5.png" />
+    <Content Include="images\tmpicshow\6.png" />
+    <Content Include="images\topbottombg.png" />
+    <Content Include="images\topleft.png" />
+    <Content Include="images\topright.png" />
+    <Content Include="images\touxiang.png" />
+    <Content Include="images\wangjinxing.png" />
+    <Content Include="images\wanwang.jpg" />
+    <Content Include="images\wanwangchengpzhan.jpg" />
+    <Content Include="images\wanwangshouye.jpg" />
+    <Content Include="images\why.png" />
+    <Content Include="images\yaoxiaohui.png" />
+    <Content Include="images\yinfang.png" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\nav.js" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Contact.aspx" />
+    <Content Include="Views\Home\NotFound.aspx" />
+    <Content Include="Views\Jobs\Index.aspx" />
+    <Content Include="Views\News\News.aspx" />
+    <Content Include="Views\News\NewsList.aspx" />
+    <Content Include="Views\Product\Index.aspx" />
+    <Content Include="Views\Shared\ITsdsMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\FBS_Admin\Views\Account\Login.aspx" />
+    <Content Include="Areas\FBS_Admin\Views\Site\ShowThemes.aspx" />
+    <Content Include="ITsdsWebNews.sdm" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="Views\Shared\Footer.ascx" />
+    <Content Include="Views\Shared\Header.ascx" />
+    <Content Include="Areas\FBS_Admin\Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Areas\FBS_Admin\Views\Site\Index.aspx" />
+    <Content Include="Areas\FBS_Admin\Views\Web.config" />
+    <Content Include="Areas\FBS_Admin\Views\Shared\Admin.Master" />
+    <None Include="images\fancybox\Thumbs.db" />
+    <Content Include="css\maincontainer.css" />
+    <Content Include="css\nottunav.css" />
+    <Content Include="images\aboutlink.png" />
+    <Content Include="images\bigshow\fxzhk.png" />
+    <Content Include="images\bigshow\huayu.jpg" />
+    <Content Include="images\bigshow\huayu.png" />
+    <Content Include="images\bigshow\jiaju.jpg" />
+    <Content Include="images\bigshow\jiaju.png" />
+    <Content Include="images\bigshow\jiaoyu.jpg" />
+    <Content Include="images\bigshow\jiaoyu.png" />
+    <Content Include="images\bigshow\jiudian.jpg" />
+    <Content Include="images\bigshow\jiudian.png" />
+    <Content Include="images\bigshow\njl.jpg" />
+    <Content Include="images\bigshow\njl.png" />
+    <Content Include="images\bigshow\qinghang.jpg" />
+    <Content Include="images\bigshow\qinghang.png" />
+    <Content Include="images\btn_backlist.png" />
+    <Content Include="images\caseshow.png" />
+    <Content Include="images\footerContentAreaBgTopTile.jpg" />
+    <Content Include="images\hy.jpg" />
+    <Content Include="images\jiazai.gif" />
+    <Content Include="images\jiazai1.gif" />
+    <Content Include="images\jyu.jpg" />
+    <Content Include="images\leftlanbgjianbian.png" />
+    <Content Include="images\online.png" />
+    <Content Include="images\tmpicshow\1.jpg" />
+    <Content Include="images\tmpicshow\11.png" />
+    <Content Include="images\tmpicshow\13.png" />
+    <Content Include="images\tmpicshow\15.png" />
+    <Content Include="images\arrowDoubleWebDev.png" />
+    <Content Include="images\contact-divider-vertical.jpg" />
+    <Content Include="images\dnsservice.png" />
+    <Content Include="images\hrOurCompanyNav.gif" />
+    <Content Include="images\mainLeftColumnBg.jpg" />
+    <Content Include="images\mainLeftNavTop.png" />
+    <Content Include="images\software.png" />
+    <Content Include="images\tmpicshow\2.jpg" />
+    <Content Include="images\tmpicshow\3.jpg" />
+    <Content Include="images\tmpicshow\4.jpg" />
+    <Content Include="images\tmpicshow\5.jpg" />
+    <Content Include="images\tmpicshow\6.jpg" />
+    <Content Include="images\tmpicshow\88.png" />
+    <Content Include="images\website.png" />
+    <Content Include="images\workshowjianbianbg.png" />
+    <Content Include="js\demo.js" />
+    <Content Include="js\jquery.easing.1.2.js" />
+    <Content Include="js\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="js\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="js\slider.js" />
+    <Content Include="js\_notes\dwsync.xml" />
+    <Content Include="Lib\antlr.runtime.dll" />
+    <Content Include="Lib\AspNetPager.dll" />
+    <Content Include="Lib\Aviator.DBUtility.dll" />
+    <Content Include="Lib\Aviator.Domain.dll" />
+    <Content Include="Lib\Aviator.EntLibHelper.dll" />
+    <Content Include="Lib\Aviator.Factory.dll" />
+    <Content Include="Lib\Aviator.Repository.dll" />
+    <Content Include="Lib\Aviator.Service.dll" />
+    <Content Include="Lib\Aviator.Share.dll" />
+    <Content Include="Lib\Aviator.Utils.dll" />
+    <Content Include="Lib\LitJSON.dll" />
+    <Content Include="Lib\log4net.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="Lib\Microsoft.Practices.ObjectBuilder.dll" />
+    <Content Include="Lib\MySql.Data.dll" />
+    <Content Include="Lib\SortUtility.dll" />
+    <Content Include="Lib\StringTemplate.dll" />
+    <Content Include="Lib\System.Data.SQLite.DLL" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Views\Home\CommonError.aspx" />
+    <Content Include="Views\Install\DbCnf.aspx" />
+    <Content Include="Views\Install\EnvironmentCheck.aspx" />
+    <Content Include="Views\Install\Index.aspx" />
+    <Content Include="Views\Install\Installed.aspx" />
+    <Content Include="Views\Install\SiteCnf.aspx" />
+    <Content Include="Views\Install\Success.aspx" />
+    <Content Include="Views\Service\Index.aspx" />
+    <Content Include="Views\Shared\ThemesList.ascx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FBS.App\FBS.App.csproj">
+      <Project>{AEF1535B-469B-4891-A616-C9A4C2751314}</Project>
+      <Name>FBS.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Domain\FBS.Domain.csproj">
+      <Project>{1C32487C-531D-4F91-8D10-6C69873A6A2D}</Project>
+      <Name>FBS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Service\FBS.Service.csproj">
+      <Project>{2D83B4EC-523B-46C9-813A-E6B5AE9FE39F}</Project>
+      <Name>FBS.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\FBS_Admin\Models\" />
+    <Folder Include="Areas\FBS_Admin\Views\Article\" />
+    <Folder Include="Areas\FBS_Admin\Views\Category\" />
+    <Folder Include="Areas\FBS_Admin\Views\Page\" />
+    <Folder Include="Themes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5383</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

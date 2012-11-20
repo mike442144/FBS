@@ -1,0 +1,79 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="[YourProjectName].Views.Shared.Site" %>
+
+<%@ Import Namespace="Helpers" %><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="~/Scripts/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/roundCorners.js"></script>
+<!--[if lte IE 6]>
+    <link href="~/Content/Ie6.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Ie.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if (gt IE 6)&(lte IE 8)]>
+    <link href="~/Content/Ie.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      $(function() {
+        DoRoundedCorners();
+      });
+    </script>
+<![endif]-->
+  </head>
+  <body>
+    <div class="page roundBig">
+      <div id="header">
+        <div id="title" class="round">
+          <h1>My Sample MVC Application</h1>
+          <img src="~/Content/Images/mvcLogo.png" alt="Stylized MVC diagram">
+        </div>
+        <div id="logindisplay">
+          [ <a href="#">Login</a> ]
+        </div> 
+        <div id="menucontainer" class="round roundT">
+          <ul id="menu">              
+            <%
+              String homeLinkClasses = "round roundT";
+              String aboutLinkClasses = homeLinkClasses;
+              homeLinkClasses += Html.IsCurrentAction( "Index", "Home" ) ? " current" : String.Empty;
+              aboutLinkClasses += Html.IsCurrentAction( "About", "Home" ) ? " current" : String.Empty;
+            %>
+            
+            <li><%= Html.ActionLink( "Home", "Index", "Home", new { @class = homeLinkClasses } )%></li>
+            <li><%= Html.ActionLink( "About Us", "About", "Home", new { @class = aboutLinkClasses } )%></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main" class="round roundB">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        <div class="section">
+          <div class="rightImage roundSmall">
+            <img src="~/Content/Images/701816373_8535b37f71.jpg" alt="Grey skies over Matsumoto Castle"/>
+            <p>Photo by <a href="http://flickr.com/photos/zhzheka/701816373/">EugeniusD80</a></p>
+          </div>
+          <h3>&lt;H3> Level 3 Header </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mi. Suspendisse purus nulla, cursus a, imperdiet ut, euismod vel, magna. 
+            In urna nunc, dignissim id, convallis at, vulputate at, enim. Donec euismod, dui vitae adipiscing pretium, eros nibh imperdiet metus, in sodales lectus felis non enim. 
+          </p>
+          <h4>&lt;H4> Level 4 Header; List: </h4>
+          <ul>
+            <li><span>Donec euismod</span></li>
+            <li>
+              <span>Nam faucibus ornare leo:</span>
+              <ol>
+                <li><span>Aenean egestas risus.</span></li>
+                <li><span>Morbi fringilla pharetra est.</span></li>
+                <li><span>Phasellus quis ligula quis tellus accumsan condimentum.</span></li> 
+              </ol>
+            </li>
+            <li><span>Mauris rutrum vestibulum eros.</span></li> 
+          </ul>                
+        </div>
+      </div>
+      <div id="footer">
+        My Sample MVC Application &copy; Copyright 2008
+      </div>        
+    </div>
+  </body>
+</html>

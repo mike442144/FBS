@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head" runat="server">
+	<title>
+		<asp:ContentPlaceHolder runat="server" ID="TitleContent" />
+	</title>
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+	</asp:ContentPlaceHolder>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="description" content="ASP.NET MVC Design Gallery Simple and Fast Layout.  CSS and XHTML." />
+	<meta name="keywords" content="ASP.NET MVC Design Gallery Simple and Fast Layout CSS XHTML" />
+	<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link id="Link1" href="~/Content/Site.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+<body>
+	<div id="header">
+		<div id="navbar" class="topmenu">
+			<ul>
+				<asp:ContentPlaceHolder runat="server" ID="NavBarContent" />
+				<li><span>
+					<%= Html.ActionLink("Home", "Index", "Home")%></span></li>
+				<li><span>
+					<%= Html.ActionLink("About", "About", "Home")%></span></li>
+				<li><span>
+					<% Html.RenderPartial( "LogOnUserControl" ); %></span></li>
+			</ul>
+		</div>
+		<div>
+			<asp:ContentPlaceHolder runat="server" ID="PageLogoContent" />
+			<h1>
+				Simple and Fast, CSS and XHTML</h1>
+			<p id="statusinfo">
+				<asp:ContentPlaceHolder runat="server" ID="PageStatusContent" />
+				<%
+					if( Request.IsAuthenticated )
+					{
+				%>
+				Welcome <b>
+					<%= Html.ActionLink(Html.Encode( Page.User.Identity.Name ), "UserAccount", "Account") %></b>
+				<%
+					}
+					else
+					{
+				%>
+				Anonymous Access
+				<%
+					}
+				%>
+			</p>
+		</div>
+	</div>
+	<div class="colmask rightmenu">
+		<div class="colleft">
+			<div class="col1">
+				<!-- Column 1 start -->
+				<asp:ContentPlaceHolder runat="server" ID="MainContent" />
+				<h2>
+					Donec feugiat dolor vitae eros</h2>
+				<p>
+					Etiam laoreet. Fusce id purus. Proin sit amet justo ac purus facilisis ultricies. Ut tellus odio, ultrices in, mollis id, tincidunt vel, ante. Etiam dapibus felis a ipsum. Donec feugiat dolor vitae eros. Nam mollis interdum massa. Nullam vitae ligula at tortor scelerisque ornare. Ut nunc. Pellentesque justo odio, rhoncus vel, cursus at, pellentesque sed, ligula. Ut a arcu. Duis quis dolor. Sed consequat varius est. Phasellus blandit ornare elit. Cras quis erat. </p>
+				<h2>
+					Suspendisse potenti</h2>
+				<p>
+					Pellentesque justo odio, rhoncus vel, cursus at, pellentesque sed, ligula. Ut a arcu. Duis quis dolor. Sed consequat varius est. Phasellus blandit ornare elit. Cras quis erat. Nam tristique, nisl eu fermentum euismod, purus sem euismod risus, a pulvinar nisi mi sed erat. Suspendisse eros dui, consectetur sed, rhoncus a, sollicitudin ac, mi. Aliquam erat volutpat. Fusce tempus erat.</p>
+				<h2>
+					Sed consequat varius est</h2>
+				<p>
+					Pellentesque justo odio, rhoncus vel, cursus at, pellentesque sed, ligula. Ut a arcu. Duis quis dolor. Sed consequat varius est. Phasellus blandit ornare elit. Cras quis erat. </p>
+									
+				<!-- Column 1 end -->
+			</div>
+			<div class="col2">
+				<!-- Column 2 start -->
+				<asp:ContentPlaceHolder runat="server" ID="RightColumnContent" />
+				<h2>
+					&lt;h2&gt; Item 1</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien ut turpis aliquet vehicula. Nam vitae diam. Aliquam sed nulla. Sed turpis metus, dignissim.</p>				
+				<h3>
+					&lt;h3&gt; Item B</h3>
+				<ul>
+					<li>List 1</li>
+					<li>List 2</li>
+					<li>List 3</li>
+					<li>List 4</li>
+				</ul>
+				<!-- Column 2 end -->
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>
+			Copyright &copy; 2009 Simple and Fast, CSS and XHTML</p>
+	</div>
+</body>
+</html>

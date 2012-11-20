@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Home/Index" title="首页"  description="">
+    <siteMapNode url="~/Home/About" title="企业简介"  description=""/>
+    <siteMapNode url="~/Home/Contact" title="联系我们"  description=""/>
+    <siteMapNode url="~/Jobs/Index" title="招贤纳士"  description=""/>
+    <siteMapNode url="~/News/NewsList" title="企业动态"  description=""/>
+    <siteMapNode url="~/News/News" title="企业动态"  description=""/>
+    <siteMapNode url="~/Product/Index" title="产品介绍"  description=""/>
+    <!--<siteMapNode siteMapFile="WebChild.sitemap">
+    </siteMapNode>-->
+    
+  </siteMapNode>
+ 
+</siteMap>

@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+.introducemaincontent
+{
+    padding-bottom:20px;
+}
+.bigshowbox
+{
+   background:black;
+   max-height:415px;
+   overflow:hidden;
+   margin-top:3px;
+   margin-left:5px;
+   margin-right:5px;
+}
+.bigshowbox_topcontain
+{
+   position:relative;
+   z-index:1;
+}
+.leftteamimgshow
+{
+    float:left;
+	margin-left:10px;
+	margin-top:5px;
+}
+.rightkouhao
+{
+    float:right;
+}
+.rightkouhao table
+{
+    font-size:14px;
+	margin-top:30px;
+	font-family:"幼圆","微软雅黑","黑体";
+}
+.rightkouhao table tr td
+{
+   color:white;
+   font-size:20px;
+   font-weight:bold;
+   height:25px;
+}
+.gonggao
+{
+    position:relative;
+	z-index:2;
+	top:-36px;
+	height:36px;
+	line-height:36px;
+	padding-left:20px;
+	/*margin-left:20px;*/
+	color:white;
+	font-size:13px;
+	font-weight:bold;
+	font-family:"微软雅黑","黑体";
+	
+	background:url(../images/gonggaobg.png) repeat-x;
+	
+}
+.gonggao strong
+{
+   height:36px;
+   line-height:36px;
+   font-size:15px;
+   padding-left:30px;
+   background:url(../images/laba.png) no-repeat left;
+}
+.companyIntroducebox
+{
+    border-radius: 32px;
+	border:1px solid #DCDCDD;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:10px;
+	margin-top:15px;
+	width:988px;
+	background:#F1F0F0;
+}
+.titlebox
+{
+    position:relative;
+	z-index:2;
+}
+.titlebox_title
+{
+    float:left;
+	width:213px;
+	height:50px;
+	line-height:50px;
+	padding-left:40px;
+	margin-top:15px;
+	font-size:20px;
+	color:white;
+	background:#181818 url(../images/titlebg.png) no-repeat;
+	font-family:"黑体";
+	font-weight:bold;
+}
+.titlebox_kouhao
+{
+    margin-top:15px;
+    padding-left:30px;
+	width:705px;
+	float:right;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px solid black;
+	font-family:"微软雅黑","黑体";
+	font-weight:bold;
+	font-size:14px;
+	color:#660000;
+}
+.jiabbianblank8
+{
+    clear:both;
+   overflow:hidden;
+   height:8px;
+   width:988px;
+   margin:0 auto;
+   background:#2b2b2b;
+   position:relative;
+   top:-10px;
+   z-index:1;
+}
+.companyIntroducetext
+{
+   padding:30px 40px;
+}
+.companyIntroducetext
+{
+     text-indent:2em;
+	 line-height:1.8em;
+	 font-size:14px;
+	 color:black;
+	 font-family:"黑体";
+}
+.member
+{
+   margin-left:5px;
+   margin-right:5px;
+   width:988px;
+   border-radius: 32px;
+   border:1px solid #DCDCDD;
+   padding-bottom:10px;
+}
+.member_title
+{
+   margin:0 auto;
+   margin-top:10px;
+   width:950px;
+   text-align:center;
+   
+   font-family:"微软雅黑","黑体";
+   font-size:14px;
+   color:#FFCC33;
+   background:url(../images/baqijljianbianbg.png) repeat-y;/*背景以后用图片*/
+}
+.member_title span
+{
+   height:35px;
+   line-height:35px;
+}
+.memberintrodce
+{
+   margin-top:20px;
+   margin-bottom:20px;
+   margin-left:20px;
+}
+.memberbox
+{
+   float:left;
+   width:320px;
+}
+.memberphoto
+{
+   float:left;
+   width:168px;
+   height:173px;
+}
+.membertext
+{
+   float:left;
+   padding-left:10px;
+   height:173px;
+}
+.name
+{
+    font-family:"幼圆","微软雅黑","黑体";
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	line-height:2em;
+}
+.position
+{
+    font-family:"幼圆","微软雅黑","黑体";
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	line-height:2em;
+}
+.personIntroduce
+{
+}
+.personIntroduce li
+{
+   border-bottom:1px dotted #ccc;
+   font-family:"幼圆","微软雅黑","黑体";
+	font-size:13px;
+	font-weight:bold;
+	color:#999;
+	line-height:1.8em;
+	width:135px!important;
+	width:136px;
+}
+.intrduceblank20
+{
+   clear:both;
+   overflow:hidden;
+   height:20px;
+   width:1000px;
+   margin:0 auto;
+   background:#CCCCCC;
+}
+

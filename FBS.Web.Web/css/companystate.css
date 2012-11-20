@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+.companystatemaincontent
+{
+    padding-bottom:15px;
+}
+.bigshowbox
+{
+    width:988px;
+	margin:0 auto;
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	/*border-radius: 30px;
+    border:1px solid #ccc;	*/
+}
+
+.top_left
+{
+   width:30px;
+   height:27px;
+   border:none;
+   background:url(../images/topleft.png) no-repeat;
+}
+.top_middle
+{
+   height:27px;
+   width:930px;
+   border:none;
+   background:url(../images/topbottombg.png) repeat-x;
+}
+.top_right
+{
+   width:30px;
+   height:27px;
+   border:none;
+   background:url(../images/topright.png) no-repeat;
+}
+.middle_left
+{
+   border:none;
+   background:url(../images/middlebg.png) repeat-y;
+}
+.middle_right
+{
+   border:none;
+   background:url(../images/middlebg.png) repeat-y;
+}
+.bottom_left
+{
+   width:30px;
+   height:27px;
+   border:none;
+   background:url(../images/bottomleft.png) no-repeat;
+}
+.bottom_middle
+{
+   height:27px;
+   width:930px;
+   background:url(../images/topbottombg.png) repeat-x;
+}
+.bottom_right
+{
+   width:30px;
+   height:27px;
+   border:none;
+   background:url(../images/bottomright.png) no-repeat;
+}
+.kouhao
+{
+    width:930px;
+	background:url(../images/companystatebigshow.png) no-repeat 0px 0px black;
+}
+.kouhaoleft
+{
+   float:left;
+}
+.kouhao table
+{
+   float:right;
+   width:400px;
+   margin-top:20px;
+   margin-bottom:20px;
+   margin-right:10px;
+}
+.kouhao table tr td
+{
+   font-size:18px;
+   font-weight:bold;
+   font-family:"微软雅黑","黑体";
+   color:white;
+   padding:5px 5px;
+}
+.kouhao table tr td img
+{
+    border:0;
+}
+.newsbox
+{
+   width:988px;
+   background:#F1F0F0 url(../images/hua.png) no-repeat;
+   margin-left:5px;
+   margin-right:5px;
+   padding-bottom:15px;
+   margin-top:10px;
+   border-radius: 30px;
+   border:1px solid #DBDBDC;
+}
+.sitemap
+{
+   width:900px;
+   height:80px;
+   line-height:80px;
+   margin:0 auto;
+   margin-top:20px;
+   padding-left:20px;
+}
+.sitemap a
+{
+    font-size:16px;
+	font-family:"宋体";
+	font-weight:bold;
+	text-decoration:none;
+	color:#2b2b2b;
+}
+.sitemap a:link
+{
+   
+	text-decoration:none;
+	color:black;
+}
+.sitemap a:visited
+{
+   
+	text-decoration:none;
+	color:#2b2b2b;
+}
+.sitemap a:hover
+{
+	text-decoration:none;
+	color:#999;
+}
+.sitemap a:active
+{
+	text-decoration:none;
+	color:#999;
+}
+.newslistbox
+{
+   width:800px;
+   margin:0 auto;
+  
+}
+.newslist
+{
+   height:40px;
+	line-height:40px;
+   border-bottom:1px dotted #ccc;
+   background:url(../images/liblue.png) no-repeat left 11px;
+}
+.newslist ul
+{
+    padding-left:40px;
+	
+}
+.newstitle
+{
+    float:left;
+    overflow:hidden;
+    width:80%;	
+}
+.newstitle a
+{
+   color:#525151;
+   text-decoration:none;
+}
+.newstitle a:link
+{
+   color:#525151;
+   text-decoration:none;
+}
+.newstitle a:visited
+{
+   color:#525151;
+   text-decoration:none;
+}
+.newstitle a:hover
+{
+   color:#823030;
+   text-decoration:none;
+}
+.newstitle a:active
+{
+   color:#525151;
+   text-decoration:none;
+}
+.newsdate
+{
+    float:right;
+	margin-right:20px;
+}
+.borderbottomnone
+{
+    border-bottom:none;
+}

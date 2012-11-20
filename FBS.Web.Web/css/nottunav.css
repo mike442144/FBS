@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+.navlan
+{
+   width:980px;
+   background: transparent url(../../images/nav_bg.png);
+   height:44px;
+   margin:0 auto;
+   padding-left:20px;
+   border-radius: 5px;
+}
+.navitem
+{
+   float:left;
+   text-align:center;
+   padding-top:10px!important;
+   padding-top:0px;
+   height:44px;
+   _line-height:44px;
+   width:120px;
+   background:url(../../images/nav_whitebg.png) no-repeat -15px top;
+   
+}
+.navitemhover
+{
+   float:left;
+   text-align:center;
+   padding-top:10px!important;
+   padding-top:0px;
+   height:44px;
+   _line-height:44px;
+   width:120px;
+   background:url(../../images/nav_yellowbg.png) no-repeat -15px top;
+   
+}
+.navitemCurrent
+{
+   float:left;
+   text-align:center;
+   padding-top:10px!important;
+   padding-top:0px;
+   height:44px;
+   _line-height:44px;
+   width:120px;
+   background:url(../../images/nav_yellowbg.png) no-repeat -15px top;
+}
+.navitemCurrent a
+{
+   display:block;
+   text-decoration:none;
+   font-size:14px;
+   color:#7D5F5F;
+   font-family:"微软雅黑","黑体";
+   font-weight:bold;
+   height:44px;
+   width:120px;
+   -webkit-box-reflect:below -53px -webkit-gradient(linear,0 0,0 100%,from(transparent),to(#FFD85E));
+}
+.navitem a
+{
+   display:block;
+   text-decoration:none;
+   font-size:14px;
+   color:#7D5F5F;
+   font-family:"微软雅黑","黑体";
+   font-weight:bold;
+   height:44px;
+   width:120px;
+   -webkit-box-reflect:below -53px -webkit-gradient(linear,0 0,0 100%,from(transparent),to(#FFD85E));
+  
+}
+.navitem a:hover
+{
+   
+}
+.navfenge
+{
+   background:url(../../images/nav_fengefu.png) no-repeat;
+   width:4px;
+   height:44px;
+   float:left;
+   border:none;
+}

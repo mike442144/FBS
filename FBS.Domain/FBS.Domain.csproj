@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C32487C-531D-4F91-8D10-6C69873A6A2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FBS.Domain</RootNamespace>
+    <AssemblyName>FBS.Domain</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aggregate\Entity\Account.cs" />
+    <Compile Include="Aggregate\Entity\AdvertiseFilling.cs" />
+    <Compile Include="Aggregate\Entity\Advertisement.cs" />
+    <Compile Include="Aggregate\Entity\AdvertiseObject.cs" />
+    <Compile Include="Aggregate\Entity\AdvertisePage.cs" />
+    <Compile Include="Aggregate\Entity\AggregateRoot.cs" />
+    <Compile Include="Aggregate\Entity\Album.cs" />
+    <Compile Include="Aggregate\Entity\Attachment.cs" />
+    <Compile Include="Aggregate\Entity\BlogAnswer.cs" />
+    <Compile Include="Aggregate\Entity\BlogState.cs" />
+    <Compile Include="Aggregate\Entity\BlogStory.cs" />
+    <Compile Include="Aggregate\Entity\BlogCategoryTree.cs" />
+    <Compile Include="Aggregate\Entity\BlogComment.cs" />
+    <Compile Include="Aggregate\Entity\CategoryBase.cs" />
+    <Compile Include="Aggregate\Entity\Demand.cs" />
+    <Compile Include="Aggregate\Entity\City.cs" />
+    <Compile Include="Aggregate\Entity\Feed.cs" />
+    <Compile Include="Aggregate\Entity\ForbiddenAccount.cs" />
+    <Compile Include="Aggregate\Entity\FormInfo.cs" />
+    <Compile Include="Aggregate\Entity\Forum.cs" />
+    <Compile Include="Aggregate\Entity\ForumMessage.cs" />
+    <Compile Include="Aggregate\Entity\ForumMessageReply.cs" />
+    <Compile Include="Aggregate\Entity\BlogQuestion.cs" />
+    <Compile Include="Aggregate\Entity\Article.cs" />
+    <Compile Include="Aggregate\Entity\Goods.cs" />
+    <Compile Include="Aggregate\Entity\Needs.cs" />
+    <Compile Include="Aggregate\Entity\Province.cs" />
+    <Compile Include="Aggregate\Entity\ShareThread.cs" />
+    <Compile Include="Aggregate\Entity\SheetAnswer.cs" />
+    <Compile Include="Aggregate\Entity\SheetQuestion.cs" />
+    <Compile Include="Aggregate\Entity\ShortMessage.cs" />
+    <Compile Include="Aggregate\Entity\Site.cs" />
+    <Compile Include="Aggregate\Entity\SiteModule.cs" />
+    <Compile Include="Aggregate\Entity\SitePage.cs" />
+    <Compile Include="Aggregate\Entity\Suggest.cs" />
+    <Compile Include="Aggregate\Entity\ThreadRootMessage.cs" />
+    <Compile Include="Aggregate\Entity\TopForumThread.cs" />
+    <Compile Include="Aggregate\Entity\UserFollow.cs" />
+    <Compile Include="Aggregate\Entity\UserFriend.cs" />
+    <Compile Include="Aggregate\Entity\UserProfile.cs" />
+    <Compile Include="Aggregate\Entity\UserProperty.cs" />
+    <Compile Include="Aggregate\Property.cs" />
+    <Compile Include="Aggregate\Entity\ThreadTag.cs" />
+    <Compile Include="Aggregate\ValueObject\AccountMessageVO.cs" />
+    <Compile Include="Aggregate\Entity\BlogStoryCategory.cs" />
+    <Compile Include="Aggregate\Entity\ArticleCategory.cs" />
+    <Compile Include="Aggregate\Entity\BlogQuestionCategory.cs" />
+    <Compile Include="Aggregate\ValueObject\AdvertisementVO.cs" />
+    <Compile Include="Aggregate\ValueObject\CategoryVO.cs" />
+    <Compile Include="Aggregate\ValueObject\BlogStoryState.cs" />
+    <Compile Include="Aggregate\ValueObject\ForumState.cs" />
+    <Compile Include="Aggregate\Entity\ForumThread.cs" />
+    <Compile Include="Aggregate\IAggregateRoot.cs" />
+    <Compile Include="Aggregate\IEntity.cs" />
+    <Compile Include="Aggregate\ValueObject\ForumThreadState.cs" />
+    <Compile Include="Aggregate\ValueObject\MessageVO.cs" />
+    <Compile Include="Aggregate\ValueObject\ArticleVO.cs" />
+    <Compile Include="Aggregate\ValueObject\QuestionState.cs" />
+    <Compile Include="Aggregate\ValueObject\Reward.cs" />
+    <Compile Include="Aggregate\ValueObject\ThreadTagsVO.cs" />
+    <Compile Include="Log\LoggingAspect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryObject\DbQueryProvider.cs" />
+    <Compile Include="QueryObject\Evaluator.cs" />
+    <Compile Include="QueryObject\ObjectReader.cs" />
+    <Compile Include="QueryObject\QueryProvider.cs" />
+    <Compile Include="Repository\IAccountRepository.cs" />
+    <Compile Include="Repository\IBlogQuestionRepository.cs" />
+    <Compile Include="Repository\IBlogStoryRepository.cs" />
+    <Compile Include="Repository\IFeedRepository.cs" />
+    <Compile Include="Repository\IForumMessageRepository.cs" />
+    <Compile Include="Repository\IForumsRepository.cs" />
+    <Compile Include="Repository\IForumThreadRepository.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="QueryObject\IQuery.cs" />
+    <Compile Include="QueryObject\Query.cs" />
+    <Compile Include="Repository\ISiteRepository.cs" />
+    <Compile Include="Repository\IXmlRepository.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
+    <Compile Include="Security\Authority.cs" />
+    <Compile Include="Security\SecurityAspect.cs" />
+    <Compile Include="Security\Task.cs" />
+    <Compile Include="Specifications\ISpecification.cs" />
+    <Compile Include="Specifications\Specification.cs" />
+    <Compile Include="Specifications\SpecificationBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FBS.EntLibHelper\FBS.EntLibHelper.csproj">
+      <Project>{2855B49F-A9A7-4D54-ADF1-8F2C5B0455C5}</Project>
+      <Name>FBS.EntLibHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Factory\FBS.Factory.csproj">
+      <Project>{AD284018-6061-47B3-8A9C-0E34FC938B6B}</Project>
+      <Name>FBS.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Utils\FBS.Utils.csproj">
+      <Project>{2398954B-ABDD-42F7-9DCF-364024C16300}</Project>
+      <Name>FBS.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Rules\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

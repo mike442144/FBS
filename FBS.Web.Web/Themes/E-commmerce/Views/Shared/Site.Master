@@ -1,0 +1,123 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><%= Html.Encode(ViewData["Title"]) %></title>
+    <script src="../../Scripts/jquery-1.2.6.js"></script>
+    <link href="../../Content/Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="page">
+        <div id="pageHeader">
+            <ul class="menu">
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="">Sign In</a></li>
+            </ul>
+            <div class="logo">
+            
+            </div>
+            <div class="searchbox">
+                Search : <input type="text" class="searchbox_textbox" /><input type="button" class="searchbox_btn" />
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="" class="active">Computer</a></li>
+                <li><a href="">Electronic</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">My Cart</a></li>
+            </ul>
+        </div>
+        <div id="pageContent">
+            <div class="b">
+                <div class="left">
+                    <div class="submenu">
+                        <h2>Computer</h2>
+                        <ul class="f12">
+                            <li><a href="">Laptops</a></li>
+                            <li><a href="">Laptop Accessories</a></li>
+                            <li><a href="">Desktop Computers</a></li>
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">Monitors</a></li>
+                            <li><a href="">Printers</a></li>
+                            <li><a href="">Drives & Storage</a></li>
+                            <li><a href="">Networking</a></li>
+                            <li><a href="">Software</a></li>
+                            <li><a href="">Computer Upgrades</a></li>
+                            <li><a href="">Computer Speakers</a></li>
+                            <li><a href="">Mice & Keyboards</a></li>
+                            <li><a href="">Webcams</a></li>
+                            <li><a href="">Computer Accessories</a></li>
+                            <li><a href="">Media</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Scanners</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+        </div><div class="pageContentFooter"></div>
+        <div class="block margin_t_10">
+            <div class="h"></div>
+            <div class="b">
+                <div class="newsletter margin_l_10">
+                    <div class="cGray bold">Join Newsletter</div>
+                    <p class="f11">
+                        The weekly newsletter to help you learn more about technology and promotions.
+                        <input type="text" class="newsletter_text" /><input type="button" value="Subscribe" class="newsletter_btn"  />
+                    </p>
+                </div>
+                <div class="line"></div>
+                <div class="fLeft w180 margin_l_10">
+                    <div class="cGray bold">Product Categories</div>
+                    <ul class="list">
+                        <li><a href="">Computers</a></li>
+                        <li><a href="">Electronics</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Others</a></li>
+                    </ul>
+                </div>
+                <div class="fLeft w180">
+                    <div class="cGray bold">Customer Service</div>
+                    <ul class="list">
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Online Returns </a></li>
+                    </ul>
+                </div>
+                <div class="fLeft w180">
+                    <div class="cGray bold">Shopping Policy</div>
+                    <ul class="list">
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="fLeft w180">
+                    <div class="cGray bold">Your Order</div>
+                    <ul class="list">
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Shipping & Delivery</a></li>
+                        <li><a href="">Store Pickup</a></li>
+                        <li><a href="">Find a Rebate</a></li>
+                        <li><a href="">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f"></div>
+        </div>
+        <div id="pageFooter">
+            © 2009 MVC E-commerce. All Rights Reserved. Dev by <a href="http://www.protienshow.com/" target="_blank">Protienshow</a>
+        </div>
+    </div>
+</body>
+</html>

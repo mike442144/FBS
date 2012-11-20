@@ -1,0 +1,421 @@
+/******************
+HTML Tags
+******************/
+
+body {
+	font-family:"Courier New", Courier, monospace;
+	color:#666666;
+	margin:10px 0px 20px 0px;
+	font-size:.95em;
+	background: url(bg-main.jpg) repeat-x;
+	}
+
+/******************
+FORM STYLES
+******************/
+
+#content form {
+	margin:20px 0px;
+	padding:0px 0px 0px 0px;
+	}
+
+#content fieldset {
+	margin:10px 0px 20px 0px;
+	padding:0px 20px 20px 20px;
+	border:6px solid #E6E6E6;
+	}
+
+/* a nested fieldset */
+#content fieldset fieldset {
+	margin:15px 0px 5px 0px;
+	padding:0px 5px 5px 5px;
+	}
+
+#content legend {
+	margin-bottom:0px;
+	padding:0px 10px 5px 5px;
+	color:#666666;
+	font-weight:bold;
+	}
+
+/* a nested legend */
+#content fieldset fieldset legend {
+	margin-bottom:0px;
+	padding:0px;
+	font-weight:bold;
+	}
+
+#content label {
+	display:block;
+	padding-top:8px;
+	}
+
+/******************
+SIDE SEARCH FORM
+******************/
+
+#side form {
+	margin:10px 0px;
+	padding:0px;
+	}
+	
+#side fieldset {
+	margin:0px;
+	padding:0px;
+	border:none;
+	}
+	
+#side legend {
+	display:none;
+	}
+
+#side label {
+	display:none;
+	}
+	
+#side input {
+	display:block;
+	}
+
+.button-search {
+	margin-top:4px;
+	}
+	
+.searchbox {
+	}
+	
+/******************
+LINKS
+******************/
+
+/* LINK VISTED HOVER ACTIVE selectors must remain in this order to work */
+a:link {
+	color:#990033;
+	text-decoration:underline;
+	}
+
+a:visited {
+	color:#660000;
+	text-decoration:underline;
+	}
+
+a:hover {
+	color:#FF9900;
+	text-decoration:none;
+	}
+
+a:active {
+	color:#FF6600;
+	text-decoration:underline overline;
+	}
+
+/* LINK VISTED HOVER ACTIVE selectors must remain in this order to work */
+#mainnav a:link {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+
+#mainnav a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+
+#mainnav a:hover {
+	color:#FEFFBE;
+	text-decoration:underline;
+	}
+
+#mainnav a:active {
+	color:#FFDDDD;
+	text-decoration:underline overline;
+	}
+
+/* LINK VISTED HOVER ACTIVE selectors must remain in this order to work */
+#breadcrumbs a:link, #breadcrumbs a:visited  {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+
+#breadcrumbs a:hover {
+	color:#990000;
+	text-decoration:underline;
+	}
+
+#breadcrumbs a:active {
+	color:#FF6600;
+	text-decoration:underline overline;
+	}
+
+/* LINK VISTED HOVER ACTIVE selectors must remain in this order to work */
+#side ul a:link, #side ul a:visited  {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+
+#side ul a:hover {
+	color:#990000;
+	text-decoration:underline;
+	}
+
+#side ul a:active {
+	color:#FF6600;
+	text-decoration:underline overline;
+	}
+/******************
+HEADINGS
+******************/
+
+h1 {
+	font-size:1.8em;
+	margin:0px 0px 10px 0px
+	}
+
+h2 {
+	font-size:1.1em;
+	}
+
+h3 {
+	font-size:1em;
+	}
+	
+h4 {
+	font-size:.9em;
+	}
+	
+h5 {
+	font-size:.8em;
+	}
+	
+h6 {
+	font-size:.75em;
+	}
+
+#three-column-container h2 {
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	}
+
+/******************
+Layout Divs
+******************/
+
+#sitename {
+	font-size:2.3em;
+	margin:0px;
+	color:#FFFFFF;
+	padding:18px 0px 0px 30px;
+	}
+
+#sitename a {
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+#header-container {
+	width:760px;
+	height:144px;
+	margin-left:auto;
+	margin-right:auto;
+	background: #990033 url(bg-header.jpg) no-repeat;
+	}
+
+#mainnav {
+	padding:19px 0px 0px 33px
+	}
+
+#breadcrumbs {
+	color:#666666;
+	padding:18px 0px 0px 33px;
+	font-size:.8em;
+	}
+
+#content-container {
+	width:740px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px 0px 10px 20px;
+	}
+
+#side {
+	width:170px;
+	float:left;
+	font-size:.8em;
+	margin-bottom:18px;
+	}
+
+#content {
+	width:510px;
+	margin-left:200px;
+	}
+
+#three-column-container {
+	width:100%;
+	margin:10px 0px;
+	}
+
+#three-column-left {
+	float:left;
+	width:30%
+	}
+
+#three-column-right {
+	float:right;
+	width:30%
+	}
+
+#three-column-middle {
+	width:30%;
+	margin:0px 32% 0px 35%
+	}
+
+#footer {
+	clear:both;
+	width:535px;
+	height:55px;
+	min-height:55px;
+	margin-right:auto;
+	margin-left:auto;
+	padding:20px 0px 10px 225px;
+	background: #990000 url(bg-footer.jpg) no-repeat center top;
+	color:#FFFFFF;
+	font-size:.75em;
+	}
+
+/******************
+MAIN MENU ITEMS
+******************/
+
+#mainnav ul {
+	margin:0px;
+	padding:0px;
+	}
+
+#mainnav li {
+	padding:0px;
+	list-style:none;
+	display:inline;
+	padding:0px 8px 0px 0px;
+	}
+
+/******************
+SIDE LIST MENUS
+******************/
+
+#side ul {
+	margin:0px;
+	padding:0px;
+	}
+
+#side li {
+	padding:0px;
+	list-style:none;
+	padding:6px 0px 6px 10px;
+	border-bottom:2px solid #FFFFFF;
+	background:#F7941C;
+	font-weight:bold;
+	}
+
+/******************
+LISTS - IN THE CONTENT DIV
+******************/
+
+#content ul.list, #content ul.link-list-vertical {
+	margin:0px 0px 15px 15px;
+	padding:0px;
+	}
+
+#content ul.list li {
+	list-style:none;
+	padding:2px 0px 2px 16px;
+	margin:0px;
+	background: url(bullet.gif) no-repeat;
+	background-position: 0 .1em;
+	}
+
+#content ul.link-list-vertical li {
+	list-style:none;
+	margin:0px;
+	padding:2px 0px;
+	}
+
+#content ul.link-list-vertical li a:link {
+	padding:2px 0px 2px 16px;
+	background: url(bullet-link.gif) no-repeat;
+	background-position: 0 .1em;
+	}
+
+#content ul.link-list-vertical li a:visited {
+	padding:2px 0px 2px 16px;
+	background: url(bullet-link-visited.gif) no-repeat;
+	background-position: 0 .1em;
+	}
+
+#content ul.link-list-vertical li a:hover {
+	padding:2px 0px 2px 16px;
+	background: url(bullet-link-hover.gif) no-repeat;
+	background-position: 0 .1em;
+	}
+
+#content ul.link-list-vertical li a:active {
+	padding:2px 0px 2px 16px;
+	background: url(bullet-link-active.gif) no-repeat;
+	background-position: 0 .1em;
+	}
+
+/******************
+TABLE STYLES
+******************/
+
+.table {
+	width:100%;
+	background:#E6E6E6;
+	border:6px solid #E6E6E6;
+	border-collapse:collapse;
+	}
+	
+.table td {
+	padding:10px 2px;
+	color:#000000;
+	}
+
+thead th, tfoot th{
+	padding:6px 2px;
+	background-color:#757575;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	font-weight:bold;
+	}
+
+.table-row-1 td {
+	background:#FFFFFF;
+	}
+
+.table-row-2 td {
+	}
+
+/******************
+CLASSES
+******************/
+
+.none {
+	display:none;
+	}
+	
+.clear {
+	clear:both;
+	}
+
+.button-big {
+	margin-top:8px;
+	}
+
+img.photobig, img.photosmall {
+	border:10px solid #CECECE;
+	}
+
+img.photosmall {
+	margin-right:25px;
+	margin-bottom:8px;
+	float: left;
+	}

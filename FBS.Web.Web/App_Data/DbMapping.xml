@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<map>
+  <Entity Id="Article">
+    <Table Name="fbs_CMSArticle"></Table>
+    <Column Member="Id">ArticleID</Column>
+    <Column Member="CategoryID">CategoryID</Column>
+    <Column>Body</Column>
+    <Column Member="CreationDate">CreatedOn</Column>
+    <Column>UserID</Column>
+    <Column>UserName</Column>
+    <Column>CategoryID</Column>
+    <Column>SourceUrl</Column>
+    <Column>SourceSite</Column>
+    <Column Member="ImgName">ImgName</Column>
+    <Column Member="ClickCount">ClickCount</Column>
+    <Column Member="CategoryName">CategoryName</Column>
+  </Entity>
+  <Entity Id="Account">
+    <Table Name="fbs_Account"></Table>
+    <Column Member="Id">AccountID</Column>
+    <Column Member="Email">Email</Column>
+    <Column Member="Roles">Role</Column>
+    <Column Member="UserName">Name</Column>
+    <Column Member="Points">Points</Column>
+  </Entity>
+  <Entity Id="ForumThread">
+    <Table Name="fbs_ForumThread"></Table>
+    <Column Member="Id">ThreadID</Column>
+    <Column Member="ForumID">ForumID</Column>
+    <Column Member="CreationDate">CreationDate</Column>
+    <Column Member="MessageCount">MessageCount</Column>
+    <Column Member="ModifiedDate">ModifiedDate</Column>
+    
+  </Entity>
+
+  <Entity Id="Forum">
+    <Table Name="fbs_Forum"></Table>
+    <Column Member="Id">ForumID</Column>
+    <Column Member="Priority">Priority</Column>
+  </Entity>
+
+  <Entity Id="ForumMessage">
+    <Table Name="fbs_Message"></Table>
+    <Column Member="Id">MessageID</Column>
+    <Column Member="CreationDate">CreationDate</Column>
+    <Column Member="ForumThreadID">ThreadID</Column>
+    <Column Member="Forum">ForumID</Column>
+    
+  </Entity>
+  <Entity Id="ForumMessageReply">
+    <Table Name="fbs_Message"></Table>
+    <Column Member="Id">MessageID</Column>
+    <Column Member="CreationDate">CreationDate</Column>
+    <Column Member="ForumThreadID">ThreadID</Column>
+    <Column Member="ParentMessageID">ParentMessageID</Column>
+    <Column Member="Forum">ForumID</Column>
+    
+  </Entity>
+  <Entity Id="ThreadRootMessage">
+    <Table Name="fbs_Message"></Table>
+    <Column Member="Id">MessageID</Column>
+    <Column Member="Forum">ForumID</Column>
+  </Entity>
+  <Entity Id="BlogStory">
+    <Table Name="fbs_Story"></Table>
+    <Column Member="Id">StoryID</Column>
+    <Column Member="ClickCount">ClickCount</Column>
+    <Column Member="CategoryID">CategoryID</Column>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="CreationDate">CreatedOn</Column>
+    <Column Member="ImgName">ImgName</Column>
+    <Column Member="EnglishTitle">EnglishTitle</Column>
+  </Entity>
+  <Entity Id="ArticleCategory">
+    <Table Name="fbs_CMSCategory"></Table>
+    <Column Member="Id">CategoryID</Column>
+    <Column Member="Name">CategoryName</Column>
+    <Column Member="Deepth">Deepth</Column>
+    <Column Member="Priority">Priority</Column>
+  </Entity>
+  <Entity Id="BlogComment">
+    <Table Name="fbs_Comment"></Table>
+    <Column Member="Id">CommentID</Column>
+    <Column Member="TargetId">TargetID</Column>
+    <Column Member="CreationDate">CreatedOn</Column>
+  </Entity>
+  <Entity Id="BlogStoryCategory">
+    <Table Name="fbs_BlogCategory"></Table>
+    <Column Member="Id">BlogCategoryID</Column>
+    <Column Member="CategoryName">CategoryName</Column>
+    <Column Member="OrderPriority">OrderPriority</Column>
+    <Column Member="EnglishName">EnglishName</Column>
+  </Entity>
+  <Entity Id="BlogQuestionCategory">
+    <Table Name="fbs_BlogQuestionCategory"></Table>
+    <Column Member="Id">QuestionCategoryID</Column>
+  </Entity>
+  <Entity Id="BlogQuestion">
+    <Table Name="fbs_BlogQuestion"></Table>
+    <Column Member="Id">QuestionID</Column>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="CategoryID">CategoryID</Column>
+    <Column Member="BestAnswerID">BestAnswerID</Column>
+    <Column Member="CreationDate">CreationDate</Column>
+    <Column Member="RewardPoints">RewardPoints</Column>
+  </Entity>
+  <Entity Id="BlogAnswer">
+    <Table Name="fbs_BlogAnswer"></Table>
+    <Column Member="Id">AnswerID</Column>
+    <Column Member="QuestionId">QuestionID</Column>
+    <Column Member="CreationDate">CreationDate</Column>
+  </Entity>
+  <Entity Id="UserFriend">
+    <Table Name="fbs_UserFriend"></Table>
+    <Column Member="Id">UserID</Column>
+    <Column Member="CreatedOn">CreatedOn</Column>
+  </Entity>
+  <Entity Id="ShortMessage">
+    <Table Name="fbs_ShortMessage"></Table>
+    <Column Member="Id">ShortMessageID</Column>
+    <Column Member="ReciverID">SendToID</Column>
+    <Column Member="HasRead">HasRead</Column>
+    <Column Member="SentOn">SentOn</Column>
+  </Entity>
+  <Entity Id="Feed">
+    <Table Name="fbs_Feed"></Table>
+    <Column Member="Id">FeedID</Column>
+    <Column Member="CreatedOn">CreatedOn</Column>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="FeedType">FeedType</Column>
+    
+  </Entity>
+  <Entity Id="UserProperty">
+    <Table Name="fbs_UserProperty"></Table>
+    <Column Member="Id">ID</Column>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="Type">UserType</Column>
+    <Column Member="FollowersCount">FollowersCount</Column>
+    <Column Member="FolloweesCount">FolloweesCount</Column>
+    <Column Member="Display">Display</Column>
+    <Column Member="BlogName">BlogName</Column>
+  </Entity>
+
+  <Entity Id="UserFollow">
+    <Table Name="fbs_UserFollow"></Table>
+    <Column Member="Id">ID</Column>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="Followee">FolloweeID</Column>
+  </Entity>
+  <Entity Id="FormInfo">
+    <Table Name="fbs_FormInfo"></Table>
+    <Column Member="Id">FormID</Column>
+    <Column Member="Title">Title</Column>
+    <Column Member="Display">Display</Column>
+  </Entity>
+
+  <Entity Id="UserProfile">
+    <Table Name="fbs_UserProfile"></Table>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="Id">UserID</Column>
+    <Column Member="City">City</Column>
+    <Column Member="Province">Province</Column>
+  </Entity>
+  
+  <Entity Id="Advertisement">
+    <Table Name="fbs_Advertisement"></Table>
+    <Column Member="Id">AdvertisementID</Column>
+    
+  </Entity>
+  <Entity Id="AdvertisePage">
+    <Table Name="fbs_AdvertisePage"></Table>
+    <Column Member="PageID">PageID</Column>
+    <Column Member="PageDescription">PageDescription</Column>
+  </Entity>
+  
+  <Entity Id="AdvertiseFilling">
+    <Table Name="fbs_AdvertiseFilling"></Table>
+    <Column Member="ID">ID</Column>
+    <Column Member="PageID">PageID</Column>
+    <Column Member="PositionName">PositionName</Column>
+    
+  </Entity>
+
+  <Entity Id="SheetQuestion">
+    <Table Name="fbs_SheetQuestion"></Table>
+    <Column Member="Id">QuestionID</Column>
+    <Column Member="FormID">FormID</Column>
+  </Entity>
+  <Entity Id="SheetAnswer">
+    <Table Name="fbs_SheetAnswer"></Table>
+    <Column Member="Id">AnswerID</Column>
+    <Column Member="QuestionID">QuestionID</Column>
+    <Column Member="AnswerName">AnswerName</Column>
+    <Column Member="FormID">FormID</Column>
+  </Entity>
+
+  <Entity Id="Goods">
+    <Table Name="fbs_Goods"></Table>
+    <Column Member="Id">GoodsID</Column>
+
+  </Entity>
+
+
+  <Entity Id="Demand">
+    <Table Name="fbs_Demand"></Table>
+    <Column Member="Id">DemandID</Column>
+
+  </Entity>
+
+  <Entity Id="Needs">
+    <Table Name="fbs_Needs"></Table>
+    <Column Member="Id">NeedsID</Column>
+
+  </Entity>
+
+  <Entity Id="Suggest">
+    <Table Name="fbs_Suggest"></Table>
+    <Column Member="Id">SuggestID</Column>
+    <Column Member="CreationDate">CreationDate</Column>
+    <Column Member="Type">Type</Column>
+  </Entity>
+
+  <Entity Id="ShareThread">
+    <Table Name="fbs_ShareThread"></Table>
+    <Column Member="Id">VideoID</Column>
+    <Column Member="ShareTime">ShareTime</Column>
+    <Column Member="PlayUrl">PlayUrl</Column>
+    <Column Member="Source">Source</Column>
+  </Entity>
+
+  <Entity Id="Album">
+    <Table Name="fbs_Album"></Table>
+    <Column Member="Id">AlbumID</Column>
+    <Column Member="UserID">UserID</Column>
+    <Column Member="Time">Time</Column>
+    <Column Member="PhotoName">PhotoName</Column>
+  </Entity>
+
+  <Entity Id="TopForumThread">
+    <Table Name="fbs_TopForumThread"></Table>
+    <Column Member="Id">ID</Column>
+    <Column Member="TopForumID">TopForumID</Column>
+    <Column Member="CreatTime">CreatTime</Column>
+    <Column Member="TopForumThreadID">TopForumThreadID</Column>
+  </Entity>
+  <Entity Id="Site">
+    <Table Name="fbs_SiteInfo"></Table>
+    <Column Member="Id">SiteID</Column>
+  </Entity>
+  <Entity Id="ForbiddenAccount">
+    <Table Name="fbs_ForbiddenAccount"></Table>
+    <Column Member="Id">ForbiddenID</Column>
+    <Column Member="AccountID">AccountID</Column>
+  </Entity>
+</map>
