@@ -5,13 +5,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Index</title>
+<link media="screen" rel="Stylesheet" href="../../Scripts/dojo-release-1.8.1/dijit/themes/soria/soria.css" />
+<!--<link media="screen" rel="Stylesheet" href="../../Scripts/dojo-release-1.8.1/dijit/themes/soria/Dialog.css" />-->
+<script src="../../Scripts/dojo-release-1.8.1/dojo/dojo.js" type="text/javascript"></script>
+<!--<script src="../../Scripts/dojo-release-1.8.1/dijit/dijit-all.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+    require(["dijit/form/Button", "dojo/domReady!"], function (Button) {
+        var button = new Button({
+            label: "下一步",
+            onClick: function () {
+                top.location = "/Install/EnvironmentCheck";
+            }
+        }, "nextBtn");
+        button.startup();
+    });
+    require(["dijit/layout/BorderContainer"]);
+</script>
 </head>
-<body>
+<body class="soria">
 
     <div>
     <h1><%="License："+Model.Info%></h1>
     </div>
-    <%=Html.ActionLink("下一步", "EnvironmentCheck")%>
-
+    <button id="nextBtn"></button>
 </body>
 </html>

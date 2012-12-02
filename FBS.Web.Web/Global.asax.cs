@@ -27,20 +27,29 @@ namespace ITsds.Web.News
                "News/News/{ArticleID}", // URL with parameters
                new { controller = "News", action = "News" } // Parameter defaults
            );
-            routes.MapRoute("install", "{controller}/{action}/{step}", new { controller="Install",action="Index"});
+            routes.MapRoute("install", "{controller}/", new { controller="Install",action="Index"});
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
-
+            routes.MapRoute(
+                "Articles",
+                "Articles/",
+                new { controller="Article",action = "Index"}
+            );
+            routes.MapRoute(
+                "Article",
+                "a/{id}",
+                new { controller="Article",action="Details" }
+            );
         }
 
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
             System.Web.Mvc.ViewEngines.Engines.Add(new WebFormThemeViewEngine());
-            this.Application.Add("themeName", "Abrasive");
+            this.Application.Add("themeName", "Default");
             RegisterRoutes(RouteTable.Routes);
         }
     }

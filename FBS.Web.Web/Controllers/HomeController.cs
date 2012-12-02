@@ -13,6 +13,7 @@ namespace ITsds.Web.News.Controllers
 
         public ActionResult Index()
         {
+            
             return View();
         }
 

@@ -31,8 +31,8 @@ namespace FBS.Service.ActionModels
         public string DbPsd { get; set; }
         [DisplayName("数据库地址")]
         public string DbAddr { get; set; }
-        [DisplayName("数据库表前缀")]
-        public string DbTablePrefix { get; set; }
+        //[DisplayName("数据库表前缀")]
+        //public string DbTablePrefix { get; set; }
     }
 
     [DisplayName("配置网站信息")]

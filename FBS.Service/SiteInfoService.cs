@@ -31,7 +31,6 @@ namespace FBS.Service
             }
             else
                 throw new Exception("网站已安装，请勿重复操作！");
-            
         }
 
         /// <summary>

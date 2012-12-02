@@ -5,8 +5,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>SiteCnf</title>
+    <link media="screen" rel="Stylesheet" href="../../Scripts/dojo-release-1.8.1/dijit/themes/soria/soria.css" />
+    <script src="../../Scripts/dojo-release-1.8.1/dojo/dojo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        require(["dijit/form/Button", "dijit/form/TextBox", "dijit/form/SimpleTextarea", "dijit/form/ValidationTextBox","dojo/parser", "dojo/domReady!"], function (Button, TextBox, SimpleTextarea, ValidationTextBox) {
+            var button = new Button({
+                label: "完成",
+                onClick: function () {
+                    siteform.submit();
+                }
+            }, "submitBtn");
+            button.startup();
+
+            var siteName = new TextBox({
+                placeHolder: "名称",
+                name:"SiteName"
+            }, "SiteName");
+            siteName.startup();
+
+            var siteDesc = new SimpleTextarea({
+                rows: 5,
+                cols: 30,
+                value: "简单介绍一下您的网站...",
+                name:"SiteDesc"
+            }, "SiteDesc");
+            siteDesc.startup();
+
+            var siteUrl = new TextBox({
+                placeHolder: "域名",
+                name:"SiteUrl"
+            }, "SiteUrl");
+            siteUrl.startup();
+
+            var email = new ValidationTextBox({
+                required: true,
+                regExp:'/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/',
+                invalidMessage:"Invalid email format",
+                name:"FounderEmail"
+            }, "FounderEmail");
+            email.startup();
+
+        });
+</script>
 </head>
-<body>
+<body class="soria">
     <div>
     <%using (Html.BeginForm("SiteCnf", "Install", FormMethod.Post, new { @id = "siteform" }))
       {
@@ -25,7 +67,7 @@
             
           </div>
           <div>
-            <%=Html.TextBoxFor(model => model.SiteDesc)%>
+            <%=Html.TextAreaFor(model => model.SiteDesc)%>
             <%=Html.ValidationMessageFor(model => model.SiteDesc)%>
             
           </div>
@@ -62,12 +104,12 @@
             
           </div>
           <div>
-            <%=Html.PasswordFor(model => model.FounderEmail)%>
+            <%=Html.TextBoxFor(model => model.FounderEmail)%>
             <%=Html.ValidationMessageFor(model => model.FounderEmail)%>
           </div>
           
           <div>
-            <input type="submit" value="下一步" />
+            <button id="submitBtn"></button>
           </div>
           <% 
           

@@ -228,3 +228,9 @@ System.NullReferenceException: 未将对象引用设置到对象的实例。
 2011-12-24 11:53:43,885 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
 2011-12-24 11:53:43,885 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - uid = 0a4bdf77-150c-4ca7-8863-7395cb8bc91b
 2011-12-24 11:53:43,885 [5] INFO  Aviator.Utils.LoggerHelper [(null)] - )
+2012-12-02 17:11:44,420 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2012-12-02 17:11:44,471 [15] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2012-12-02 17:11:44,471 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-02 17:22:43,140 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2012-12-02 17:22:43,155 [5] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2012-12-02 17:22:43,155 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )

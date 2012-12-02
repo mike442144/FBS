@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Server>
+  <EmailServer Name="myserver">
+    <Property Name="Priority">4</Property>
+    <Property Name="MailType">SMTP</Property>
+    <Property Name="MailServerAddress">smtp.0513jl.com</Property>
+    <Property Name="MailPort">25</Property>
+    <Property Name="MailUser">thundernet</Property>
+    <Property Name="MailPassord">84424588</Property>
+    <Property Name="MailAddress">thundernet@0513jl.com</Property>
+    <Property Name="MailServer">thundernet</Property>
+    <Property Name="SSLSupport">true</Property>
+    <Property Name="MailServerState">on</Property>
+  </EmailServer>
+  <EmailServer Name="myserver1">
+    <Property Name="Priority">2</Property>
+    <Property Name="MailType">SMTP</Property>
+    <Property Name="MailServerAddress">smtp.163.com</Property>
+    <Property Name="MailPort">25</Property>
+    <Property Name="MailUser">thundernet</Property>
+    <Property Name="MailPassord">thundernet</Property>
+    <Property Name="MailAddress">thundernet.163.com</Property>
+    <Property Name="MailServer">thundernet</Property>
+    <Property Name="SSLSupport">true</Property>
+    <Property Name="MailServerState">on</Property>
+  </EmailServer>
+</Server>

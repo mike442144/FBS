@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<ACL>
+  <Tasks>
+    <Task Name="ModifyItem" Description="修改" />
+    <Task Name="RemoveItem" Description="删除" />
+    <Task Name="ListForwardItem" Description="获取列表" />
+    <Task Name="ListItem" Description="列表" />
+    <Task Name="AddItem" Description="增加列表" />
+    <Task Name="ManageSystem" Description="系统管理" />
+  </Tasks>
+  <Roles>
+    <Role Name="Member">
+      <Task Name="AddItem" />
+      <Task Name="ModifyItem" />
+      <Task Name="RemoveItem" />
+      <Task Name="ListForwardItem" />
+    </Role>
+    <Role Name="Guest">
+      <Task Name="ListItem" />
+    </Role>
+    <Role Name="Admin">
+      <Task Name="ModifyItem" />
+      <Task Name="RemoveItem" />
+      <Task Name="ListForwardItem" />
+      <Task Name="ListItem" />
+      <Task Name="AddItem" />
+      <Task Name="ManageSystem" />
+    </Role>
+  </Roles>
+</ACL>

@@ -82,7 +82,8 @@ namespace ITsds.Web.News.ViewEngine
             {
                 return new ViewEngineResult(this.CreateView(controllerContext, viewPath, masterPath), this);
             }
-            return new ViewEngineResult(strArray.Union<string>(strArray2));
+            var result = strArray2==null ? strArray : strArray.Union<string>(strArray2);
+            return new ViewEngineResult(result);
         }
 
         public override ViewEngineResult FindPartialView(ControllerContext controllerContext, string partialViewName, bool useCache)

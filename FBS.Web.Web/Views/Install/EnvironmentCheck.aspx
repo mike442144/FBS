@@ -5,12 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>EnvironmentCheck</title>
+    <link media="screen" rel="Stylesheet" href="../../Scripts/dojo-release-1.8.1/dijit/themes/soria/soria.css" />
+    <script src="../../Scripts/dojo-release-1.8.1/dojo/dojo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        require(["dijit/form/Button", "dojo/domReady!"], function (Button) {
+            var button = new Button({
+                label: "下一步",
+                onClick: function () {
+                    top.location = "/Install/DbCnf";
+                }
+            }, "nextBtn");
+            button.startup();
+        });
+</script>
 </head>
-<body>
+<body class="soria">
     <div>
     <h1><%="系统版本："+Model.OSVersion %></h1>
     <h2><%=".Net运行时版本："+Model.RunTimeVersion %></h2>
     </div>
-    <%=Html.ActionLink("下一步", "DbCnf")%>
+    <button id="nextBtn"></button>
 </body>
 </html>

@@ -59,29 +59,25 @@ namespace FBS.App
         /// <returns></returns>
         public void SetDbCnf(StepOfDbCnf sodc)
         {
-            ConnectionStringSettings setting=null;
+            var cnf = WebConfigurationManager.OpenWebConfiguration("~");//打开配置文件
+            if (cnf == null) throw new NullReferenceException("未能正常读取配置文件,web.config");
+            ConnectionStringsSection section = cnf.ConnectionStrings;//配置连接字符串节点
+            if (section == null)
+                throw new ConfigurationErrorsException("web.config中不存在connectionstrings节点,请检查文件是否已经损坏，或被恶意篡改！");
+            var setting = new ConnectionStringSettings();
+            setting.ConnectionString = "Data Source=" + sodc.DbAddr + ";Initial Catalog=" + sodc.DbName + ";User Id=" + sodc.DbUser + ";Password=" + sodc.DbPsd;
+            setting.Name = "sqlstrconn";
+            setting.ProviderName = "System.Data.SqlClient";
+            section.ConnectionStrings.Clear();
+            section.ConnectionStrings.Add(setting);
             try
             {
-                Configuration cnf = WebConfigurationManager.OpenWebConfiguration("~");//打开配置文件
-                
-                ConnectionStringsSection section = cnf.ConnectionStrings;//配置连接字符串节点
-                if (section == null)
-                    throw new ConfigurationErrorsException("web.config中不存在connectionstrings节点,请检查文件是否已经损坏，或被恶意篡改！");
-                setting = new ConnectionStringSettings();
-                
-                setting.ConnectionString = "Data Source=" + sodc.DbAddr + ";Initial Catalog=" + sodc.DbName + ";User Id=" + sodc.DbUser + ";Password=" + sodc.DbPsd;
-                setting.Name = "sqlstrconn";
-                setting.ProviderName = "System.Data.SqlClient";
-                section.ConnectionStrings.Clear();
-                section.ConnectionStrings.Add(setting);
-                
                 cnf.Save();//保存
             }
-            catch (ConfigurationErrorsException error)
-            {
-                throw new ConfigurationErrorsException("web.config不存在或损坏，请检查！",error);
+            catch 
+            { 
+                throw; 
             }
-
         }
 
         /// <summary>
