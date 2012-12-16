@@ -1,12 +1,6 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<FBS.Service.ActionModels.StepOfSiteCnf>" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Install.Master" Inherits="System.Web.Mvc.ViewPage<FBS.Service.ActionModels.StepOfSiteCnf>" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-    <title>SiteCnf</title>
-    <link media="screen" rel="Stylesheet" href="../../Scripts/dojo-release-1.8.1/dijit/themes/soria/soria.css" />
-    <script src="../../Scripts/dojo-release-1.8.1/dojo/dojo.js" type="text/javascript"></script>
+<asp:Content ContentPlaceHolderID="Head" runat="server">
     <script type="text/javascript">
         require(["dijit/form/Button", "dijit/form/TextBox", "dijit/form/SimpleTextarea", "dijit/form/ValidationTextBox","dojo/parser", "dojo/domReady!"], function (Button, TextBox, SimpleTextarea, ValidationTextBox) {
             var button = new Button({
@@ -47,8 +41,8 @@
 
         });
 </script>
-</head>
-<body class="soria">
+</asp:Content>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
     <div>
     <%using (Html.BeginForm("SiteCnf", "Install", FormMethod.Post, new { @id = "siteform" }))
       {
@@ -117,5 +111,4 @@
         
          %>
     </div>
-</body>
-</html>
+</asp:Content>

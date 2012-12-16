@@ -12,10 +12,14 @@
     <AssemblyName>FBS.Domain</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -135,6 +139,7 @@
     <Compile Include="QueryObject\Evaluator.cs" />
     <Compile Include="QueryObject\ObjectReader.cs" />
     <Compile Include="QueryObject\QueryProvider.cs" />
+    <Compile Include="Repository\IHelper.cs" />
     <Compile Include="Repository\IAccountRepository.cs" />
     <Compile Include="Repository\IBlogQuestionRepository.cs" />
     <Compile Include="Repository\IBlogStoryRepository.cs" />

@@ -73,6 +73,9 @@ namespace FBS.App
             try
             {
                 cnf.Save();//保存
+                var sqlScript = System.IO.File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/fbs.sql"));
+                Domain.Repository.IHelper helper = FBS.Factory.Factory<FBS.Domain.Repository.IHelper>.GetConcrete();
+                helper.ExecScriptFile(sqlScript);
             }
             catch 
             { 
@@ -95,7 +98,7 @@ namespace FBS.App
             m.Email = sosc.FounderEmail;
             m.Password = sosc.FounderPsd;
             m.UserName = sosc.FounderName;
-            m.RoleName = "Founder";
+            m.RoleName = "founder";
 
             us.Register(m);//注册创始人
 

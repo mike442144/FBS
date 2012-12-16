@@ -1,12 +1,6 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<FBS.Service.ActionModels.StepOfDbCnf>" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Install.Master" Inherits="System.Web.Mvc.ViewPage<FBS.Service.ActionModels.StepOfDbCnf>" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-    <title>DbCnf</title>
-    <link media="screen" rel="Stylesheet" href="../../Scripts/dojo-release-1.8.1/dijit/themes/soria/soria.css" />
-    <script src="../../Scripts/dojo-release-1.8.1/dojo/dojo.js" type="text/javascript"></script>
+<asp:Content ContentPlaceHolderID="Head" runat="server">
     <script type="text/javascript">
         require(["dijit/form/Button", "dijit/form/TextBox", "dojo/domReady!"], function (Button, TextBox) {
             var button = new Button({
@@ -36,8 +30,8 @@
             dbpsd.startup();
         });
 </script>
-</head>
-<body class="soria">
+</asp:Content>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
     <div>
     <%using (Html.BeginForm("DbCnf", "Install", FormMethod.Post, new { @id = "dbform" }))
       {
@@ -84,5 +78,4 @@
         
          %>
     </div>
-</body>
-</html>
+    </asp:Content>

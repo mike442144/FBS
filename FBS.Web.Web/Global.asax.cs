@@ -12,7 +12,7 @@ namespace ITsds.Web.News
     // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : System.Web.HttpApplication
-    {
+    {        
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
@@ -51,6 +51,24 @@ namespace ITsds.Web.News
             System.Web.Mvc.ViewEngines.Engines.Add(new WebFormThemeViewEngine());
             this.Application.Add("themeName", "Default");
             RegisterRoutes(RouteTable.Routes);
+            
+        }
+        public override void Init()
+        {
+            this.BeginRequest += new EventHandler((s, e) =>
+            {
+                var context = (s as MvcApplication).Context;
+                if (
+                    !(new string[] { "css", "js", "jpg", "gif", "png", "html", "txt" }).Any(item => context.Request.Url.AbsolutePath.ToLower().EndsWith(item))
+                    && !System.IO.File.Exists(context.Server.MapPath("~/installed")))
+                {
+                    if(!context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
+                        context.Response.Redirect("/Install/Index/", false);
+                }
+                else if (context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
+                    context.Response.Redirect("/Home/Index/", false);
+            });
+            base.Init();
         }
     }
 }

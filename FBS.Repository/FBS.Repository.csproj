@@ -12,10 +12,14 @@
     <AssemblyName>FBS.Repository</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -80,6 +84,7 @@
     <Compile Include="ForumThreadRepository.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Helper.cs" />
     <Compile Include="Persistence\AccountPersist.cs" />
     <Compile Include="Persistence\BlogCategoryPersist.cs" />
     <Compile Include="Persistence\BlogQuestionPersist.cs" />

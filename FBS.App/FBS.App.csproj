@@ -12,10 +12,14 @@
     <AssemblyName>FBS.App</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -81,6 +85,10 @@
     <ProjectReference Include="..\FBS.Domain\FBS.Domain.csproj">
       <Project>{1C32487C-531D-4F91-8D10-6C69873A6A2D}</Project>
       <Name>FBS.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Factory\FBS.Factory.csproj">
+      <Project>{AD284018-6061-47B3-8A9C-0E34FC938B6B}</Project>
+      <Name>FBS.Factory</Name>
     </ProjectReference>
     <ProjectReference Include="..\FBS.Service\FBS.Service.csproj">
       <Project>{2D83B4EC-523B-46C9-813A-E6B5AE9FE39F}</Project>

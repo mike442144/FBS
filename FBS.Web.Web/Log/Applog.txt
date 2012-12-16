@@ -234,3 +234,6 @@ System.NullReferenceException: 未将对象引用设置到对象的实例。
 2012-12-02 17:22:43,140 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
 2012-12-02 17:22:43,155 [5] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
 2012-12-02 17:22:43,155 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-16 18:55:32,762 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2012-12-16 18:55:32,795 [10] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2012-12-16 18:55:32,795 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )

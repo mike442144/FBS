@@ -13,10 +13,14 @@
     <AssemblyName>ITsds.Web.News</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -83,6 +87,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\FilterModule.cs" />
     <Compile Include="Helpers\IsCurrentActionHelper.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -343,6 +348,7 @@
     <Content Include="Views\Service\Index.aspx" />
     <Content Include="Views\Shared\ThemesList.ascx" />
     <Content Include="Web.sitemap" />
+    <Content Include="Views\Shared\Install.Master" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FBS.App\FBS.App.csproj">
