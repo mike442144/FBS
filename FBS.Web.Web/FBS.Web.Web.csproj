@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ITsds.Web.News</RootNamespace>
-    <AssemblyName>ITsds.Web.News</AssemblyName>
+    <RootNamespace>FBS.Web.News</RootNamespace>
+    <AssemblyName>FBS.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <SccProjectName>
@@ -87,7 +87,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\FilterModule.cs" />
     <Compile Include="Helpers\IsCurrentActionHelper.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -348,7 +347,6 @@
     <Content Include="Views\Service\Index.aspx" />
     <Content Include="Views\Shared\ThemesList.ascx" />
     <Content Include="Web.sitemap" />
-    <Content Include="Views\Shared\Install.Master" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FBS.App\FBS.App.csproj">

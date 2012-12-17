@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Globalization;
 
-namespace ITsds.Web.News.ViewEngine
+namespace FBS.Web.News.ViewEngine
 {
     public class WebFormThemeViewEngine : WebFormViewEngine
     {

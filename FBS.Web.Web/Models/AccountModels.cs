@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace ITsds.Web.News.Models
+namespace FBS.Web.News.Models
 {
 
     #region Models

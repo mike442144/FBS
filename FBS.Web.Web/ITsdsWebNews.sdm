@@ -14,9 +14,9 @@
         <Property Name="VSProjectId" Value="1a7990e8-a1c8-4a40-b225-dbd11924ed10" />
         <Relationship Id="f0fcdb8d7dbf4ff2bcce7166391294b3" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@9af8ad928abd4664b989048cffe1c468" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
         <ModelElement Id="9af8ad928abd4664b989048cffe1c468" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
-          <Property Name="Name" Value="ITsds.Web.News" />
+          <Property Name="Name" Value="FBS.Web.News" />
           <Property Name="Guid" Value="1a7990e8-a1c8-4a40-b225-dbd11924ed10" />
-          <Property Name="Location" Value="E:\FBS\ITsds.Web.News\" />
+          <Property Name="Location" Value="E:\FBS\FBS.Web.News\" />
           <Property Name="IsSupportedWebProject" Value="true" />
           <Property Name="Language" Value="c#" />
           <Property Name="IsImplemented" Value="true" />
@@ -39,7 +39,7 @@
       <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
         <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.AspComponentType">
           <Property Name="State" Value="Implemented" />
-          <Property Name="Project" Value="ITsds.Web.News" />
+          <Property Name="Project" Value="FBS.Web.News" />
           <Property Name="DefaultNamespace" Value="ITsdsWebNews" />
         </ModelElement>
       </VisualStudio>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.IO;
 
-namespace ITsds.Web.News.Controllers
+namespace FBS.Web.News.Controllers
 {
     struct Theme
     {
