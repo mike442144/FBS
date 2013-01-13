@@ -26,5 +26,13 @@
       <Task Name="AddItem" />
       <Task Name="ManageSystem" />
     </Role>
+	<Role Name="founder">
+      <Task Name="ModifyItem" />
+      <Task Name="RemoveItem" />
+      <Task Name="ListForwardItem" />
+      <Task Name="ListItem" />
+      <Task Name="AddItem" />
+      <Task Name="ManageSystem" />
+    </Role>
   </Roles>
 </ACL>

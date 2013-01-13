@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Advertiser>
+  <Section Name="用户" Id="User">
+    <Page Name="登录主页" Id="Login">
+      <Area Name="登陆页面左广告区" Id="area1">
+        <Position Name="巨幅广告位" eWidth="100" eHeight="100" Id="position1" />
+      </Area>
+    </Page>
+    <Page Name="注册页面" Id="register">
+      <Area Name="注册页面左广告区" Id="area2">
+        <Position Name="巨幅广告位" eWidth="100" eHeight="100" Id="position2" />
+      </Area>
+    </Page>
+  </Section>
+  <Section Name="观赏体验区" Id="Viewing">
+    <Page Name="首页" Id="Index">
+      <Area Name="顶部广告区" Id="area3">
+        <Position Name="横幅广告位" eWidth="100" eHeight="100" Id="position3">
+        </Position>
+      </Area>
+      <Area Name="飞行焦点广告区" Id="area4">
+        <Position Name="焦点图广告位" eWidth="100" eHeight="100" Id="position4" />
+      </Area>
+      <Area Name="右侧广告区" Id="area5">
+        <Position Name="上一矩形广告位" eWidth="200" eHeight="210" Id="position5" />
+        <Position Name="上二矩形广告位" eWidth="200" eHeight="210" Id="position6" />
+        <Position Name="中部矩形广告位" eWidth="200" eHeight="180" Id="position7" />
+        <Position Name="中部矩形广告位" eWidth="200" eHeight="180" Id="position54" />
+        <Position Name="下一矩形广告位" eWidth="200" eHeight="180" Id="position8" />
+        <Position Name="下二矩形广告位" eWidth="200" eHeight="267" Id="position9" />
+      </Area>
+      <Area Name="底部广告区" Id="area6">
+        <Position Name="文字广告位" eWidth="100" eHeight="100" Id="position10" />
+        <Position Name="条幅广告位" eWidth="100" eHeight="100" Id="position11" />
+      </Area>
+      <Area Name="中部广告1区" Id="area7">
+        <Position Name="左横幅广告位" eWidth="350" eHeight="100" Id="position12">
+          <Advertisement Id="19034237-0db7-40c3-aa33-90c0159a2b68">
+            <type>AnimatedGif</type>
+            <path>FLYUpload/Images/19034237-0db7-40c3-aa33-90c0159a2b68.jpg</path>
+            <width>12</width>
+            <height>12</height>
+            <priority>10</priority>
+            <BeginTime>2011-11-05</BeginTime>
+            <EndTime>2011-11-30</EndTime>
+            <advertiseName>权威权威</advertiseName>
+            <Location>Advertiser.Viewing.Index.area7.position12</Location>
+            <url>http://www.0513jl.com</url>
+          </Advertisement>
+        </Position>
+        <Position Name="右横幅广告位" eWidth="390" eHeight="100" Id="position13">
+          <Advertisement Id="ef305539-038f-4f50-ab9a-41e13ef7a7ac">
+            <type>AnimatedGif</type>
+            <path>FLYUpload/Images/ef305539-038f-4f50-ab9a-41e13ef7a7ac.jpg</path>
+            <width>100</width>
+            <height>100</height>
+            <priority>12</priority>
+            <BeginTime>2011-10-29</BeginTime>
+            <EndTime>2012-01-31</EndTime>
+            <advertiseName>广告3</advertiseName>
+            <Location>Advertiser.Viewing.Index.area7.position13</Location>
+            <url>http://www.0513jl.com</url>
+          </Advertisement>
+          <Advertisement Id="63fc2e0f-44e4-4d02-aa34-f3892c7970ce">
+            <type>AnimatedGif</type>
+            <path>FLYUpload/Images/63fc2e0f-44e4-4d02-aa34-f3892c7970ce.jpg</path>
+            <width>100</width>
+            <height>100</height>
+            <priority>12</priority>
+            <BeginTime>2011-11-05</BeginTime>
+            <EndTime>2011-11-30</EndTime>
+            <advertiseName>广告1</advertiseName>
+            <Location>Advertiser.Viewing.Index.area7.position13</Location>
+            <url>http://www.0513jl.com</url>
+          </Advertisement>
+        </Position>
+      </Area>
+      <Area Name="中部广告2区" Id="area8">
+        <Position Name="左横幅广告位" eWidth="350" eHeight="100" Id="position14" />
+        <Position Name="右横幅广告位" eWidth="390" eHeight="100" Id="position15" />
+      </Area>
+      <Area Name="中部广告3区" Id="area9">
+        <Position Name="左横幅广告位" eWidth="350" eHeight="100" Id="position16" />
+        <Position Name="右横幅广告位" eWidth="390" eHeight="100" Id="position17" />
+      </Area>
+      <Area Name="中部广告4区" Id="area10">
+        <Position Name="左横幅广告位" eWidth="350" eHeight="100" Id="position18" />
+        <Position Name="右横幅广告位" eWidth="390" eHeight="100" Id="position19" />
+      </Area>
+      <Area Name="中部广告5区" Id="area11">
+        <Position Name="左横幅广告位" eWidth="350" eHeight="100" Id="position20" />
+        <Position Name="右横幅广告位" eWidth="390" eHeight="100" Id="position21" />
+      </Area>
+      <Area Name="两侧摩天大楼广告区" Id="area12">
+        <Position Name="左侧对联广告位" eWidth="180" eHeight="100" Id="position22" />
+        <Position Name="右侧对联侧广告位" eWidth="180" eHeight="100" Id="position23" />
+      </Area>
+    </Page>
+    <Page Name="视频展示页面" Id="videolist">
+      <Area Name="顶部广告区" Id="area13">
+        <Position Name="横幅广告位" eWidth="958" eHeight="118" Id="position24" />
+      </Area>
+      <Area Name="右上侧矩形广告区" Id="area14">
+        <Position Name="上矩形广告位" eWidth="360" eHeight="100" Id="position25" />
+        <Position Name="中部矩形广告位" eWidth="360" eHeight="100" Id="position26" />
+        <Position Name="下矩形广告位" eWidth="360" eHeight="100" Id="position27" />
+      </Area>
+      <Area Name="底部广告区" Id="area15">
+        <Position Name="条幅广告位" eWidth="100" eHeight="100" Id="position28" />
+      </Area>
+    </Page>
+    <Page Name="新闻列表页面" Id="newslist">
+      <Area Name="顶部广告区" Id="area28">
+        <Position Name="横幅广告位" eWidth="958" eHeight="118" Id="position55">
+          <Advertisement Id="92e1609b-a5ca-4cff-a978-de3cc643c151">
+            <type>AnimatedGif</type>
+            <path>FLYUpload/Images/92e1609b-a5ca-4cff-a978-de3cc643c151.jpg</path>
+            <width>118</width>
+            <height>958</height>
+            <priority>1</priority>
+            <BeginTime>2011-11-03</BeginTime>
+            <EndTime>2011-11-19</EndTime>
+            <advertiseName>hehe</advertiseName>
+            <Location>Advertiser.Viewing.newslist.area28.position55</Location>
+            <url>http://www.google.com</url>
+          </Advertisement>
+        </Position>
+      </Area>
+      <Area Name="右侧广告区" Id="area27">
+        <Position Name="右一横幅广告位" eWidth="360" eHeight="100" Id="position29" />
+        <Position Name="右二横幅广告位" eWidth="360" eHeight="100" Id="position30" />
+        <Position Name="右三横幅广告位" eWidth="360" eHeight="100" Id="position31" />
+        <Position Name="右四横幅广告位" eWidth="360" eHeight="100" Id="position32" />
+        <Position Name="右五横幅广告位" eWidth="360" eHeight="100" Id="position33" />
+        <Position Name="右六横幅广告位" eWidth="360" eHeight="100" Id="position34" />
+      </Area>
+    </Page>
+    <Page Name="新闻详细页面" Id="detailslist">
+      <Area Name="顶部广告区" Id="area26">
+        <Position Name="横幅广告位" eWidth="958" eHeight="118" Id="position56" />
+      </Area>
+      <Area Name="左侧广告区" Id="area50">
+        <Position Name="横幅广告位" eWidth="558" eHeight="118" Id="position100" />
+      </Area>
+      <Area Name="右侧广告区" Id="area25">
+        <Position Name="右一横幅广告位" eWidth="360" eHeight="100" Id="position47" />
+        <Position Name="右二横幅广告位" eWidth="360" eHeight="100" Id="position48" />
+        <Position Name="右三横幅广告位" eWidth="360" eHeight="100" Id="position49" />
+        <Position Name="右四横幅广告位" eWidth="360" eHeight="100" Id="position50" />
+        <Position Name="右五横幅广告位" eWidth="360" eHeight="100" Id="position51" />
+        <Position Name="右六横幅广告位" eWidth="360" eHeight="100" Id="position52" />
+      </Area>
+    </Page>
+  </Section>
+  <Section Name="博客区" Id="blog">
+    <Page Name="我的航空站首页" Id="Bindex">
+      <Area Name="左侧广告区" Id="area18">
+        <Position Name="矩形广告位" eWidth="145" eHeight="100" Id="position37" />
+      </Area>
+      <Area Name="中部广告区" Id="area19">
+        <Position Name="横幅广告位" eWidth="450" eHeight="100" Id="position38" />
+      </Area>
+      <Area Name="右侧广告区" Id="area20">
+        <Position Name="矩形广告位" eWidth="190" eHeight="100" Id="position39" />
+      </Area>
+    </Page>
+    <Page Name="博文详细页面" Id="blogstory">
+      <Area Name="标题下方广告区" Id="area50">
+        <Position Name="居中横幅广告位" eWidth="780" eHeight="100" Id="position101" />
+      </Area>
+    </Page>
+    <Page Name="博文列表页面" Id="bloglist">
+      <Area Name="列表上方广告区" Id="area51">
+        <Position Name="居中横幅广告位" eWidth="780" eHeight="100" Id="position102" />
+      </Area>
+    </Page>
+  </Section>
+  <Section Name="飞行者舰群" Id="tieba">
+    <Page Name="贴吧页面" Id="Tindex">
+      <Area Name="顶部广告区" Id="area21">
+        <Position Name="横幅广告位" eWidth="900" eHeight="147" Id="position42" />
+      </Area>
+      <Area Name="两侧摩天大楼广告区" Id="area22">
+        <Position Name="左侧对联广告位" eWidth="180" eHeight="100" Id="position43" />
+        <Position Name="右侧对联广告位" eWidth="180" eHeight="100" Id="position44" />
+      </Area>
+      <Area Name="底部广告区" Id="area23">
+        <Position Name="文字广告位" eWidth="100" eHeight="100" Id="position45" />
+      </Area>
+    </Page>
+  </Section>
+  <Section Name="引领区页面" Id="introduce">
+    <Page Name="引领区首页" Id="Iindex">
+      <Area Name="顶部广告区" Id="area24">
+        <Position Name="横幅广告位" eWidth="900" eHeight="147" Id="position46" />
+      </Area>
+    </Page>
+  </Section>
+</Advertiser>

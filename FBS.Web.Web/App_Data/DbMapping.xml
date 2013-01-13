@@ -252,4 +252,8 @@
     <Column Member="Id">ForbiddenID</Column>
     <Column Member="AccountID">AccountID</Column>
   </Entity>
+  <Entity Id="SiteSettings">
+    <Table Name="fbs_SiteSettings"></Table>
+    <Column Member="SiteID">SiteID</Column>
+  </Entity>
 </map>

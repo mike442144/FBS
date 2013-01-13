@@ -107,7 +107,7 @@
     <Compile Include="ActionModels\ForumDspModel.cs" />
     <Compile Include="ActionModels\GoodsDetailsModel.cs" />
     <Compile Include="ActionModels\GoodsDspModel.cs" />
-    <Compile Include="ActionModels\InstallModels.cs" />
+    <Compile Include="ActionModels\SiteModels.cs" />
     <Compile Include="ActionModels\ModifiedArticleModel.cs" />
     <Compile Include="ActionModels\NeedsDetailsModel.cs" />
     <Compile Include="ActionModels\NeedsDspModel.cs" />
@@ -169,7 +169,7 @@
     <Compile Include="SearchHelper.cs" />
     <Compile Include="SearchService.cs" />
     <Compile Include="ShareThreadService.cs" />
-    <Compile Include="SiteInfoService.cs" />
+    <Compile Include="SiteService.cs" />
     <Compile Include="StatisticService.cs" />
     <Compile Include="SuggestService.cs" />
     <Compile Include="ThreadAdminService.cs" />

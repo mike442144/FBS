@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+font-size: 100%;
+}
+body, p {
+    font-family:"Segoe UI Light", "Helvetica Neue", 'RobotoLight', "Segoe UI", "Segoe WP", sans-serif;
+	/*font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;*/
+	font-weight:100;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	/*line-height: 20px;*/
+}
+a, .link {
+    /*font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 11pt;
+    color: #2E92CF;
+    text-decoration: none;*/
+}
+*, :after, :before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/*MenuBar,MenuItem,Menu,MenuBarItem*/
+.metro .dijitMenuBar {
+  margin: 0;
+  padding: 0;
+  background-color: #008287;
+  border-left:1px solid #008287;
+  background-image:none;
+  _background-image: none;
+}
+.metro .dijitMenuItem {
+  color: #1e1e1e;
+}
+.metro .dijitMenuBar .dijitMenuItem{
+    padding:6px 10px 7px;
+    margin:-1px;
+    color:White;
+    font-size:1.15em;
+}
+.metro .dijitMenuBar .dijitMenuItemHover, .metro .dijitMenuBar .dijitMenuItemSelected {
+  padding: 5px 10px 6px;
+}
+.metro .dijitSelectMenu .dijitMenuItemHover td,
+.metro .dijitSelectMenu .dijitMenuItemSelected td,
+.metro .dijitMenuItemHover,
+.metro .dijitMenuItemSelected {
+    background-color:#008287;
+    color:#fff;
+    background-image:none;
+    _background-image: none;
+}
+.metro .dijitMenu {
+  background-color: #ffffff;
+  border: 1px solid #008287;
+  margin: -1px 0;
+}
+.metro .dijitMenuTable {
+  border-collapse: separate;
+  border-spacing: 0 0;
+  padding: 0;
+}
+.metro .dijitMenuItem td {
+  padding: 1px;
+}
+.metro td.dijitMenuItemLabel {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dj_webkit .dijitMenuTable td[colspan="2"]{
+    border-right:hidden;
+}
+
+.metro td.dijitMenuItemIconCell {
+  padding: 2px;
+  margin: 0 0 0 4px;
+}
+.metro .dijitMenuExpand {
+  width: 7px;
+  height: 7px;
+  background-image: url("images/spriteArrows.png");
+  background-position: -14px 0;
+  margin-right: 3px;
+}
+
+
+
+
+.metro .dijitbutton .dijitbuttonnode, .metro .dijitdropdownbutton .dijitbuttonnode, .metro .dijitcombobutton .dijitbuttonnode, .metro .dijittogglebutton .dijitbuttonnode
+	{
+		border:1px transparent solid;
+		background-color:#008287;
+		color:White;
+		padding:4px 10px;
+	}
+.metro .dijitbutton .dijitbuttonnode
+	{
+/*min-width:90px;
+min-heigh:32px;*/
+	}
+	.metro .dijitButtonHover .dijitButtonNode,
+.metro .dijitDropDownButtonHover .dijitButtonNode,
+.metro .dijitComboButton .dijitButtonNodeHover,
+.metro .dijitComboButton .dijitDownArrowButtonHover,
+.metro .dijitToggleButtonHover .dijitButtonNode,
+.metro .dijitButtonActive .dijitButtonNode,
+.metro .dijitDropDownButtonActive .dijitButtonNode,
+.metro .dijitComboButtonActive .dijitButtonNode,
+.metro .dijitToggleButtonActive .dijitButtonNode,
+.metro .dijitToggleButtonChecked .dijitButtonNode
+	{
+	  background-color: #17A2E7;
+	  color: White;
+	  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+	}
+.metro .dijitButtonDisabled, .metro .dijitDropDownButtonDisabled, .metro .dijitComboButtonDisabled, .metro .dijitToggleButtonDisabled
+	{
+outline-width:medium;
+outline-style:none;
+outline-color:invert;
+background-image:none;
+	}
+	
+	.metro .dijitButtonDisabled .dijitButtonNode,
+.metro .dijitDropDownButtonDisabled .dijitButtonNode,
+.metro .dijitComboButtonDisabled .dijitButtonNode,
+.metro .dijitToggleButtonDisabled .dijitButtonNode 
+	{
+		  background-color: #eaeaea;
+		  color: #bebebe;
+	}
+	.metro .dijitCustomIcon
+	{
+
+background-repeat:no-repeat;
+width:18px;
+height:18px;
+text-align:center;
+	}
+	.metro .dijitCustomIconHome
+	{
+		background-image:url(white/home_16x16.png);
+	}
+	.metro .dijitCustomIconUser
+	{
+		background-image:url(white/lock_fill_12x16.png);
+	}
+.dj_gecko .metro .dijitTextBox .dijitInputInner, .dj_webkit .metro .dijitTextBox .dijitInputInner {
+  min-height:22px;
+  width:100%;
+}
+.metro .dijitTextBox, .metro .dijitInputInner {
+  color: #555;
+}
+.metro .dijitSelect .dijitInputField, .metro .dijitTextBox .dijitInputField {
+  padding: 5px;
+}
+.metro .dijitTextBoxFocused .dijitInputContainer {
+  background: #ffffff;
+}
+.metro .dijitSelect, .metro .dijitTextBox {
+  background-color: #ffffff;
+}
+.metro .dijitSelect,
+.metro .dijitSelect .dijitButtonContents,
+.metro .dijitTextBox,
+.metro .dijitTextBox .dijitButtonNode {
+  
+  border-color: #bababa;
+  border-width:2px;
+  -webkit-transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  transition-property: background-color, border;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+.metro .dijitSelectFocused,
+.metro .dijitSelectFocused .dijitButtonContents,
+.metro .dijitTextBoxFocused,
+.metro .dijitTextBoxFocused .dijitButtonNode {
+  border-color: #000;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.metro .dijitInputField .dijitPlaceHolder{
+    font-style:normal;
+    line-height:22px;
+}
+.metro .dijitSelectDisabled,
+.metro .dijitSelectDisabled .dijitButtonContents,
+.metro .dijitTextBoxDisabled,
+.metro .dijitTextBoxDisabled .dijitButtonNode {
+  border-color: #d3d3d3;
+}
+.metro .dijitSelectDisabled, .metro .dijitTextBoxDisabled, .metro .dijitTextBoxDisabled .dijitInputContainer {
+  background-color: #eee;
+  background-image: none;
+}
+.metro .dijitSelectDisabled, .metro .dijitTextBoxDisabled, .metro .dijitTextBoxDisabled .dijitInputInner {
+  color: #555;
+}

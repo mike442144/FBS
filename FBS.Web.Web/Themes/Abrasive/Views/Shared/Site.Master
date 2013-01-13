@@ -1,4 +1,4 @@
-<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
 <%@ Import Namespace="Helpers" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -23,11 +23,15 @@ Released   : 20081122
     <meta name="keywords" content="Keywords for you web page go here. Each keyword or group of keyword phrases are separated by a comma. Keep this  list short and relevant to the content and title of this specific page." />
     <title>
         <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+        -<%=Helpers.SharedData.SiteName %>
     </title>
     <link href="/Themes/Abrasive/Content/Site.css" rel="stylesheet" type="text/css" media="screen" />
-    <script src="/Scripts/dojo-release-1.8.1/dojo/dojo.js" type="text/javascript"></script>
+    <!--<script src="/Scripts/dojo-release-1.8.1-src/dojo/dojo.js" type="text/javascript"></script>-->
     <script type="text/javascript">
-        function art_details() {
+    /*    function home() {
+            
+        }
+        function art_details(obj) {
             require(["dojo/request/xhr", "dojo/domReady!"],function (xhr) {
             var reg = /\/article\/details\/([a-f0-9\-]{36})/ig;
             var str = document.location.pathname;
@@ -53,13 +57,16 @@ Released   : 20081122
             }
         });
     }
-        require(["dojo/router" ], function (router) {
-            router.register("/Article/Details", art_details);
-            router.startup();
-            var keys = document.location.pathname.match(/\/\w+\/\w+/i);
-            if (keys && keys.length > 0)
-                router.go(keys[0]);
-        });
+    require(["dojo/router"], function (router) {
+        router.register("/Article/Details", art_details);
+        router.register("/", "/Home/Index");
+        router.register("/Home/Index", home);
+        router.startup();
+        
+        var keys = document.location.pathname.match(/\/\w+\/\w+|\/w+|\//i);
+        if (keys && keys.length > 0)
+            router.go(keys[0]);
+    });*/
     </script>
 </head>
 <body>
@@ -67,18 +74,20 @@ Released   : 20081122
         <div id="header">
             <div id="logo">
                 <h1>
-                    <a href="#">Abrasive</a></h1>
+                    <a href="/Home/Index">FBS建站</a></h1>
                 <h2>
-                    by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">
-                        FreeCSSTemplates</a> + Keith Adler</h2>
+                    Flash Build Site for enterprise specially.
+                </h2>
             </div>
             <!-- end #logo -->
             <div id="menu">
                 <ul>
                     <li class="first">
-                        <%= Html.ActionLink("Home", "Index", "Home") %></li>
+                        <%= Html.ActionLink("首页", "Index", "Home") %></li>
                     <li>
-                        <%= Html.ActionLink("About", "About", "Home") %></li>
+                        <%=Html.ActionLink("新闻","","Article") %></li>
+                    <li>
+                        <%= Html.ActionLink("关于", "About", "Home") %></li>
                 </ul>
             </div>
             <!-- end #menu -->
@@ -131,10 +140,7 @@ Released   : 20081122
         </div>
         <!-- end #page -->
         <div id="footer">
-            <p>
-                Copyright (c) 2009 SiteName.com. Design by <a href="http://www.nodethirtythree.com/">
-                    NodeThirtyThree</a>, <a href="http://www.freecsstemplates.org/">FreeCSSTemplates</a>
-                and Keith Adler</p>
+            <%=Html.Action("Footer","Home") %>
         </div>
         <!-- end #footer -->
     </div>

@@ -237,3 +237,1005 @@ System.NullReferenceException: 未将对象引用设置到对象的实例。
 2012-12-16 18:55:32,762 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
 2012-12-16 18:55:32,795 [10] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
 2012-12-16 18:55:32,795 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 13:09:12,542 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-23 13:09:12,597 [12] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-23 13:09:12,597 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 13:09:12,625 [12] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-23 14:08:56,410 [32] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-23 14:08:56,410 [32] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-23 14:08:56,410 [32] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:08:56,544 [32] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-23 14:08:56,544 [32] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-23 14:08:56,544 [32] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:15:37,533 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-23 14:15:37,548 [12] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-23 14:15:37,548 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:15:37,693 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-23 14:15:37,693 [12] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-23 14:15:37,693 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:17:20,055 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-23 14:17:20,055 [6] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-23 14:17:20,055 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:17:20,055 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-23 14:17:20,055 [6] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-23 14:17:20,055 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:33:27,621 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-23 14:33:27,670 [19] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-23 14:33:27,670 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 14:33:27,711 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-23 14:33:27,711 [19] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-23 14:33:27,711 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 17:22:49,895 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2012-12-23 17:22:49,908 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-23 17:22:49,976 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2012-12-23 17:22:49,976 [27] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2012-12-23 17:22:49,976 [27] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2012-12-23 17:22:49,976 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 10:36:16,405 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 10:36:16,440 [26] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 10:36:16,441 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 10:36:16,464 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 10:36:16,464 [26] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 10:36:16,464 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:33:07,725 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 15:33:07,734 [18] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 15:33:07,734 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:33:07,861 [18] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 15:33:15,868 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 15:33:15,868 [18] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 15:33:15,869 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:33:15,869 [18] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 15:33:52,155 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 15:33:52,155 [19] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 15:33:52,155 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:33:52,155 [19] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 15:35:11,554 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 15:35:11,554 [26] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 15:35:11,554 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:35:11,587 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 15:35:11,587 [26] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 15:35:11,587 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:38:18,238 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 15:38:18,248 [30] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 15:38:18,248 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 15:38:18,330 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 15:38:18,330 [30] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 15:38:18,330 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:48:53,858 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 18:48:53,858 [30] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 18:48:53,858 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:48:53,869 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 18:48:53,869 [30] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 18:48:53,870 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:49:07,632 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 18:49:07,632 [30] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 18:49:07,632 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:49:07,637 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 18:49:07,637 [30] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 18:49:07,637 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:49:39,519 [67] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2012-12-25 18:49:39,519 [67] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:49:39,555 [67] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2012-12-25 18:49:39,555 [67] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2012-12-25 18:49:39,555 [67] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2012-12-25 18:49:39,556 [67] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:49:57,235 [62] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2012-12-25 18:49:57,235 [62] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 18:49:57,237 [62] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2012-12-25 18:49:57,237 [62] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2012-12-25 18:49:57,237 [62] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2012-12-25 18:49:57,237 [62] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:07:57,416 [70] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:07:57,416 [70] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:07:57,416 [70] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:07:57,421 [70] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 19:07:57,421 [70] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 19:07:57,421 [70] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:10:35,254 [73] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:10:35,264 [73] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:10:35,264 [73] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:10:35,330 [73] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 19:11:23,265 [67] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:11:23,265 [67] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:11:23,266 [67] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:11:23,266 [67] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 19:15:05,429 [74] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:15:05,429 [74] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:15:05,429 [74] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:15:05,429 [74] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 19:53:33,346 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:53:33,346 [16] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:53:33,346 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:53:33,346 [16] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 19:54:09,284 [20] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:54:09,284 [20] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:54:09,284 [20] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:54:09,284 [20] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 19:54:43,361 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:54:43,361 [21] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:54:43,361 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:54:43,362 [21] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+System.NullReferenceException: 用户登录时，用户名和邮箱至少使用一个
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 87
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2012-12-25 19:58:58,033 [75] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 19:58:58,043 [75] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 19:58:58,043 [75] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 19:58:58,126 [75] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 19:58:58,126 [75] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 19:58:58,126 [75] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 20:03:12,924 [60] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-25 20:03:12,924 [60] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-25 20:03:12,924 [60] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-25 20:03:12,937 [60] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-25 20:03:12,937 [60] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-25 20:03:12,937 [60] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-29 18:13:49,442 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-29 18:13:49,475 [6] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-29 18:13:49,475 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-29 18:13:49,498 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-29 18:13:49,498 [6] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-29 18:13:49,498 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-29 18:15:32,216 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2012-12-29 18:15:32,216 [27] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2012-12-29 18:15:32,216 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2012-12-29 18:15:32,221 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2012-12-29 18:15:32,221 [27] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2012-12-29 18:15:32,221 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-02 23:47:06,776 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-02 23:47:06,826 [5] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-02 23:47:06,826 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-02 23:47:07,296 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-02 23:47:07,296 [5] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-02 23:47:07,296 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-02 23:53:32,709 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-02 23:53:32,709 [13] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-02 23:53:32,709 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-02 23:53:32,714 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-02 23:53:32,714 [13] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-02 23:53:32,714 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 00:08:34,773 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-03 00:08:34,783 [4] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-03 00:08:34,783 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 00:08:34,792 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-03 00:08:34,792 [4] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-03 00:08:34,792 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 23:39:39,579 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-03 23:39:39,595 [6] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-03 23:39:39,595 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 23:39:39,610 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-03 23:39:39,610 [6] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-03 23:39:39,610 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 23:50:10,109 [38] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-03 23:50:10,109 [38] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 23:50:10,124 [38] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-03 23:50:10,124 [38] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-03 23:50:10,124 [38] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-03 23:50:10,124 [38] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 23:55:42,507 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-03 23:55:42,507 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-03 23:55:42,517 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-03 23:55:42,517 [17] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-03 23:55:42,517 [17] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-03 23:55:42,517 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:10:51,273 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:10:51,285 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:10:51,366 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:10:51,366 [14] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:10:51,366 [14] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:10:51,366 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:16:51,416 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:16:51,436 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:16:51,446 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:16:51,446 [6] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:16:51,446 [6] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:16:51,446 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:42:29,412 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:42:29,422 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:42:29,442 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:42:29,442 [19] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:42:29,442 [19] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:42:29,442 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:04,330 [37] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:53:04,330 [37] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:04,330 [37] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:53:04,330 [37] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:53:04,330 [37] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:53:04,330 [37] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:05,262 [34] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:53:05,262 [34] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:05,262 [34] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:53:05,262 [34] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:53:05,262 [34] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:53:05,262 [34] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:18,679 [37] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:53:18,679 [37] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:18,679 [37] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:53:18,679 [37] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:53:18,679 [37] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:53:18,679 [37] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:19,491 [33] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-04 00:53:19,491 [33] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-04 00:53:19,491 [33] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-04 00:53:19,491 [33] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-04 00:53:19,491 [33] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-04 00:53:19,491 [33] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-06 14:31:35,777 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-06 14:31:35,792 [10] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-06 14:31:35,792 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-06 14:31:35,824 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-06 14:31:35,824 [10] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-06 14:31:35,824 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-06 14:38:56,786 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-06 14:38:56,786 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-06 14:38:56,801 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-06 14:38:56,801 [26] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-06 14:38:56,801 [26] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-06 14:38:56,801 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-11 23:20:55,070 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-11 23:20:55,150 [12] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-11 23:20:55,150 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-11 23:20:55,234 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-11 23:20:55,234 [12] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-11 23:20:55,234 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 13:51:17,732 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-12 13:51:17,767 [23] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-12 13:51:17,767 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 13:51:17,797 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-12 13:51:17,797 [23] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 13:51:17,797 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 15:51:02,359 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 15:51:02,375 [17] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 15:51:02,375 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 15:52:20,673 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 15:52:20,673 [5] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 15:52:20,673 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 15:58:15,274 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 15:58:15,274 [6] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 15:58:15,274 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 15:59:28,451 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 15:59:28,451 [12] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 15:59:28,451 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:00:04,761 [25] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:00:04,761 [25] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:00:04,761 [25] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:07:32,816 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:07:32,816 [23] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:07:32,816 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:07:36,388 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:07:36,388 [23] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:07:36,388 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:07:36,997 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:07:36,997 [14] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:07:36,997 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:07:37,465 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:07:37,465 [23] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:07:37,465 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:07:37,777 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:07:37,777 [14] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:07:37,777 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:07:38,198 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:07:38,229 [14] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:07:38,229 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:12:23,987 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:12:23,987 [22] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:12:23,987 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:13:27,283 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:13:27,283 [22] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:13:27,283 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:16:09,646 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:16:09,646 [18] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:16:09,646 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:16:48,233 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:16:48,233 [18] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:16:48,233 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:18:27,463 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:18:27,463 [14] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:18:27,463 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:18:31,425 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:18:31,425 [18] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:18:31,425 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:18:48,820 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:18:48,820 [14] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:18:48,820 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:24:04,040 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:24:04,040 [10] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:24:04,040 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 16:27:54,862 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 16:27:54,862 [10] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 16:27:54,862 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:01:16,910 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 17:01:16,926 [19] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:01:16,926 [19] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:01:16,926 [19] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:01:16,926 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:41,641 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 17:02:41,641 [27] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:41,641 [27] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:02:41,642 [27] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:02:41,642 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:41,679 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 17:02:41,679 [27] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:41,679 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:49,029 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 17:02:49,029 [14] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:49,029 [14] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:02:49,029 [14] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:02:49,029 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:49,031 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 17:02:49,031 [14] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:49,031 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:56,624 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:02:58,465 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 17:03:19,744 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:03:38,395 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:03:38,395 [13] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:03:38,395 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:05:40,436 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:05:40,436 [10] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:05:40,436 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:05:50,888 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:05:50,888 [10] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:05:50,888 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:05:52,477 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:05:52,477 [6] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:05:52,477 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:25:27,324 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:25:27,334 [27] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:25:27,334 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:26:26,082 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:26:26,083 [18] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:26:26,083 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:26:27,634 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:26:27,634 [11] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:26:27,634 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:27:04,581 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:27:04,581 [18] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:27:04,581 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:27:33,811 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:27:33,811 [11] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:27:33,811 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:28:37,367 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:28:37,367 [15] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:28:37,367 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:28:40,904 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:28:40,905 [22] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:28:40,905 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:28:41,648 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:28:41,648 [13] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:28:41,648 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:28:42,157 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:28:42,157 [11] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:28:42,157 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:28:42,355 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:28:42,356 [15] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:28:42,356 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:49:13,973 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 17:49:13,983 [17] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 17:49:13,984 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:49:20,633 [25] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:49:20,633 [25] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:49:20,634 [25] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:49:20,634 [25] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:49:20,634 [25] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:50:02,308 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:50:02,319 [16] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:50:02,319 [16] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:50:02,319 [16] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:50:02,319 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:50:22,968 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:50:22,968 [12] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:50:22,968 [12] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:50:22,968 [12] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:50:22,968 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:54:05,191 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:54:05,202 [12] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:54:05,202 [12] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:54:05,202 [12] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:54:05,202 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:54:17,480 [34] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:54:17,480 [34] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:54:17,480 [34] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:54:17,480 [34] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:54:17,480 [34] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:54:29,089 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:54:29,089 [12] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:54:29,089 [12] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:54:29,089 [12] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:54:29,089 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:54:49,288 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:54:49,288 [12] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:54:49,288 [12] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:54:49,288 [12] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:54:49,288 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:55:58,494 [31] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:55:58,504 [31] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:55:58,504 [31] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:55:58,504 [31] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:55:58,504 [31] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:56:18,773 [31] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:56:18,773 [31] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:56:18,773 [31] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:56:18,773 [31] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:56:18,773 [31] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 17:59:34,512 [25] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 17:59:34,522 [25] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 17:59:34,522 [25] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 17:59:34,522 [25] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 17:59:34,522 [25] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:01:44,922 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:01:44,933 [24] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:01:44,933 [24] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:01:44,933 [24] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:01:44,933 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:02:35,159 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:02:35,172 [21] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:02:35,173 [21] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:02:35,173 [21] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:02:35,173 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:02:55,132 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:02:55,132 [21] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:02:55,132 [21] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:02:55,132 [21] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:02:55,132 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:04:54,740 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:04:54,740 [24] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:04:54,740 [24] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:04:54,740 [24] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:04:54,740 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:04:58,634 [28] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:04:58,634 [28] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:04:58,634 [28] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:05:04,638 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:05:04,638 [13] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:05:04,638 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:05:11,768 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:05:11,768 [24] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:05:11,768 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:08:24,436 [32] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:08:24,436 [32] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:08:24,436 [32] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:02,110 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:02,110 [21] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:02,110 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:06,917 [29] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:06,917 [29] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:06,917 [29] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:08,210 [32] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:08,210 [32] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:08,210 [32] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:08,748 [29] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:08,748 [29] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:08,748 [29] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:09,064 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:09,064 [21] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:09,064 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:09,563 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:09,563 [24] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:09,563 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:10,131 [29] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:09:10,131 [29] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:09:10,131 [29] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:09:10,131 [29] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:09:10,131 [29] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:38,085 [29] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:09:38,085 [29] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:09:38,085 [29] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:09:38,085 [29] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:09:38,085 [29] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:39,341 [33] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:09:39,341 [33] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:09:39,341 [33] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:09:39,341 [33] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:09:39,341 [33] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:40,637 [29] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 18:09:40,637 [29] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 18:09:40,637 [29] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:46,687 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:09:46,687 [24] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:09:46,687 [24] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:09:46,687 [24] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:09:46,687 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:47,557 [33] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:09:47,557 [33] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:09:47,557 [33] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:09:47,557 [33] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:09:47,557 [33] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 18:09:47,705 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 18:09:47,705 [14] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 18:09:47,705 [14] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 18:09:47,705 [14] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 18:09:47,705 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:28,101 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-12 21:15:28,116 [11] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-12 21:15:28,116 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:28,194 [11] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.LogonException: 密码错误
+   在 FBS.Service.UserEntryService.Logon(UserLogOnModel model) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 94
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-12 21:15:33,061 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-12 21:15:33,061 [5] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-12 21:15:33,061 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:33,061 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-12 21:15:33,061 [5] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 21:15:33,061 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:37,193 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 21:15:37,193 [11] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 21:15:37,193 [11] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:15:37,193 [11] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:15:37,193 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:37,203 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 21:15:37,203 [11] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 21:15:37,203 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-12 21:15:42,459 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:28:07,578 [28] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 21:28:07,578 [28] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 21:28:07,578 [28] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:28:07,578 [28] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:28:07,578 [28] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:28:15,386 [25] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 21:28:15,386 [25] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 21:28:15,386 [25] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:28:36,103 [26] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 21:28:36,103 [26] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 21:28:36,103 [26] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:28:45,203 [28] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 21:28:45,203 [28] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 21:28:45,203 [28] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:33:36,621 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 21:33:36,621 [27] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 21:33:36,621 [27] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:33:36,621 [27] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:33:36,621 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:33:45,783 [33] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 21:33:45,783 [33] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 21:33:45,783 [33] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:34:51,699 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 21:34:51,699 [27] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 21:34:51,699 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:34:53,768 [34] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 21:34:53,768 [34] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 21:34:53,768 [34] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:34:53,768 [34] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:34:53,768 [34] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:34:54,953 [31] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-12 21:34:54,953 [31] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-12 21:34:54,953 [31] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:45:26,240 [27] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 21:45:26,256 [27] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 21:45:26,256 [27] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:45:26,256 [27] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:45:26,256 [27] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-12 21:45:29,173 [31] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-12 21:45:29,173 [31] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-12 21:45:29,173 [31] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-12 21:45:29,173 [31] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-12 21:45:29,173 [31] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:05:46,341 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 00:05:46,356 [6] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 00:05:46,356 [6] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 00:05:46,356 [6] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 00:05:46,356 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:07:58,161 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 00:07:58,173 [16] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 00:07:58,173 [16] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 00:07:58,173 [16] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 00:07:58,173 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:08:00,041 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 00:08:00,041 [19] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 00:08:00,041 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:08:43,293 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 00:08:43,293 [10] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 00:08:43,293 [10] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 00:08:43,293 [10] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 00:08:43,294 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:11:24,250 [10] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 00:11:24,251 [10] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 00:11:24,251 [10] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 00:11:24,251 [10] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 00:11:24,251 [10] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:11:27,120 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 00:11:27,120 [24] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 00:11:27,120 [24] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 00:11:27,120 [24] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 00:11:27,120 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:11:28,393 [23] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 00:11:28,393 [23] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 00:11:28,393 [23] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:52:51,077 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:52:51,090 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:52:51,090 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:52:56,064 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 00:52:56,064 [22] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 00:52:56,064 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:50,989 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:50,989 [22] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:50,989 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:52,804 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:52,804 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:52,804 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:54,664 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:54,664 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:54,664 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:55,781 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:55,781 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:55,781 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:56,831 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:56,831 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:56,831 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:56,973 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:56,973 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:56,973 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:57,255 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:57,255 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:57,255 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:57,635 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:57,635 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:57,635 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:59,308 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:59,308 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:59,308 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:53:59,979 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:53:59,980 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:53:59,980 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:54:00,478 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:54:00,478 [11] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:54:00,478 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:54:00,886 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:54:00,887 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:54:00,887 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:54:01,331 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:54:01,331 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:54:01,331 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:54:01,741 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 00:54:01,741 [11] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 00:54:01,741 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:54:16,735 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-13 00:54:16,735 [11] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-13 00:54:16,736 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:54:16,754 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-13 00:54:16,754 [11] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 00:54:16,754 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:55:20,084 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetSuggestCount(
+2013-01-13 00:55:20,084 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 00:55:20,092 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: SuggestService.GetAllSuggest(
+2013-01-13 00:55:20,092 [16] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 00:55:20,092 [16] INFO  FBS.Utils.LoggerHelper [(null)] - count = 8
+2013-01-13 00:55:20,092 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:08,500 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:08,516 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:08,516 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:13,102 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:13,102 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:13,102 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:15,019 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:15,019 [19] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:15,019 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:15,500 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:15,500 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:15,500 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:15,902 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:15,902 [15] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:15,902 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:16,563 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:16,563 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:16,563 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:17,179 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:17,179 [17] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:17,179 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:17,785 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:17,786 [15] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:17,786 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:19,304 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:19,304 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:19,304 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:19,762 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:19,763 [16] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:19,763 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:20,168 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:20,169 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:20,169 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:20,777 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:20,777 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:20,777 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:21,154 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:21,154 [6] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:21,154 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:27,017 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:27,017 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:27,017 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:27,473 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:27,473 [16] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:27,473 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:28,089 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:28,089 [15] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:28,089 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:28,466 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:28,466 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:28,466 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:28,858 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:28,858 [6] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:28,858 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:30,819 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:30,819 [19] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:30,819 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:31,496 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:31,497 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:31,497 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:32,001 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:32,001 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:32,001 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:32,457 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:32,457 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:32,457 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:32,921 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:32,921 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:32,921 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:33,382 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:33,382 [17] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:33,382 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:33,816 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:33,816 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:33,816 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:34,249 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:34,249 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:34,249 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:34,738 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:34,738 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:34,738 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:35,192 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:35,192 [19] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:35,192 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:35,649 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:35,649 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:35,649 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:36,114 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:36,114 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:36,114 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:37,081 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:37,081 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:37,081 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:37,994 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:37,994 [16] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:37,994 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:38,873 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:38,873 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:38,873 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:39,418 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:39,418 [17] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:39,418 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:40,259 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:40,259 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:40,259 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:41,145 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:41,146 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:41,146 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:42,098 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:42,098 [6] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:42,098 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:42,539 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:42,539 [19] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:42,539 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:43,415 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:00:43,415 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:00:43,415 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:52,299 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:00:52,299 [13] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:00:52,299 [13] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:00:52,299 [13] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:00:52,299 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:00:53,607 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:00:53,607 [5] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:00:53,607 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:08,654 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:08,654 [14] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:08,654 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:09,304 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:09,305 [17] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:09,305 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:09,709 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:09,709 [16] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:09,709 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:10,020 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:10,020 [15] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:10,020 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:11,193 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:11,193 [6] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:11,193 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:11,641 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:11,641 [12] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:11,641 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:17,613 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:17,613 [13] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:17,613 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:19,296 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:19,296 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:19,296 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:19,989 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:19,989 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:19,989 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:22,427 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:22,427 [13] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:22,427 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:22,994 [19] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:22,994 [19] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:22,994 [19] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:23,458 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:23,458 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:23,458 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:23,923 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:23,923 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:23,923 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:24,371 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:24,371 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:24,371 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:24,834 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:24,834 [17] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:24,834 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:25,298 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:25,298 [15] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:25,298 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:25,832 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:25,832 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:25,832 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:26,579 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:26,579 [16] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:26,579 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:27,074 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:27,074 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:27,074 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:27,578 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:27,578 [5] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:27,578 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:28,048 [17] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:28,049 [17] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:28,049 [17] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:28,477 [14] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-13 01:01:28,477 [14] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-13 01:01:28,477 [14] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:48,638 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:01:48,638 [18] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:01:48,638 [18] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:01:48,638 [18] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:01:48,638 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:01:49,932 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:01:49,932 [12] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:01:49,932 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:02:18,914 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:02:18,915 [15] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:02:18,915 [15] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:02:18,915 [15] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:02:18,915 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:02:25,958 [13] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:02:25,958 [13] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:02:25,958 [13] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:02:36,569 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:02:36,569 [4] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:02:36,569 [4] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:02:36,569 [4] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:02:36,569 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:03:35,308 [20] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:03:35,308 [20] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:03:35,308 [20] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:03:35,308 [20] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:03:35,308 [20] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:03:47,086 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:03:47,086 [21] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:03:47,086 [21] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:03:47,086 [21] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:03:47,086 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:03:52,906 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:03:52,906 [22] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:03:52,906 [22] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:03:52,906 [22] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:03:52,906 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:03:55,746 [21] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:03:55,746 [21] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:03:55,746 [21] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:04:22,601 [20] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 01:04:22,601 [20] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 01:04:22,601 [20] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 01:04:22,601 [20] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 01:04:22,601 [20] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:04:23,209 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:04:23,209 [12] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:04:23,209 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 01:04:37,561 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 01:04:37,561 [15] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 01:04:37,561 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:31:52,679 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Logon(
+2013-01-13 12:31:52,774 [5] INFO  FBS.Utils.LoggerHelper [(null)] - model = FBS.Service.ActionModels.UserLogOnModel
+2013-01-13 12:31:52,774 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:31:52,808 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.CheckForbidden(
+2013-01-13 12:31:52,808 [5] INFO  FBS.Utils.LoggerHelper [(null)] - uid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:31:52,808 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:31:57,269 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-13 12:31:57,270 [4] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:31:57,270 [4] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 12:31:57,270 [4] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 12:31:57,270 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:31:57,290 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-13 12:31:57,290 [4] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:31:57,290 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:32:00,886 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-13 12:32:00,886 [12] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:32:00,886 [12] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 12:32:00,886 [12] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 12:32:00,886 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:32:00,895 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-13 12:32:00,895 [12] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:32:00,895 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:32:11,405 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysSummaryOfUser(
+2013-01-13 12:32:11,405 [5] INFO  FBS.Utils.LoggerHelper [(null)] - userId = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:32:11,405 [5] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 12:32:11,405 [5] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 12:32:11,405 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 12:32:11,410 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
+2013-01-13 12:32:11,411 [5] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
+2013-01-13 12:32:11,411 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )

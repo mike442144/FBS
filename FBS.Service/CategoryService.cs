@@ -273,16 +273,12 @@ namespace FBS.Service
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public BlogCategoryModel GetCategoryNameById(Guid id)
+        public string GetCategoryNameById(Guid id)
         {
             IRepository<BlogStoryCategory> bRep = Factory.Factory<IRepository<BlogStoryCategory>>.GetConcrete<BlogStoryCategory>();
-            BlogStoryCategory bs = bRep.Find(new Specification<BlogStoryCategory>(b => b.Id == id));
-            BlogCategoryModel m = new BlogCategoryModel();
-            m.BlogCategoryID = bs.Id;
-            m.CategoryName = bs.CategoryName;
-
-            return m;
-
+            BlogStoryCategory bs = bRep.GetByKey(id);
+            if (bs == null) return null;
+            return bs.CategoryName;
         }
 
 
@@ -312,12 +308,13 @@ namespace FBS.Service
             }
             return targets;
         }
-
+        
         /// <summary>
         /// 根据分类获取
         /// </summary>
         /// <param name="CategoryName"></param>
         /// <returns></returns>
+        [Obsolete]
         public BlogCategoryModel GetBlogCategoryModelByCategoryName(string CategoryName)
         {
             IList<BlogCategoryModel> mylist = GetBlogCategoryList();
@@ -391,9 +388,9 @@ namespace FBS.Service
         }
 
         /// <summary>
-        /// 获取博文分类
+        /// 获取一个博文分类
         /// </summary>
-        /// <param name="name">博客分类名</param>
+        /// <param name="name">名称</param>
         /// <returns></returns>
         public BlogCategoryModel GetBlogCategoryModelContentByName(string name)
         {

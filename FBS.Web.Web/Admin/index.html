@@ -1,0 +1,111 @@
+﻿<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dojo/resources/dojo.css" />
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dijit/themes/claro/claro.css" />
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dijit/themes/claro/layout/ContentPane.css" />
+    <style type="text/css">
+        body
+        {
+            font-family:'Segoe UI Light', 'Helvetica Neue', 'RobotoLight', 'Segoe UI', 'Segoe WP', 'sans-serif';
+        }
+        .claro .dijitMenu {
+            border:0;
+            width:100%;
+            font-size:14px;
+            background-color: white;
+        }
+        .claro .dijitmenupassive .dijitmenuitemhover, .claro .dijitcomboboxmenu .dijitmenuitemhover, .claro .dijitmenuitemselected {
+background-color: Teal !important;
+color:#fff;
+background-image:none;
+}
+        .claro .dijitAccordionTitle
+        {
+            background-image:none;
+        }
+        .claro .dijitaccordioninnercontainerselected .dijitaccordiontitle,.claro .dijitaccordioninnercontaineractive .dijitaccordiontitle,.claro .dijitaccordioninnercontainerhover .dijitAccordionTitleHover
+        {
+            background-image:none;
+            color:#fff;
+        }
+        .claro .dijitaccordioninnercontainerselected,.claro .dijitaccordioninnercontainerhover,.claro .dijitaccordioninnercontaineractive
+        {
+            background-color:Teal;
+        }
+        .dijitmenuitemlabel {
+	        font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	        font-weight: 400;
+	        letter-spacing: 0.01em;
+	        line-height: 14pt;
+	        display: block;
+	        width: 100%;
+	        white-space: nowrap;
+	        cursor: pointer;
+	        font-size: 10pt;
+	        float: none;
+	        color: #1E1E1E;
+	        padding: 3px 20px;
+        }
+        .dijitmenuitemlabel:focus{
+	        outline:none;
+        }
+        .dijitmenuitemlabel span{
+	        display: block;
+	        color: white;
+	        font-size: 10pt;
+        }
+        .dijitMenuItemSelected .dijitMenuItemLabel{
+	        color:white;
+        }
+        .dijitMenuItemLabel:hover{
+	        color:white;
+        }
+        .dijitMenuItemFocused{
+        outline:none;
+        }
+    </style>
+    <script type="text/javascript" src="/Scripts/dojo-release-1.8.1-src/dojo/dojo.js" djConfig="parseOnLoad:true,isDebug:true"></script>
+    <script type="text/javascript">
+        require(["dojo/domReady!"], function () {
+            dojo.query("#siderBar button").onclick( function (e) {
+                console.log(e);
+            });
+        });
+    </script>
+</head>
+<body class="claro">
+<div id='wrap' data-dojo-type="dijit/layout/BorderContainer" style="width:100%;height:100%">
+    <div id='top' data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'" style="height:65px;background-color:Teal;color:#fff;">
+        <h1>This is fbs site. and welcome "administrator".</h1>
+    </div>
+    <div id='siderBar' data-dojo-type="dijit/layout/AccordionContainer" style="height:100%;width:200px;" data-dojo-props="region:'leading',splitter:true">
+        <div data-dojo-type="dijit/layout/ContentPane" title="Content">
+           <div data-dojo-type="dijit/DropDownMenu">
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/ArticlesPages/ArticlesList.aspx';}">文章</div>
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/ArticlesCategoryPages/ArticlesCategoryList.aspx';}">文章分类</div>
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/BlogPages/Blogs.aspx';}">博客</div>
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/BlogCategoryPages/BlogCategoryList.aspx';}">博客分类</div>
+                <!--<div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/ArticlesPages/ArticlesList.aspx';)}">视频</div>
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/ArticlesPages/ArticlesList.aspx';}">label1</div>-->
+            </div>
+        </div>
+        <div data-dojo-type="dijit/layout/ContentPane" title="Members & Access">
+           <div data-dojo-type="dijit/DropDownMenu">
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/RolePages/RoleList.aspx';}">角色</div>
+            </div>
+        </div>
+        <div data-dojo-type="dijit/layout/ContentPane" title="Site Administration">
+            <div data-dojo-type="dijit/DropDownMenu">
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/Suggest/SuggestList.aspx';}">建议</div>
+                <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){dojo.byId('pageFrame').src='Pages/Settings/Settings.aspx';}">设置</div>
+            </div>
+        </div>
+    </div>
+    <div data-dojo-type="dijit/layout/ContentPane" id="pageContainer" data-dojo-props="region:'center'">
+        <iframe frameborder="0" height="100%" width="100%" id="pageFrame" src="welcome.html"></iframe>
+    </div>
+</div>
+</body>
+</html>

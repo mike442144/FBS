@@ -16,6 +16,7 @@ namespace FBS.Web.News
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("Admin/");
             routes.MapRoute(
                "newslist", // Route name
                "News/NewsList/{index}", // URL with parameters
@@ -27,7 +28,15 @@ namespace FBS.Web.News
                "News/News/{ArticleID}", // URL with parameters
                new { controller = "News", action = "News" } // Parameter defaults
            );
-            routes.MapRoute("install", "{controller}/", new { controller="Install",action="Index"});
+            routes.MapRoute(
+                "Article",
+                "a/{id}",
+                new { controller = "Article", action = "Details",id=UrlParameter.Optional }
+            );
+            routes.MapRoute("Blog", "b/{id}", new {controller="Blog",action="Details",id=UrlParameter.Optional});
+            
+            routes.MapRoute("page", "page/{name}", new { controller = "Home", action = "Page",name=UrlParameter.Optional });
+            routes.MapRoute("Blogs", "{controller}/{action}/{id}", new {controller="Blog",action="Index",id=UrlParameter.Optional });
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
@@ -38,18 +47,15 @@ namespace FBS.Web.News
                 "Articles/",
                 new { controller="Article",action = "Index"}
             );
-            routes.MapRoute(
-                "Article",
-                "a/{id}",
-                new { controller="Article",action="Details" }
-            );
+
+            routes.MapRoute("install", "{controller}/{action}", new { controller = "Install", action = "Index" });
         }
 
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
             System.Web.Mvc.ViewEngines.Engines.Add(new WebFormThemeViewEngine());
-            this.Application.Add("themeName", "Default");
+            this.Application.Add("themeName", Helpers.SharedData.ThemeName);
             RegisterRoutes(RouteTable.Routes);
             
         }

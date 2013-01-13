@@ -7,44 +7,34 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.0513jl.com/</loc>
+  <loc>http://www.codermike.name/</loc>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.0513jl.com/Home/Index/</loc>
+  <loc>http://www.codermike.name/Home/About/</loc>
   <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.0513jl.com/Home/Contact/</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.0513jl.com/Home/About/</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <priority>0.50</priority>
 </url>
 <!--<url>
-  <loc>http://www.0513jl.com/News/NewsList/?startIndex=0&amp;count=20</loc>
+  <loc>http://www.codermike.name/News/NewsList/?startIndex=0&amp;count=20</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 -->
 <url>
-  <loc>http://www.0513jl.com/Jobs/Index/</loc>
+  <loc>http://www.codermike.name/b/</loc>
   <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.0513jl.com/News/NewsList/</loc>
+  <loc>http://www.codermike.name/n/</loc>
   <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>http://www.0513jl.com/News/News</loc>
+  <loc>http://www.codermike.name/News/Index</loc>
   <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
+  <priority>0.84</priority>
 </url>
 </urlset>

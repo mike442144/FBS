@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.IO;
+using FBS.Service;
 
 namespace FBS.Web.News.Controllers
 {
@@ -12,6 +12,7 @@ namespace FBS.Web.News.Controllers
         private readonly string name;
         private readonly string path;
         private readonly string smallThumbnail;
+        private readonly string largeThumbnail;
         private string description;
         private string author;
         private DateTime pubDate;
@@ -41,6 +42,11 @@ namespace FBS.Web.News.Controllers
             get { return this.smallThumbnail; }
         }
 
+        public string LargeThumbnail
+        {
+            get { return this.largeThumbnail; }
+        }
+
         public Theme(string path)
         {
             this.path = path;
@@ -49,6 +55,7 @@ namespace FBS.Web.News.Controllers
             this.author = string.Empty;
             this.pubDate = DateTime.MinValue;
             this.smallThumbnail = "/Themes/"+name + "/Thumbnails/small.jpg";//path + "\\Thumbnails\\small.jpg";
+            this.largeThumbnail = "/Themes/" + name + "/Thumbnails/large.jpg";
         }
 
         /// <summary>
@@ -108,7 +115,12 @@ namespace FBS.Web.News.Controllers
     {
         //
         // GET: /Site/
-
+        SiteService srv;
+        protected override void Initialize(System.Web.Routing.RequestContext requestContext)
+        {
+            srv = new SiteService();
+            base.Initialize(requestContext);
+        }
         public ActionResult Index()
         {
             return View();
@@ -121,7 +133,7 @@ namespace FBS.Web.News.Controllers
             //setting
 
             this.HttpContext.Application.Set("themeName", themeName);
-
+            srv.ChangeTheme(themeName);
             //saved
 
             //return
@@ -134,7 +146,7 @@ namespace FBS.Web.News.Controllers
             return View();
         }
 
-        [HttpPost]
+        //[HttpPost]
         public JsonResult FetchThemes()
         {
             string themeDir = this.Server.MapPath("~/Themes/");
@@ -156,7 +168,7 @@ namespace FBS.Web.News.Controllers
             {
                 throw;
             }
-            if (themes.Count() > 0)
+            if (themes.Count > 0)
                 foreach (string cur in themes)
                 {
                     string smallThumbnail = cur + "\\Thumbnails\\small.jpg";
@@ -165,8 +177,18 @@ namespace FBS.Web.News.Controllers
                     themeSet.Add(t);
                 }
 
-
-            return Json(themeSet);
+            var result = new resultDojo();
+            result.identifer = "Name";
+            result.label = "Description";
+            result.items = themeSet;
+            
+            return Json(result,JsonRequestBehavior.AllowGet);
+        }
+        class resultDojo 
+        {
+            public string identifer;
+            public string label;
+            public IList<Theme> items;
         }
     }
 }

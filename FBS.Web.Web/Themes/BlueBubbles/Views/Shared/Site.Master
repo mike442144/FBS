@@ -9,9 +9,9 @@
 <meta name="description" content="Description of your web page goes here." />
 <meta name="keywords" content="Keywords for you web page go here. Each keyword or group of keyword phrases are separated by a comma. Keep this  list short and relevant to the content and title of this specific page." />
 <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
-<link rel="shortcut icon" href="../../Content/images/favicon.ico" />
-<link href="../../Content/Site.css" rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
-<link href="../../Content/print-styles.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="shortcut icon" href="/Themes/BlueBubbles/Content/images/favicon.ico" />
+<link href="/Themes/BlueBubbles/Content/Site.css" rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+<link href="/Themes/BlueBubbles/Content/print-styles.css" rel="stylesheet" type="text/css" media="print" />
 </head>
 <body class="inner-body">
 <div class="none"><a href="#maincontent">skip to the main content area of this page</a></div>
@@ -237,7 +237,7 @@
 </div>
 <div class="nav-footer-container">
     <div class="nav-footer">
-        <p class="copyright">&copy; 2007 Site Name</p>
+        <p class="copyright">&copy; 2007 <%=Helpers.SharedData.CopyRight %></p>
         <ul>
             <li class="first"><%= Html.ActionLink("Home", "Index", "Home") %></li>
             <li><%= Html.ActionLink("About", "About", "Home") %></li>

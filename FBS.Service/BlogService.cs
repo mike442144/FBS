@@ -9,11 +9,12 @@ using System.Web;
 using System.Text.RegularExpressions;
 using System.Linq;
 using System.Configuration;
+using FBS.Domain.Log;
 
 namespace FBS.Service
 {
-    
-    public class BlogService
+    [Logging()]
+    public class BlogService:ContextBoundObject
     {
         #region 博文操作
 
@@ -116,10 +117,10 @@ namespace FBS.Service
         }
         
         /// <summary>
-        /// 获得一篇博文的详细信息
+        /// 获得指定分类的博客
         /// </summary>
-        /// <param name="storyId">博文编号</param>
-        /// <returns>博文详细模型</returns>
+        /// <param name="categoryname">分类名</param>
+        /// <returns></returns>
         public BlogStoryDspModel GetLeastBlogStoryContentByCategoryName(string categoryname)
         {
             CategoryService myservice = new CategoryService();
@@ -156,7 +157,7 @@ namespace FBS.Service
             BlogStory story = storyRep.GetByKey(storyId);
             if (story != null)
             {
-                string name = cateservice.GetCategoryNameById(story.CategoryID).CategoryName;
+                string name = cateservice.GetCategoryNameById(story.CategoryID);
                 target = new BlogStoryDetailsModel() { CategoryName = name, CategoryID = story.CategoryID, StoryID = story.Id, AccountID = story.UserID, WriterName = story.UserName, Title = story.State.Title, Content = story.State.Description, PublishTime = story.CreationDate, ReadCount = story.State.ClickCount, CommentsCount = story.State.CommentCount };
                 target.Comments = new List<CommentDspModel>();
                 int commentCount = commentRep.FindAll(new Specification<BlogComment>(c => c.TargetId == storyId)).Count;
@@ -199,7 +200,7 @@ namespace FBS.Service
             return targets;
         }
         /// <summary>
-        /// 指定用户博文的数量
+        /// 某个用户博文的数量
         /// </summary>
         /// <param name="userid"></param>
         /// <returns></returns>
@@ -247,7 +248,7 @@ namespace FBS.Service
             return tmp;
         }
         /// <summary>
-        /// 获取某个分类的所有博文简介
+        /// 获取某个分类的博文列表
         /// </summary>
         /// <param name="categoryId">分类编号</param>
         public IList<BlogStoryDspModel> GetAllBlogStorysSummaryOfCategory(Guid categoryId)
@@ -276,7 +277,7 @@ namespace FBS.Service
             return targets;
         }
         /// <summary>
-        /// 获取某个分类的所有博文简介
+        /// (分页)获取某个分类的博文列表
         /// </summary>
         /// <param name="categoryId">分类编号</param>
         public IList<BlogStoryDspModel> GetAllBlogStorysByCategory(Guid categoryId,int startIndex,int count)
@@ -294,7 +295,7 @@ namespace FBS.Service
                     Title = story.State.Title,
                     CommentsCount = story.State.CommentCount,
                     ReadCount = story.State.ClickCount,
-                    Description = story.State.GetShortBody(50),
+                    Description = story.State.GetShortBody(200),
                     PublishTime = story.CreationDate,
                     StoryID = story.Id,
                      UserID = story.UserID, ImgName=story.ImgName
@@ -308,7 +309,7 @@ namespace FBS.Service
 
 
         /// <summary>
-        /// 获取博客文章下的信息
+        /// 获取某个分类的博文的数量
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -348,10 +349,36 @@ namespace FBS.Service
             this.CreateFeed(newFeed);
         }
 
-        //获取最近发表的N篇博文简介
-        public void GetRecentBlogStorysSummary()
+       
+        /// <summary>
+        /// 获取最近发表的N篇博文简介
+        /// </summary>
+        /// <param name="n">获取数量</param>
+        /// <returns></returns>
+        public IList<BlogStoryDspModel> GetRecentBlogStorysSummary(int n)
         {
-            //查询最近发表的N篇博文简介
+            IRepository<BlogStory> storyRep = Factory.Factory<IRepository<BlogStory>>.GetConcrete<BlogStory>();
+
+            IList<BlogStory> storys = storyRep.FindAll(new Specification<BlogStory>(post => post.Id != Guid.Empty).Take(n).OrderByDescending(p => p.CreationDate));
+            IList<BlogStoryDspModel> targets = new List<BlogStoryDspModel>();
+
+            foreach (BlogStory story in storys)
+            {
+                BlogStoryDspModel tmp = new BlogStoryDspModel()
+                {
+                    WriterName = story.UserName,
+                    Title = story.State.Title,
+                    CommentsCount = story.State.CommentCount,
+                    ReadCount = story.State.ClickCount,
+                    Description = story.State.GetShortBody(200),
+                    PublishTime = story.CreationDate,
+                    StoryID = story.Id,
+                    UserID = story.UserID
+                };
+                targets.Add(tmp);
+            }
+
+            return targets;
         }
 
         /// <summary>

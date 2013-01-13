@@ -12,11 +12,15 @@ namespace FBS.Repository
     public class SiteRepository : ISiteRepository
     {
         private Site _currentSite;
-        string _op = string.Empty;
+        Persistence.DbOperation _op;
         AviatorDb<Site> _db = null;
+        AviatorDb<SitePage> _pageDb = null;
+        AviatorDb<SiteSettings> _settingsDb = null;
         public SiteRepository()
         {
             this._db = new AviatorDb<Site>();
+            this._pageDb = new AviatorDb<SitePage>();
+            this._settingsDb = new AviatorDb<SiteSettings>();
             this._currentSite = null;
         }
 
@@ -28,7 +32,7 @@ namespace FBS.Repository
                 this._currentSite = entity;
             else
                 throw new Exception("网站已经安装，不可重复操作");
-            this._op = "add";
+            this._op = Persistence.DbOperation.Insert;
         }
 
         public bool Exists(ISpecification<Site> specification)
@@ -87,21 +91,57 @@ namespace FBS.Repository
         public void Update(Site entity)
         {
             this._currentSite = entity;
-            this._op = "up";
+            this._op = Persistence.DbOperation.Update;
         }
 
         public void PersistAll()
         {
-            DataTable table=new DataTable();
-            this._currentSite.AlterToRow(table);
-            if (this._op == "up")
-                Persistence.SitePersist.PersistAll(table, Persistence.DbOperation.Update);
-            else if (this._op == "add")
-                Persistence.SitePersist.PersistAll(table, Persistence.DbOperation.Insert);
-
-            table.Clear();
+            var siteTable=new DataTable();
+            
+            this._currentSite.AlterToRow(siteTable);
+            
+            Persistence.TPersist<Site>.PersistAll(siteTable, this._op);
+            
+            siteTable.Clear();
+            siteTable.Dispose();
+            siteTable = null;
+            if (this._currentSite.Settings != null)
+            {
+                var settingsTable = new DataTable();
+                this._currentSite.Settings.AlterToRow(settingsTable);
+                Persistence.TPersist<SiteSettings>.PersistAll(settingsTable, this._op);
+                settingsTable.Clear();
+                settingsTable.Dispose();
+                settingsTable = null;
+            }
         }
 
         #endregion
+
+        public SitePage PageByName(Site site, string name)
+        {
+            SitePage result = null;
+            var sps = this._pageDb.TEntitys.Where(sp => sp.Name == name);
+            if (sps != null)
+                result = sps.ToList().FirstOrDefault();
+            return result;
+        }
+
+        public string SiteTheme(Site site)
+        {
+            var themeName = string.Empty;
+            var settings = this._settingsDb.TEntitys.Where(set => set.SiteID == site.Id);
+            if (settings != null)
+                themeName = settings.ToList().FirstOrDefault().ThemeName;
+            return themeName;
+        }
+
+        public SiteSettings SiteSettings(Site site)
+        {
+            var settings = this._settingsDb.TEntitys.Where(set => set.SiteID == site.Id);
+            if (settings != null)
+                return settings.ToList().FirstOrDefault();
+            return null;
+        }
     }
 }

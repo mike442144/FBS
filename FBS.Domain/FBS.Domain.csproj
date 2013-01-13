@@ -107,6 +107,7 @@
     <Compile Include="Aggregate\Entity\Site.cs" />
     <Compile Include="Aggregate\Entity\SiteModule.cs" />
     <Compile Include="Aggregate\Entity\SitePage.cs" />
+    <Compile Include="Aggregate\Entity\SiteSettings.cs" />
     <Compile Include="Aggregate\Entity\Suggest.cs" />
     <Compile Include="Aggregate\Entity\ThreadRootMessage.cs" />
     <Compile Include="Aggregate\Entity\TopForumThread.cs" />

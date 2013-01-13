@@ -8,5 +8,8 @@ namespace FBS.Domain.Repository
 {
     public interface ISiteRepository:IRepository<Site>
     {
+        SitePage PageByName(Site site,string name);
+        string SiteTheme(Site site);
+        SiteSettings SiteSettings(Site site);
     }
 }

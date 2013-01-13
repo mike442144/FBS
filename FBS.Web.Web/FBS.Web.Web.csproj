@@ -48,10 +48,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AspNetPager, Version=7.2.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL" />
-    <Reference Include="Aviator.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Lib\Aviator.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations">
@@ -80,7 +76,371 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AddAdvertisement.aspx.cs">
+      <DependentUpon>AddAdvertisement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AddAdvertisement.aspx.designer.cs">
+      <DependentUpon>AddAdvertisement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AddAdvertisementPageOld.aspx.cs">
+      <DependentUpon>AddAdvertisementPageOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AddAdvertisementPageOld.aspx.designer.cs">
+      <DependentUpon>AddAdvertisementPageOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AdvertisementList.aspx.cs">
+      <DependentUpon>AdvertisementList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AdvertisementList.aspx.designer.cs">
+      <DependentUpon>AdvertisementList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AdvertisementListOLd.aspx.cs">
+      <DependentUpon>AdvertisementListOLd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AdvertisementListOLd.aspx.designer.cs">
+      <DependentUpon>AdvertisementListOLd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AdvertisementPageListOld.aspx.cs">
+      <DependentUpon>AdvertisementPageListOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\AdvertisementPageListOld.aspx.designer.cs">
+      <DependentUpon>AdvertisementPageListOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\GetXML.ashx.cs">
+      <DependentUpon>GetXML.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\UpdateAdvertisement.aspx.cs">
+      <DependentUpon>UpdateAdvertisement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\AdvertisementPages\UpdateAdvertisement.aspx.designer.cs">
+      <DependentUpon>UpdateAdvertisement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesCategoryPages\AddArticlesCategory.aspx.cs">
+      <DependentUpon>AddArticlesCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesCategoryPages\AddArticlesCategory.aspx.designer.cs">
+      <DependentUpon>AddArticlesCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesCategoryPages\ArticlesCategoryList.aspx.cs">
+      <DependentUpon>ArticlesCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesCategoryPages\ArticlesCategoryList.aspx.designer.cs">
+      <DependentUpon>ArticlesCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesCategoryPages\UpdateArticlesCategory.aspx.cs">
+      <DependentUpon>UpdateArticlesCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesCategoryPages\UpdateArticlesCategory.aspx.designer.cs">
+      <DependentUpon>UpdateArticlesCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\AddArticles.aspx.cs">
+      <DependentUpon>AddArticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\AddArticles.aspx.designer.cs">
+      <DependentUpon>AddArticles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\ArticlesList.aspx.cs">
+      <DependentUpon>ArticlesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\ArticlesList.aspx.designer.cs">
+      <DependentUpon>ArticlesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\UpdateArticle.aspx.cs">
+      <DependentUpon>UpdateArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\UpdateArticle.aspx.designer.cs">
+      <DependentUpon>UpdateArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\UpLoadImg.ashx.cs">
+      <DependentUpon>UpLoadImg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\UpLoadImgWindow.aspx.cs">
+      <DependentUpon>UpLoadImgWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ArticlesPages\UpLoadImgWindow.aspx.designer.cs">
+      <DependentUpon>UpLoadImgWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogCategoryPages\AddBlogCategory.aspx.cs">
+      <DependentUpon>AddBlogCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogCategoryPages\AddBlogCategory.aspx.designer.cs">
+      <DependentUpon>AddBlogCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogCategoryPages\BlogCategoryList.aspx.cs">
+      <DependentUpon>BlogCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogCategoryPages\BlogCategoryList.aspx.designer.cs">
+      <DependentUpon>BlogCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogCategoryPages\UpdateBlogCategory.aspx.cs">
+      <DependentUpon>UpdateBlogCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogCategoryPages\UpdateBlogCategory.aspx.designer.cs">
+      <DependentUpon>UpdateBlogCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogPages\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogPages\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogPages\Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BlogPages\Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\DemandPages\DemandDetailsView.aspx.cs">
+      <DependentUpon>DemandDetailsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\DemandPages\DemandDetailsView.aspx.designer.cs">
+      <DependentUpon>DemandDetailsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\DemandPages\DemandList.aspx.cs">
+      <DependentUpon>DemandList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\DemandPages\DemandList.aspx.designer.cs">
+      <DependentUpon>DemandList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\FormInfoList\UpdateFormInfo.aspx.cs">
+      <DependentUpon>UpdateFormInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\FormInfoList\UpdateFormInfo.aspx.designer.cs">
+      <DependentUpon>UpdateFormInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\GoodsPages\GoodsList.aspx.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\GoodsPages\GoodsList.aspx.designer.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\GoodsPages\UpdateGoods.aspx.cs">
+      <DependentUpon>UpdateGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\GoodsPages\UpdateGoods.aspx.designer.cs">
+      <DependentUpon>UpdateGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\MailServerPages\MailServerList.aspx.cs">
+      <DependentUpon>MailServerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\MailServerPages\MailServerList.aspx.designer.cs">
+      <DependentUpon>MailServerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\MailServerPages\UpdateMailServer.aspx.cs">
+      <DependentUpon>UpdateMailServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\MailServerPages\UpdateMailServer.aspx.designer.cs">
+      <DependentUpon>UpdateMailServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\MissionPages\MissionList.aspx.cs">
+      <DependentUpon>MissionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\MissionPages\MissionList.aspx.designer.cs">
+      <DependentUpon>MissionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\MissionPages\UpdateMission.aspx.cs">
+      <DependentUpon>UpdateMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\MissionPages\UpdateMission.aspx.designer.cs">
+      <DependentUpon>UpdateMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\NeedsPages\NeedsList.aspx.cs">
+      <DependentUpon>NeedsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\NeedsPages\NeedsList.aspx.designer.cs">
+      <DependentUpon>NeedsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Recommend\Recommend.aspx.cs">
+      <DependentUpon>Recommend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Recommend\Recommend.aspx.designer.cs">
+      <DependentUpon>Recommend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Recommend\RecommendList.aspx.cs">
+      <DependentUpon>RecommendList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Recommend\RecommendList.aspx.designer.cs">
+      <DependentUpon>RecommendList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\RolePages\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\RolePages\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\RolePages\UpdateRole.aspx.cs">
+      <DependentUpon>UpdateRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\RolePages\UpdateRole.aspx.designer.cs">
+      <DependentUpon>UpdateRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\MissionPages\AddMission.aspx.designer.cs">
+      <DependentUpon>AddMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\MissionPages\AddMission.aspx.cs">
+      <DependentUpon>AddMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\NeedsPages\NeedsDetailsView.aspx.designer.cs">
+      <DependentUpon>NeedsDetailsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\NeedsPages\NeedsDetailsView.aspx.cs">
+      <DependentUpon>NeedsDetailsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Recommend\FindRecommend.aspx.designer.cs">
+      <DependentUpon>FindRecommend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Recommend\FindRecommend.aspx.cs">
+      <DependentUpon>FindRecommend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\RolePages\AddRole.aspx.designer.cs">
+      <DependentUpon>AddRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\RolePages\AddRole.aspx.cs">
+      <DependentUpon>AddRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Settings\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Settings\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetAnswer\AddAnswer.aspx.designer.cs">
+      <DependentUpon>AddAnswer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetAnswer\AddAnswer.aspx.cs">
+      <DependentUpon>AddAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetQuestion\Question.aspx.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetQuestion\Question.aspx.designer.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Suggest\ReplySuggest.aspx.designer.cs">
+      <DependentUpon>ReplySuggest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Suggest\ReplySuggest.aspx.cs">
+      <DependentUpon>ReplySuggest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\tiebaPages\AddForum.aspx.designer.cs">
+      <DependentUpon>AddForum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\tiebaPages\AddForum.aspx.cs">
+      <DependentUpon>AddForum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Video\AddShareVideo.aspx.designer.cs">
+      <DependentUpon>AddShareVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Video\AddShareVideo.aspx.cs">
+      <DependentUpon>AddShareVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\EmailPages\SendEmail.aspx.designer.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\EmailPages\SendEmail.aspx.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetAnswer\UpdateAnswer.aspx.cs">
+      <DependentUpon>UpdateAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetAnswer\UpdateAnswer.aspx.designer.cs">
+      <DependentUpon>UpdateAnswer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetQuestion\UpdateQuestion.aspx.cs">
+      <DependentUpon>UpdateQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\SheetQuestion\UpdateQuestion.aspx.designer.cs">
+      <DependentUpon>UpdateQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Suggest\SuggestList.aspx.cs">
+      <DependentUpon>SuggestList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Suggest\SuggestList.aspx.designer.cs">
+      <DependentUpon>SuggestList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\tiebaPages\ForumList.aspx.cs">
+      <DependentUpon>ForumList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\tiebaPages\ForumList.aspx.designer.cs">
+      <DependentUpon>ForumList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\tiebaPages\UpdateForum.aspx.cs">
+      <DependentUpon>UpdateForum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\tiebaPages\UpdateForum.aspx.designer.cs">
+      <DependentUpon>UpdateForum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Video\VideoList.aspx.cs">
+      <DependentUpon>VideoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Video\VideoList.aspx.designer.cs">
+      <DependentUpon>VideoList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstallController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
@@ -88,15 +448,77 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\IsCurrentActionHelper.cs" />
+    <Compile Include="Helpers\SharedData.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewEngine\WebFormThemeViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AddAdvertisement.aspx" />
+    <Content Include="Admin\index.html" />
+    <Content Include="Admin\login.aspx" />
+    <Content Include="Admin\main.aspx" />
+    <Content Include="Admin\Pages\AdvertisementPages\AddAdvertisement.aspx" />
+    <Content Include="Admin\Pages\AdvertisementPages\AddAdvertisementPageOld.aspx" />
+    <Content Include="Admin\Pages\AdvertisementPages\AdvertisementList.aspx" />
+    <Content Include="Admin\Pages\AdvertisementPages\AdvertisementListOLd.aspx" />
+    <Content Include="Admin\Pages\AdvertisementPages\AdvertisementPageListOld.aspx" />
+    <Content Include="Admin\Pages\AdvertisementPages\UpdateAdvertisement.aspx" />
+    <Content Include="Admin\Pages\ArticlesCategoryPages\AddArticlesCategory.aspx" />
+    <Content Include="Admin\Pages\ArticlesCategoryPages\ArticlesCategoryList.aspx" />
+    <Content Include="Admin\Pages\ArticlesCategoryPages\UpdateArticlesCategory.aspx" />
+    <Content Include="Admin\Pages\ArticlesPages\AddArticles.aspx" />
+    <Content Include="Admin\Pages\ArticlesPages\ArticlesList.aspx" />
+    <Content Include="Admin\Pages\ArticlesPages\UpdateArticle.aspx" />
+    <Content Include="Admin\Pages\ArticlesPages\UpLoadImgWindow.aspx" />
+    <Content Include="Admin\Pages\BlogCategoryPages\AddBlogCategory.aspx" />
+    <Content Include="Admin\Pages\BlogCategoryPages\BlogCategoryList.aspx" />
+    <Content Include="Admin\Pages\BlogCategoryPages\UpdateBlogCategory.aspx" />
+    <Content Include="Admin\Pages\BlogPages\Blog.aspx" />
+    <Content Include="Admin\Pages\BlogPages\Blogs.aspx" />
+    <Content Include="Admin\Pages\DemandPages\DemandDetailsView.aspx" />
+    <Content Include="Admin\Pages\DemandPages\DemandList.aspx" />
+    <Content Include="Admin\Pages\FormInfoList\UpdateFormInfo.aspx" />
+    <Content Include="Admin\Pages\GoodsPages\GoodsList.aspx" />
+    <Content Include="Admin\Pages\GoodsPages\UpdateGoods.aspx" />
+    <Content Include="Admin\Pages\MailServerPages\MailServerList.aspx" />
+    <Content Include="Admin\Pages\MailServerPages\UpdateMailServer.aspx" />
+    <Content Include="Admin\Pages\MissionPages\MissionList.aspx" />
+    <Content Include="Admin\Pages\MissionPages\UpdateMission.aspx" />
+    <Content Include="Admin\Pages\NeedsPages\NeedsList.aspx" />
+    <Content Include="Admin\Pages\Recommend\Recommend.aspx" />
+    <Content Include="Admin\Pages\Recommend\RecommendList.aspx" />
+    <Content Include="Admin\Pages\RolePages\RoleList.aspx" />
+    <Content Include="Admin\Pages\RolePages\UpdateRole.aspx" />
+    <Content Include="Admin\Pages\Settings\Settings.aspx" />
+    <Content Include="Admin\Pages\SheetAnswer\UpdateAnswer.aspx" />
+    <Content Include="Admin\Pages\SheetQuestion\UpdateQuestion.aspx" />
+    <Content Include="Admin\Pages\Suggest\SuggestList.aspx" />
+    <Content Include="Admin\Pages\tiebaPages\ForumList.aspx" />
+    <Content Include="Admin\Pages\tiebaPages\UpdateForum.aspx" />
+    <Content Include="Admin\Pages\Video\VideoList.aspx" />
+    <Content Include="Admin\welcome.html" />
+    <Content Include="Admin\css\left.css" />
+    <Content Include="Admin\css\right.css" />
+    <Content Include="Admin\css\rightList.css" />
+    <Content Include="Admin\css\top.css" />
+    <Content Include="Admin\css\welcome.css" />
+    <Content Include="Admin\Pages\EmailPages\SendEmail.aspx" />
+    <Content Include="Admin\Pages\MissionPages\AddMission.aspx" />
+    <Content Include="Admin\Pages\NeedsPages\NeedsDetailsView.aspx" />
+    <Content Include="Admin\Pages\Recommend\FindRecommend.aspx" />
+    <Content Include="Admin\Pages\RolePages\AddRole.aspx" />
+    <Content Include="Admin\Pages\SheetAnswer\AddAnswer.aspx" />
+    <Content Include="Admin\Pages\SheetQuestion\Question.aspx" />
+    <Content Include="Admin\Pages\Suggest\ReplySuggest.aspx" />
+    <Content Include="Admin\Pages\tiebaPages\AddForum.aspx" />
+    <Content Include="Admin\Pages\Video\AddShareVideo.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Views\Article\Details.aspx" />
     <Content Include="Views\Article\Index.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -260,10 +682,14 @@
     <Content Include="Views\Shared\ITsdsMasterPage.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ITsdsWebNews.sdm" />
+    <Content Include="ITsdsWebNews.sdm">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ReadMe.txt" />
     <Content Include="Views\Shared\Footer.ascx" />
     <Content Include="Views\Shared\Header.ascx" />
+    <Content Include="Admin\Pages\AdvertisementPages\GetXML.ashx" />
+    <Content Include="Admin\Pages\ArticlesPages\UpLoadImg.ashx" />
     <None Include="images\fancybox\Thumbs.db" />
     <Content Include="css\maincontainer.css" />
     <Content Include="css\nottunav.css" />
@@ -336,7 +762,9 @@
     <Content Include="Lib\SortUtility.dll" />
     <Content Include="Lib\StringTemplate.dll" />
     <Content Include="Lib\System.Data.SQLite.DLL" />
-    <Content Include="sitemap.xml" />
+    <Content Include="sitemap.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Home\CommonError.aspx" />
     <Content Include="Views\Install\DbCnf.aspx" />
     <Content Include="Views\Install\EnvironmentCheck.aspx" />
@@ -364,6 +792,10 @@
     <ProjectReference Include="..\FBS.Service\FBS.Service.csproj">
       <Project>{2D83B4EC-523B-46C9-813A-E6B5AE9FE39F}</Project>
       <Name>FBS.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FBS.Utils\FBS.Utils.csproj">
+      <Project>{2398954B-ABDD-42F7-9DCF-364024C16300}</Project>
+      <Name>FBS.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

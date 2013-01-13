@@ -171,24 +171,28 @@ namespace FBS.Domain.Aggregate.Entity
         public string SiteName
         {
             get { return _siteName; }
+            set { this._siteName = value; }
         }
         private string _siteDescription;
 
         public string SiteDescription
         {
             get { return _siteDescription; }
+            set { this._siteDescription = value; }
         }
         private string _siteurl;
 
         public string Siteurl
         {
             get { return _siteurl; }
+            set { this._siteurl = value; }
         }
         private string _copyright;
 
         public string Copyright
         {
             get { return _copyright; }
+            set { this._copyright = value; }
         }
         private string _version;
 
@@ -198,5 +202,7 @@ namespace FBS.Domain.Aggregate.Entity
         }
         private AccountMessageVO _founder;
         private DateTime _createdDate;
+        public SiteSettings Settings { get { return this._settings; } set { this._settings = value; } }
+        private SiteSettings _settings;
     }
 }

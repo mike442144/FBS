@@ -29,10 +29,10 @@ namespace FBS.App
         /// 显示许可协议
         /// </summary>
         /// <returns></returns>
-        public StepOfLicense ShowLicense()
+        public License ShowLicense()
         {
             this._licenseContent = "LicenseContent";
-            StepOfLicense sol = new StepOfLicense();
+            License sol = new License();
             sol.Info = this._licenseContent;
 
             return sol;
@@ -42,10 +42,10 @@ namespace FBS.App
         /// 检测网站运行环境,并返回检测信息
         /// </summary>
         /// <returns></returns>
-        public StepOfCheck Check()
+        public CheckEvn Check()
         {
 
-            StepOfCheck soc = new StepOfCheck();
+            CheckEvn soc = new CheckEvn();
             soc.OSVersion = Environment.OSVersion.ToString();
             soc.RunTimeVersion = Environment.Version.ToString();
 
@@ -57,7 +57,7 @@ namespace FBS.App
         /// </summary>
         /// <param name="sodc"></param>
         /// <returns></returns>
-        public void SetDbCnf(StepOfDbCnf sodc)
+        public void SetDbCnf(DbCnf sodc)
         {
             var cnf = WebConfigurationManager.OpenWebConfiguration("~");//打开配置文件
             if (cnf == null) throw new NullReferenceException("未能正常读取配置文件,web.config");
@@ -88,10 +88,10 @@ namespace FBS.App
         /// </summary>
         /// <param name="sosc"></param>
         /// <returns></returns>
-        public void SetSiteCnf(StepOfSiteCnf sosc)
+        public void SetSiteCnf(SiteCnf sosc)
         {
-            SiteInfoService service = new SiteInfoService();
-            service.InitSiteInfo(sosc);//初始化网站信息
+            SiteService service = new SiteService();
+            service.SetSiteInfo(sosc);//初始化网站信息
 
             UserEntryService us = new UserEntryService();//添加创始人
             UserRegisterModel m = new UserRegisterModel();
