@@ -59,11 +59,19 @@ namespace FBS.Web.News
             RegisterRoutes(RouteTable.Routes);
             
         }
+
+        
+        bool IgnoreMvcDig(HttpContext c)
+        {
+            if (c.Request.Url.AbsolutePath.ToLower().EndsWith("mvcdiagnostics.aspx")) return true;
+            else return false;
+        }
         public override void Init()
         {
             this.BeginRequest += new EventHandler((s, e) =>
             {
                 var context = (s as MvcApplication).Context;
+                if (IgnoreMvcDig(context)) return;
                 if (
                     !(new string[] { "css", "js", "jpg", "gif", "png", "html", "txt" }).Any(item => context.Request.Url.AbsolutePath.ToLower().EndsWith(item))
                     && !System.IO.File.Exists(context.Server.MapPath("~/installed")))
