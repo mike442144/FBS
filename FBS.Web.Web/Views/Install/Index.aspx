@@ -1,4 +1,6 @@
-﻿<html>
+﻿<%@ Page Title="FBS安装" Language="C#" Inherits="System.Web.Mvc.ViewPage" %>
+<!DOCTYPE html >
+<html>
 <head>
 <title>FBS安装</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
