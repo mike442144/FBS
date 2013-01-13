@@ -10,7 +10,6 @@ namespace Helpers
     public static class SharedData
     {
         static SiteService siteInfoService;
-        static SiteSettings siteSettings;
         static SiteCnf sc;
         public static string SiteName { get { return getSiteInfo().SiteName; } }
         public static string CopyRight { get { return getSiteInfo().CopyRight; } }
@@ -20,7 +19,8 @@ namespace Helpers
             get
             {
                 if (siteInfoService == null) siteInfoService = new SiteService();
-                return siteInfoService.ThemeName();
+                try { var name = siteInfoService.ThemeName(); return name; }
+                catch { return "Default"; }
             }
         }
         static SiteCnf getSiteInfo()
