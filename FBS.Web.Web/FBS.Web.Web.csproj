@@ -497,10 +497,6 @@
     <Content Include="Admin\Pages\tiebaPages\UpdateForum.aspx" />
     <Content Include="Admin\Pages\Video\VideoList.aspx" />
     <Content Include="Admin\welcome.html" />
-    <Content Include="Admin\css\left.css" />
-    <Content Include="Admin\css\right.css" />
-    <Content Include="Admin\css\rightList.css" />
-    <Content Include="Admin\css\top.css" />
     <Content Include="Admin\css\welcome.css" />
     <Content Include="Admin\Pages\EmailPages\SendEmail.aspx" />
     <Content Include="Admin\Pages\MissionPages\AddMission.aspx" />
