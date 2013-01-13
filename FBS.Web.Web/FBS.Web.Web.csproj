@@ -511,6 +511,7 @@
     <Content Include="Admin\Pages\tiebaPages\AddForum.aspx" />
     <Content Include="Admin\Pages\Video\AddShareVideo.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="LICENSE.txt" />
     <Content Include="Scripts\dojo-release-1.8.1\dijit\a11y.js" />
     <Content Include="Scripts\dojo-release-1.8.1\dijit\a11y.js.uncompressed.js" />
     <Content Include="Scripts\dojo-release-1.8.1\dijit\a11yclick.js" />
