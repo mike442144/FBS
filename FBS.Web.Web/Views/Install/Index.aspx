@@ -14,7 +14,7 @@
     </script>
     <style type="text/css">
     .pageOverlay {
-        top: 10px;
+        top: 50px;
         left: 375px;
         position: absolute;
         height: 50px;
@@ -53,7 +53,7 @@
                     method: cnfForm.method
                 }).then(function (data) {
                     theloadbox.endLoading();
-                    if (data && data !== '') dijit.byId("completingPane").set("content", "安装失败！");
+                    if (data && data !== '') dijit.byId("completingPane").set("content", "安装失败！错误信息："+data);
                     else dijit.byId("completingPane").set("content", "安装成功点击完成") ;
                 });
             });
