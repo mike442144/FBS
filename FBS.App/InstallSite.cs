@@ -65,7 +65,7 @@ namespace FBS.App
             if (section == null)
                 throw new ConfigurationErrorsException("web.config中不存在connectionstrings节点,请检查文件是否已经损坏，或被恶意篡改！");
             var setting = new ConnectionStringSettings();
-            setting.ConnectionString = "Data Source=" + sodc.DbAddr + ";Initial Catalog=" + sodc.DbName + ";User Id=" + sodc.DbUser + ";Password=" + sodc.DbPsd;
+            setting.ConnectionString = "Server=" + sodc.DbAddr + ";Database=" + sodc.DbName + ";User ID=" + sodc.DbUser + ";Password=" + sodc.DbPsd;
             setting.Name = "sqlstrconn";
             setting.ProviderName = "System.Data.SqlClient";
             section.ConnectionStrings.Clear();
