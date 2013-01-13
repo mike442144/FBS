@@ -70,17 +70,17 @@ namespace FBS.Web.News
         {
             this.BeginRequest += new EventHandler((s, e) =>
             {
-                var context = (s as MvcApplication).Context;
-                if (IgnoreMvcDig(context)) return;
-                if (
-                    !(new string[] { "css", "js", "jpg", "gif", "png", "html", "txt" }).Any(item => context.Request.Url.AbsolutePath.ToLower().EndsWith(item))
-                    && !System.IO.File.Exists(context.Server.MapPath("~/installed")))
-                {
-                    if(!context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
-                        context.Response.Redirect("/Install/Index/", false);
-                }
-                else if (context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
-                    context.Response.Redirect("/Home/Index/", false);
+                //var context = (s as MvcApplication).Context;
+                //if (IgnoreMvcDig(context)) return;
+                //if (
+                //    !(new string[] { "css", "js", "jpg", "gif", "png", "html", "txt" }).Any(item => context.Request.Url.AbsolutePath.ToLower().EndsWith(item))
+                //    && !System.IO.File.Exists(context.Server.MapPath("~/installed")))
+                //{
+                //    if(!context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
+                //        context.Response.Redirect("/Install/Index/", false);
+                //}
+                //else if (context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
+                //    context.Response.Redirect("/Home/Index/", false);
             });
             base.Init();
         }
