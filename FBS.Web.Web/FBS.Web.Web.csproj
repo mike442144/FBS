@@ -510,6 +510,15 @@
     <Content Include="Admin\Pages\Suggest\ReplySuggest.aspx" />
     <Content Include="Admin\Pages\tiebaPages\AddForum.aspx" />
     <Content Include="Admin\Pages\Video\AddShareVideo.aspx" />
+    <Content Include="App_Data\2012.11.29fbs.sql" />
+    <Content Include="App_Data\2013.01.12fbs.sql" />
+    <Content Include="App_Data\Advertiser.xml" />
+    <Content Include="App_Data\EmailServiceConfig.xml" />
+    <Content Include="App_Data\fbs.sql" />
+    <Content Include="App_Data\Permissions.xml" />
+    <Content Include="App_Data\Provinces.xml" />
+    <Content Include="App_Data\sql20111226.sql" />
+    <Content Include="App_Data\敏感词库大全2.txt" />
     <Content Include="Global.asax" />
     <Content Include="LICENSE.txt" />
     <Content Include="Scripts\dojo-release-1.8.1\dijit\a11y.js" />
