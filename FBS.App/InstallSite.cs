@@ -69,20 +69,31 @@ namespace FBS.App
             setting.Name = "sqlstrconn";
             setting.ProviderName = "System.Data.SqlClient";
             section.ConnectionStrings.Clear();
-            section.ConnectionStrings.Add(setting);
+            section.ConnectionStrings.Add(setting); 
+            
             try
             {
-                cnf.Save();//保存
-                var sqlScript = System.IO.File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/fbs.sql"));
-                Domain.Repository.IHelper helper = FBS.Factory.Factory<FBS.Domain.Repository.IHelper>.GetConcrete();
-                helper.ExecScriptFile(sqlScript);
+                cnf.Save(ConfigurationSaveMode.Modified);//保存配置
             }
             catch 
-            { 
+            {
                 throw; 
             }
         }
 
+        /// <summary>
+        /// 安装数据库
+        /// </summary>
+        public void InstallDatabase()
+        {
+            try
+            {
+                var sqlScript = System.IO.File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/fbs.sql"));
+                Domain.Repository.IHelper helper = FBS.Factory.Factory<FBS.Domain.Repository.IHelper>.GetConcrete();
+                helper.ExecScriptFile(sqlScript);
+            }
+            catch { throw; }
+        }
         /// <summary>
         /// 配置网站信息
         /// </summary>

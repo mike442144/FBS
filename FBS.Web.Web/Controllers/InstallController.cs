@@ -41,12 +41,16 @@ namespace FBS.Web.News.Controllers
                 var filePath=Server.MapPath("~/installed");
                 if (System.IO.File.Exists(filePath))
                     throw new Exception("网站已经安装过");
-                
+                //setting database connectionstring.
                 install.SetDbCnf(new DbCnf() {
                     DbAddr=DbAddr, DbName=DbName, DbPsd=DbPsd, DbUser=DbUser 
                 });
+                System.Threading.Thread.Sleep(1000);
+                //exec database scripts.
+                install.InstallDatabase();
+                //init site base info
                 install.SetSiteCnf(new SiteCnf() {
-                     FounderEmail="admin@admin.com", FounderPsd="passw0rd", SiteDesc="", SiteName="", FounderName="Heilsberg", SiteUrl=""
+                     FounderEmail="admin@admin.com", FounderPsd="passw0rd", SiteDesc="We Love Internet.", SiteName="FBS - Flash Build Site", FounderName="Heilsberg", SiteUrl=""
                 });
                 using (var writer = System.IO.File.CreateText(filePath))
                 {

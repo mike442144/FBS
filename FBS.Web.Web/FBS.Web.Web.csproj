@@ -448,10 +448,7 @@
     <Compile Include="Helpers\SharedData.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Themes\April\Controllers\AccountController.cs" />
-    <Compile Include="Themes\blue_blog_template\Controllers\HomeController.cs" />
     <Compile Include="Themes\Desktop\Code\Rendering\HeaderRenderControl.cs" />
-    <Compile Include="Themes\OrangeTabs\Controllers\HomeController.cs" />
     <Compile Include="ViewEngine\WebFormThemeViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -55,7 +55,8 @@ namespace FBS.Web.News
         {
             AreaRegistration.RegisterAllAreas();
             System.Web.Mvc.ViewEngines.Engines.Add(new WebFormThemeViewEngine());
-            this.Application.Add("themeName", Helpers.SharedData.ThemeName);
+            if(!System.IO.File.Exists(this.Context.Server.MapPath("~/installed"))) this.Application.Add("themeName","Default");
+            else this.Application.Add("themeName", Helpers.SharedData.ThemeName);
             RegisterRoutes(RouteTable.Routes);
             
         }

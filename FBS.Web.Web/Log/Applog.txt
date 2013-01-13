@@ -1247,3 +1247,62 @@ FBS.Utils.LogonException: 密码错误
 2013-01-13 15:24:21,467 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
 2013-01-13 15:24:21,467 [4] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
 2013-01-13 15:24:21,468 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:12:55,736 [32] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 00:12:55,770 [32] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 00:12:55,770 [32] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:12:55,802 [32] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-14 00:15:49,266 [30] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 00:15:49,278 [30] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 00:15:49,278 [30] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:36:06,635 [6] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 00:36:06,648 [6] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 00:36:06,648 [6] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:36:06,950 [6] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-14 00:44:22,176 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 00:44:22,188 [11] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 00:44:22,188 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:44:22,487 [11] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-14 00:49:26,181 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 00:49:26,192 [4] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 00:49:26,192 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:49:26,492 [4] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-14 00:57:57,501 [22] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 00:57:57,514 [22] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 00:57:57,514 [22] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 00:57:57,817 [22] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-14 01:04:14,650 [24] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 01:04:14,665 [24] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 01:04:14,665 [24] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 01:04:14,975 [24] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-14 01:09:11,499 [16] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: UserEntryService.Register(
+2013-01-14 01:09:11,510 [16] INFO  FBS.Utils.LoggerHelper [(null)] - newUser = FBS.Service.ActionModels.UserRegisterModel
+2013-01-14 01:09:11,510 [16] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-14 01:09:35,065 [16] ERROR FBS.Utils.LoggerHelper [(null)] - Exception was thrown: 
+FBS.Utils.RegisterException: 该邮箱已经被注册
+   在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
+   在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)

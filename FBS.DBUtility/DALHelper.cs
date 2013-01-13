@@ -9,6 +9,11 @@ namespace FBS.DBUtility
     public class DALHelper
     {
         protected static DBHelper DataHelper = GetHelper("sqlstrconn");
+        //{  
+        //    if (_helper==null) _helper = GetHelper("sqlstrconn");
+        //    return _helper;
+        //}
+        //private static DBHelper _helper=null;
         /// <summary>
         /// 从Web.config从读取数据库的连接以及数据库类型
         /// </summary>
