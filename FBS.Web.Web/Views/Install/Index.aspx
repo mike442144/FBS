@@ -4,11 +4,11 @@
 <head>
 <title>FBS安装</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dojo/resources/dojo.css" />
-    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dijit/themes/claro/claro.css" />
-    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dijit/themes/claro/layout/ContentPane.css" />
-    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dojox/widget/Wizard/Wizard.css" />
-    <script src="/Scripts/dojo-release-1.8.1-src/dojo/dojo.js" data-dojo-config="parseOnLoad:true" type="text/javascript"></script>
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1/dojo/resources/dojo.css" />
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1/dijit/themes/claro/claro.css" />
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1/dijit/themes/claro/layout/ContentPane.css" />
+    <link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1/dojox/widget/Wizard/Wizard.css" />
+    <script src="/Scripts/dojo-release-1.8.1/dojo/dojo.js" data-dojo-config="parseOnLoad:true" type="text/javascript"></script>
     <script type="text/javascript">
         <!--require(["dojo/ready", "dojox/widget/Wizard", "dojox/widget/WizardPane", "dijit/layout/ContentPane"]);-->
     </script>

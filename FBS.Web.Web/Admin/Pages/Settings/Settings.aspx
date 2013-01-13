@@ -5,13 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1-src/dojo/resources/dojo.css" media="all" />
-<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1-src/dojox/image/resources/Gallery.css" media="all" />
-<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1-src/dojox/image/resources/ThumbnailPicker.css" media="all" />
-<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1-src/dojox/image/resources/SlideShow.css" media="all" />
-<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1-src/dijit/themes/tundra/tundra.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1/dojo/resources/dojo.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1/dojox/image/resources/Gallery.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1/dojox/image/resources/ThumbnailPicker.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1/dojox/image/resources/SlideShow.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/Scripts/dojo-release-1.8.1/dijit/themes/tundra/tundra.css" media="all" />
 
-<script type="text/javascript" src="/Scripts/dojo-release-1.8.1-src/dojo/dojo.js" djConfig="isDebug:true,parseOnLoad:true"></script>
+<script type="text/javascript" src="/Scripts/dojo-release-1.8.1/dojo/dojo.js" djConfig="isDebug:true,parseOnLoad:true"></script>
 <script type="text/javascript">
     dojo.require("dojox/image/Gallery");
     dojo.require("dojo/data/ItemFileReadStore");

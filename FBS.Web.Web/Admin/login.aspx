@@ -8,9 +8,9 @@
 <meta content="FBS" name="Description" />
 <meta content="FBS" name="Keywords" />
 <title>FBS</title>
-<link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1-src/dijit/themes/dijit.css" />
+<link type="text/css" rel="Stylesheet" href="/Scripts/dojo-release-1.8.1/dijit/themes/dijit.css" />
 <link type="text/css" rel="Stylesheet" href="css/metro_teal.css" />
-<script type="text/javascript" src="/Scripts/dojo-release-1.8.1-src/dojo/dojo.js" djConfig="parseOnLoad:true,isDebug:true"></script>
+<script type="text/javascript" src="/Scripts/dojo-release-1.8.1/dojo/dojo.js" djConfig="parseOnLoad:true,isDebug:true"></script>
 <style type="text/css">
 body
 {
