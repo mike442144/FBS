@@ -518,7 +518,6 @@
     <Content Include="App_Data\Permissions.xml" />
     <Content Include="App_Data\Provinces.xml" />
     <Content Include="App_Data\sql20111226.sql" />
-    <Content Include="App_Data\敏感词库大全2.txt" />
     <Content Include="Global.asax" />
     <Content Include="LICENSE.txt" />
     <Content Include="Scripts\dojo-release-1.8.1\dijit\a11y.js" />

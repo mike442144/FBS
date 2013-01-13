@@ -15,10 +15,10 @@
     <style type="text/css">
     .pageOverlay {
         top: 50px;
-        left: 375px;
+        left: 275px;
         position: absolute;
-        height: 50px;
-        width: 100px;
+        height: auto;
+        width: auto;
         z-index: 1001;
         display: none;
     }
@@ -67,7 +67,7 @@
 </head>
 <body class="claro">
     <div style="margin:0 auto;width:850px;padding-top:30px;text-align: center;position:relative;">
-        <div id="loadingOverlay" class="loadingOverlay pageOverlay">正在安装数据库......先去玩会蚂蚁吧:)</div>
+        <div id="loadingOverlay" class="loadingOverlay pageOverlay"><div class="loadingMessage">正在安装数据库......先去玩会蚂蚁吧:)</div></div>
         <div id="WizardContainer" data-dojo-type="dojox/widget/Wizard" data-dojo-props="nextButtonLabel: '下一步',previousButtonLabel: '上一步',doneButtonLabel:'完成'">
             <div id="Agreement" data-dojo-type="dojox/widget/WizardPane" passfunction="checkAgreement"
                 data-dojo-props="">
