@@ -1239,3 +1239,11 @@ FBS.Utils.LogonException: √‹¬Î¥ÌŒÛ
 2013-01-13 12:32:11,410 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetCountOfStorysByUserID(
 2013-01-13 12:32:11,411 [5] INFO  FBS.Utils.LoggerHelper [(null)] - userid = fcb49f29-27d5-4bdb-811a-4040a356ee60
 2013-01-13 12:32:11,411 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 15:24:16,057 [5] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetAllBlogStorysByCategory(
+2013-01-13 15:24:16,075 [5] INFO  FBS.Utils.LoggerHelper [(null)] - categoryId = 05987678-94d4-43fd-82e1-5ba768468bfe
+2013-01-13 15:24:16,075 [5] INFO  FBS.Utils.LoggerHelper [(null)] - startIndex = 0
+2013-01-13 15:24:16,075 [5] INFO  FBS.Utils.LoggerHelper [(null)] - count = 10
+2013-01-13 15:24:16,075 [5] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-13 15:24:21,467 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-13 15:24:21,467 [4] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = 6ec74656-50ce-4bb9-b0f9-064062250f9f
+2013-01-13 15:24:21,468 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
