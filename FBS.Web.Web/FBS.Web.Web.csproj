@@ -454,7 +454,6 @@
     <Compile Include="ViewEngine\WebFormThemeViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\AddAdvertisement.aspx" />
     <Content Include="Admin\index.html" />
     <Content Include="Admin\login.aspx" />
     <Content Include="Admin\main.aspx" />
