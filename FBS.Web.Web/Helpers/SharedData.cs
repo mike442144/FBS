@@ -25,13 +25,9 @@ namespace Helpers
         }
         static SiteCnf getSiteInfo()
         {
-            if (sc == null)
-            {
-                if (siteInfoService == null)
-                    siteInfoService = new SiteService();
-                sc = siteInfoService.GetSiteInfo();
-            }
-            return sc;
+            if (siteInfoService == null)
+                siteInfoService = new SiteService();
+            return siteInfoService.GetSiteInfo();
         }
     }
 }
