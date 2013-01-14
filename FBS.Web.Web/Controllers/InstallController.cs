@@ -38,7 +38,7 @@ namespace FBS.Web.News.Controllers
             string msg = string.Empty;
             try
             {
-                var filePath=Server.MapPath("~/installed");
+                var filePath=Server.MapPath("~/App_Data/installed");
                 if (System.IO.File.Exists(filePath))
                     throw new Exception("网站已经安装过");
                 //setting database connectionstring.

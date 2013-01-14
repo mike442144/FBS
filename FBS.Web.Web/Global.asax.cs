@@ -55,7 +55,7 @@ namespace FBS.Web.News
         {
             AreaRegistration.RegisterAllAreas();
             System.Web.Mvc.ViewEngines.Engines.Add(new WebFormThemeViewEngine());
-            if(!System.IO.File.Exists(this.Context.Server.MapPath("~/installed"))) this.Application.Add("themeName","Default");
+            if(!System.IO.File.Exists(this.Context.Server.MapPath("~/App_Data/installed"))) this.Application.Add("themeName","Default");
             else this.Application.Add("themeName", Helpers.SharedData.ThemeName);
             RegisterRoutes(RouteTable.Routes);
             
@@ -75,7 +75,7 @@ namespace FBS.Web.News
                 //if (IgnoreMvcDig(context)) return;
                 if (
                     !(new string[] { "css", "js", "jpg", "gif", "png", "html", "txt" }).Any(item => context.Request.Url.AbsolutePath.ToLower().EndsWith(item))
-                    && !System.IO.File.Exists(context.Server.MapPath("~/installed")))
+                    && !System.IO.File.Exists(context.Server.MapPath("~/App_Data/installed")))
                 {
                     if (!context.Request.Url.AbsolutePath.ToLower().StartsWith(("/install")))
                         context.Response.Redirect("/Install/Index/", false);
