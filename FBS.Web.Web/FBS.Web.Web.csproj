@@ -9446,7 +9446,7 @@
     <Content Include="Views\Shared\Header.ascx" />
     <Content Include="Admin\Pages\AdvertisementPages\GetXML.ashx" />
     <Content Include="Admin\Pages\ArticlesPages\UpLoadImg.ashx" />
-    <None Include="App_Data\installed" />
+    <Content Include="App_Data\installed" />
     <Content Include="Content\ueditor\net\fileUp.ashx" />
     <Content Include="Content\ueditor\net\getContent.ashx" />
     <Content Include="Content\ueditor\net\getMovie.ashx" />
