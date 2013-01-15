@@ -112,7 +112,7 @@ namespace FBS.Web.News.ViewEngine
 
         private string GetThemeToUse(ControllerContext controllerContext)
         {
-            string themeName = controllerContext.HttpContext.Application["themeName"] as string;
+            string themeName = Helpers.SharedData.ThemeName;//controllerContext.HttpContext.Application["themeName"] as string;
             if (themeName == null) themeName = "Default";
             return themeName;
         }
