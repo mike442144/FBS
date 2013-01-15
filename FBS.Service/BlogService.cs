@@ -193,7 +193,7 @@ namespace FBS.Service
 
             foreach (BlogStory story in blist)
             {
-                BlogStoryDspModel tmp = new BlogStoryDspModel() { UserID=userId, StoryID=story.Id, WriterName = story.UserName, Title = story.State.Title, CommentsCount = story.State.CommentCount, ReadCount = story.State.ClickCount, Description = story.State.GetShortBody(50), PublishTime = story.CreationDate};
+                BlogStoryDspModel tmp = new BlogStoryDspModel() { UserID=userId, StoryID=story.Id, WriterName = story.UserName, Title = story.State.Title, CommentsCount = story.State.CommentCount, ReadCount = story.State.ClickCount, Description = story.State.GetShortBody(50), PublishTime = story.CreationDate,LastModify=story.LastModify};
                 targets.Add(tmp);
             }
 
@@ -241,7 +241,8 @@ namespace FBS.Service
                 Description = story.State.GetShortBody(50),
                 PublishTime = story.CreationDate,
                 StoryID = story.Id,
-                UserID = story.UserID
+                UserID = story.UserID,
+                LastModify = story.LastModify
             };
            }
 
@@ -269,7 +270,8 @@ namespace FBS.Service
                     Description = story.State.GetShortBody(50),
                     PublishTime = story.CreationDate,
                      StoryID=story.Id,
-                    UserID = story.UserID
+                    UserID = story.UserID,
+                    LastModify = story.LastModify
                 };
                 targets.Add(tmp);
             }
@@ -298,8 +300,11 @@ namespace FBS.Service
                     Description = story.State.GetShortBody(200),
                     PublishTime = story.CreationDate,
                     StoryID = story.Id,
-                     UserID = story.UserID, ImgName=story.ImgName
-
+                    UserID = story.UserID, 
+                    ImgName=story.ImgName,
+                    LastModify=story.LastModify,
+                    CategoryName=story.CategoryName,
+                    CategoryID =story.CategoryID
                 };
                 targets.Add(tmp);
             }
@@ -373,7 +378,10 @@ namespace FBS.Service
                     Description = story.State.GetShortBody(200),
                     PublishTime = story.CreationDate,
                     StoryID = story.Id,
-                    UserID = story.UserID
+                    UserID = story.UserID,
+                    LastModify=story.LastModify,
+                    CategoryID = story.CategoryID,
+                    CategoryName = story.CategoryName
                 };
                 targets.Add(tmp);
             }
@@ -405,6 +413,7 @@ namespace FBS.Service
                 model.ReadCount = b.ClickCount;
                 model.WriterName = b.UserName;
                 model.UserID = b.UserID;
+                model.LastModify = b.LastModify;
                 temp.Add(model);
 
             }
@@ -454,6 +463,7 @@ namespace FBS.Service
                 model.WriterName = b.UserName;
                 model.UserID = b.UserID;
                 model.ImgName = b.ImgName;
+                model.LastModify = b.LastModify;
                 target.Add(model);
             }
 
@@ -469,6 +479,7 @@ namespace FBS.Service
                 model.WriterName = b.UserName;
                 model.UserID = b.UserID;
                 model.ImgName = b.ImgName;
+                model.LastModify = b.LastModify;
                 target.Add(model);
             }
             return target;
@@ -517,6 +528,7 @@ namespace FBS.Service
                     model.UserID = b.UserID;
                     model.WriterName = b.UserName;
                     model.ImageName = b.ImgName;
+                    model.LastModify = b.LastModify;
                     temp.Add(model);
                 }
             }

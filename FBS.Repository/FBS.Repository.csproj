@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="AccountRepository.cs" />
     <Compile Include="AviatorDb.cs" />
+    <Compile Include="BlogCategoryRepository.cs" />
     <Compile Include="CategoryRepository.cs" />
     <Compile Include="BlogQuestionRepository.cs" />
     <Compile Include="BlogStoryRepository.cs" />

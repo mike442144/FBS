@@ -12,6 +12,13 @@ namespace FBS.Domain.Aggregate.Entity
         {
 
         }
+        public SiteSettings(Site site,string themeName) 
+        {
+            if (site == null) throw new ArgumentNullException("null reference to site");
+            this._siteId = site.Id;
+            this._themeName = themeName;
+            this._lastModify = DateTime.Now;
+        }
         public void AlterToRow(System.Data.DataTable t)
         {
             //数据行的属性顺序与数据库表中的属性顺序必须相同

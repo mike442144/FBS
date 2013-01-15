@@ -24,6 +24,7 @@ namespace FBS.Domain.Aggregate.Entity
             this._isPublishedToHomepage = isPublishedToHomepage;
             this._storyId = Guid.NewGuid();
             this._creationDate = DateTime.Now;
+            this._lastModify = this._creationDate;
 
             this._state = new BlogStoryState();
             this._state.Title = title;
@@ -48,7 +49,7 @@ namespace FBS.Domain.Aggregate.Entity
             story._storyId = new Guid(rd["StoryID"].ToString());
             
             story._creationDate = Convert.ToDateTime(rd["CreatedOn"]);
-
+            story._lastModify = Convert.ToDateTime(rd["LastModify"]);
             story._accountVO = new 
                 AccountMessageVO(
                 new Guid(rd["UserID"].ToString()),
@@ -132,6 +133,7 @@ namespace FBS.Domain.Aggregate.Entity
                 t.Columns.Add("ClickCount",typeof(int));
                 t.Columns.Add("CommentCount",typeof(int));
                 t.Columns.Add("ImgName",typeof(string));
+                t.Columns.Add("LastModify", typeof(DateTime));
             }
 
             //新建行
@@ -149,6 +151,7 @@ namespace FBS.Domain.Aggregate.Entity
             row["ClickCount"] = this._state.ClickCount;
             row["CommentCount"] = this._state.CommentCount;
             row["ImgName"] = this._imgname;
+            row["LastModify"] = this._lastModify;
             //添加
             t.Rows.Add(row);
         }
@@ -168,9 +171,9 @@ namespace FBS.Domain.Aggregate.Entity
                 return;
 
             strSql.Append("INSERT INTO fbs_Story(");
-            strSql.Append("StoryID, Title, Description, Url, CategoryID, UserID, UserName, UserTiny, CreatedOn, IsPublishedToHomepage, ClickCount, CommentCount, ImgName)");
+            strSql.Append("StoryID, Title, Description, Url, CategoryID, UserID, UserName, UserTiny, CreatedOn, IsPublishedToHomepage, ClickCount, CommentCount, ImgName,LastModify)");
             strSql.Append(" VALUES (");
-            strSql.Append("@in_StoryID, @in_Title, @in_Description, @in_Url, @in_CategoryID, @in_UserID, @in_UserName, @in_UserTiny, @in_CreatedOn, @in_IsPublishedToHomepage, @in_ClickCount, @in_CommentCount, @in_ImgName)");
+            strSql.Append("@in_StoryID, @in_Title, @in_Description, @in_Url, @in_CategoryID, @in_UserID, @in_UserName, @in_UserTiny, @in_CreatedOn, @in_IsPublishedToHomepage, @in_ClickCount, @in_CommentCount, @in_ImgName,@in_LastModify)");
 
             cmdParms.Add("@in_StoryID", DbType.Guid);
             cmdParms.Add("@in_Title", DbType.String);
@@ -185,6 +188,7 @@ namespace FBS.Domain.Aggregate.Entity
             cmdParms.Add("@in_ClickCount", DbType.Int32);
             cmdParms.Add("@in_CommentCount", DbType.Int32);
             cmdParms.Add("@in_ImgName", DbType.String);
+            cmdParms.Add("@in_LastModify", DbType.DateTime);
                 
         }
 
@@ -210,7 +214,8 @@ namespace FBS.Domain.Aggregate.Entity
             strSql.Append("IsPublishedToHomepage=@in_IsPublishedToHomepage,");
             strSql.Append("ClickCount=@in_ClickCount,");
             strSql.Append("CommentCount=@in_CommentCount,");
-            strSql.Append("ImgName=@in_ImgName");
+            strSql.Append("ImgName=@in_ImgName,");
+            strSql.Append("LastModify=@in_LastModify");
             strSql.Append(" WHERE StoryID=@in_StoryID");
 
             cmdParms.Add("@in_StoryID", DbType.Guid);
@@ -226,7 +231,7 @@ namespace FBS.Domain.Aggregate.Entity
             cmdParms.Add("@in_ClickCount", DbType.Int32);
             cmdParms.Add("@in_CommentCount", DbType.Int32);
             cmdParms.Add("@in_ImgName", DbType.String);
-
+            cmdParms.Add("@in_LastModify", DbType.DateTime);
         }
 
         /// <summary>
@@ -310,8 +315,12 @@ namespace FBS.Domain.Aggregate.Entity
         }
 
         private bool _isPublishedToHomepage;
-
-
+        public DateTime LastModify 
+        {
+            get { return this._lastModify; }
+            set { this._lastModify = value; }
+        }
+        private DateTime _lastModify;
         public string ImgName
         {
             get { return this._imgname; }

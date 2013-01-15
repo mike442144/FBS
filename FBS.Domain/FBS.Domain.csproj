@@ -140,6 +140,7 @@
     <Compile Include="QueryObject\Evaluator.cs" />
     <Compile Include="QueryObject\ObjectReader.cs" />
     <Compile Include="QueryObject\QueryProvider.cs" />
+    <Compile Include="Repository\IBlogCategoryRepository.cs" />
     <Compile Include="Repository\IHelper.cs" />
     <Compile Include="Repository\IAccountRepository.cs" />
     <Compile Include="Repository\IBlogQuestionRepository.cs" />

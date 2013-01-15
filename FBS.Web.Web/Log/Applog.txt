@@ -1306,3 +1306,30 @@ FBS.Utils.RegisterException: 该邮箱已经被注册
    在 FBS.Service.UserEntryService.Register(UserRegisterModel newUser) 位置 E:\works\cs\FBS\fbs\FBS.Service\UserEntryService.cs:行号 140
    在 System.Runtime.Remoting.Messaging.Message.Dispatch(Object target, Boolean fExecuteInContext)
    在 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg, Int32 methodPtr, Boolean fExecuteInContext)
+2013-01-15 23:30:01,405 [9] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:30:01,443 [9] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:30:01,443 [9] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:32:56,833 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:32:56,833 [4] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:32:56,833 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:34:37,746 [12] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:34:37,746 [12] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:34:37,746 [12] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:38:27,274 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:38:27,274 [15] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:38:27,274 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:39:37,691 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetOneBlogStoryContentByID(
+2013-01-15 23:39:37,691 [4] INFO  FBS.Utils.LoggerHelper [(null)] - storyId = ea48d519-c7be-4b94-acca-959a36babab9
+2013-01-15 23:39:37,691 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:40:08,584 [4] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:40:08,584 [4] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:40:08,584 [4] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:40:51,114 [15] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:40:51,114 [15] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:40:51,114 [15] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-15 23:42:50,606 [11] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-15 23:42:50,621 [11] INFO  FBS.Utils.LoggerHelper [(null)] - n = 10
+2013-01-15 23:42:50,621 [11] INFO  FBS.Utils.LoggerHelper [(null)] - )
+2013-01-16 00:03:53,115 [18] INFO  FBS.Utils.LoggerHelper [(null)] - PreProcessing: BlogService.GetRecentBlogStorysSummary(
+2013-01-16 00:03:53,127 [18] INFO  FBS.Utils.LoggerHelper [(null)] - n = 15
+2013-01-16 00:03:53,127 [18] INFO  FBS.Utils.LoggerHelper [(null)] - )

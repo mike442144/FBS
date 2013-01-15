@@ -34,7 +34,7 @@ namespace FBS.Web.News.Controllers
                         ViewData.Add("CategoryName", name);
                 }
                 else
-                    posts = srv.GetRecentBlogStorysSummary(10);
+                    posts = srv.GetRecentBlogStorysSummary(15);
                 return View(posts);
             }
             catch (Exception error)

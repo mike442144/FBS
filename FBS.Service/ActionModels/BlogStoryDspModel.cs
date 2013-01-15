@@ -40,6 +40,13 @@ namespace FBS.Service.ActionModels
         [DisplayName("图片名称")]
         public string ImgName { set; get; }
 
+        [DisplayName("最后修改")]
+        public DateTime LastModify { set; get; }
+        [DisplayName("分类")]
+        public string CategoryName { set; get; }
+        [DisplayName("分类编号")]
+        public Guid CategoryID { set; get; }
+
         #region ISortEntity 成员
 
         public int SortFieldLength()
