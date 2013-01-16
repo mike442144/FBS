@@ -7,7 +7,7 @@
   { %>
   <h2><a href="/b/<%=m.StoryID %>" target="_self"><%=m.Title %></a></h2>
   <time class="meta"><%=m.PublishTime.ToString("yyyy-MM-dd HH:mm") %></time>
-  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;    
   <span class="meta"><a href="/Blog/Index/<%=m.CategoryID %>" target="_self"><%=m.CategoryName %></a></span>
   <span class="meta">ÔÄ¶Á(<%=m.ReadCount %>)</span>
   <p class="entry"><%=m.Description %>[......]</p>
