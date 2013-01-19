@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="../Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IList<FBS.Service.ActionModels.BlogStoryDspModel>>" %>
+ï»¿<%@ Page Language="C#" MasterPageFile="../Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IList<FBS.Service.ActionModels.BlogStoryDspModel>>" %>
 <asp:Content ID="blogsTitle" ContentPlaceHolderID="TitleContent" runat="server">
 <%=ViewData["CategoryName"] ?? Helpers.SharedData.SiteName%>
 </asp:Content>
@@ -7,10 +7,10 @@
   { %>
   <h2><a href="/b/<%=m.StoryID %>" target="_self"><%=m.Title %></a></h2>
   <time class="meta"><%=m.PublishTime.ToString("yyyy-MM-dd HH:mm") %></time>
-  &nbsp;&nbsp;&nbsp;&nbsp;    
+  &nbsp;&nbsp;&nbsp;&nbsp; 
   <span class="meta"><a href="/Blog/Index/<%=m.CategoryID %>" target="_self"><%=m.CategoryName %></a></span>
-  <span class="meta">ÔÄ¶Á(<%=m.ReadCount %>)</span>
+  <span class="meta">é˜…è¯»(<%=m.ReadCount %>)</span>
   <p class="entry"><%=m.Description %>[......]</p>
-  <p style="text-align:right;"><a href="/b/<%=m.StoryID %>">È«ÎÄ</a></p>
+  <p style="text-align:right;"><a href="/b/<%=m.StoryID %>">å…¨æ–‡</a></p>
 <%} %>
 </asp:Content>
